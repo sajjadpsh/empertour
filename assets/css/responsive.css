@@ -1,0 +1,739 @@
+/* Medium Layout: 1367px. */
+
+@media only screen and (min-width: 1200px) and (max-width: 1367px) {
+
+}
+
+
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .tta-V2 .stat-focused .stat-text {
+        max-width: calc(100% - 40%);
+    }
+    ul.hsgt li a {
+        margin: 0 auto;
+    }
+    ul.dc-list li a {
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1135px) {
+    .footstep-nav .navbar-nav li a {
+        font-size: 12px;
+    }
+    .footstep-nav .navbar-nav li:last-child a {
+        font-size: 12px;
+        padding: 10px 12px;
+        margin-top: 2px;
+    }
+    .section-paragraph p {
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .section-title h3 {
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .s-text-btn a {
+        font-size: 14px;
+    }
+    .stat-text a h4 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .slocation a {
+        font-size: 12px;
+    }
+    .smps-text h4 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .st-meta p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+    .st-btn a {
+        font-size: 14px;
+    }
+    
+    .ssi-text h4 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    
+    .ssi-text p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+    p.ssi-price {
+        font-size: 18px;
+    }
+    
+    .shop-view-more a {
+        font-size: 14px;
+    }
+    
+    .btn-style-a {
+        font-size: 14px;
+        padding: 15px 20px;
+    }
+    
+    .nla-left h3 {
+    }
+    
+    .footer-text p {
+        font-size: 12px;
+        line-height: 26px;
+    }
+    
+    ul.fws li {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    ul.fws li {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .footer-widget {
+        padding: 60px 0px;
+    }
+    
+    .fc-right ul li a, .fc-right ul li p {
+        font-size: 12px;
+    }
+    
+    .fc-right ul li {
+        padding: 0px 8px;
+    }
+    
+    ul.fc-social li a i {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .newsletter-area:before,
+    .place-order-area:before {
+        display: none;
+    }
+    .customer-review-slider .owl-dots, .customer-review-slider .owl-nav {
+        display: none;
+    }
+    .cart-cupon input,
+    .cart-update-procced-btn .btn-style-a {
+        margin-bottom: 20px;
+    }
+    .billing-details .form-check .staaddress {
+        font-size: 18px;
+    }
+    .instaPost-carousel .owl-nav, .instaPost-carousel .owl-dots {
+        display: none;
+    }
+    ul.dc-list li a {
+        font-size: 10px;
+        padding: 8px 0px;
+    }
+    .bg-dark-blue .navbar-nav li a {
+        color:#000;
+    }
+    .bg-dark-blue .navbar-toggler i {
+        color: #fff;
+    }
+    .stat-focused {
+        float: unset;
+        max-width: 350px;
+    }
+    
+    .tta-V2 .stat-focused .stat-text {max-width: 100%;margin-left: 0px;}
+    
+    .stat-focused .stat-img {
+        display: none;
+    }
+    .section-title:before {
+        display: none;
+    }
+    .footstep-nav .navbar-nav li:last-child {
+        display: none;
+    }
+    .footstep-nav .navbar-nav li a {
+        background-color: #000;
+        margin: 2px;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .footstep-nav-v2 .navbar-nav li a {
+        background-color: #fff;
+    }
+    .footstep-nav-v2 .navbar-nav .dropdown-menu a{
+        color: #333;
+    }
+    .footstep-nav button.navbar-toggler{
+        cursor: pointer;
+    }
+    .footstep-nav button.navbar-toggler:focus {
+        outline: none;
+        color: #ff7050;
+    }
+    
+    
+
+    .footstep-nav .navbar-nav {
+        padding: 15px 0px;
+        text-align: center;
+        background-color: #113255;
+    }
+    
+}
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .hs-aboutme p {
+        font-size: 13px;
+        padding: 12px;
+        line-height: 18px;
+    }
+    
+    .hs-widget>h4 {
+        font-size: 20px;
+    }
+    
+    .hs-category ul li a {
+        font-size: 12px;
+    }
+    
+    .hs-category ul li {
+        margin-bottom: 15px;
+    }
+    
+    .sss-meta p {
+        font-size: 10px;
+    }
+    
+    .sss-meta {
+        margin: 15px auto 10px;
+    }
+    
+    .sss-text a h4 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    
+    .sidebarPost-carousel .owl-nav {
+        bottom: -4px;
+    }
+    
+    .sidebarPost-carousel .owl-nav button.owl-prev, .sidebarPost-carousel .owl-nav button.owl-next {
+        font-size: 15px;
+        padding: 0px 10px !important;
+    }
+    .ssrp-text h5 a {
+        font-size: 10px;
+        line-height: 14px;
+    }
+    
+    .ssrp-text {
+        width: calc(100% - 70px);
+    }
+    
+    .ssrp-text h5 {
+        line-height: 14px;
+    }
+    
+    .hs-gi-use-text p {
+        font-size: 12px;
+    }
+    
+    .hs-gi-use-text h4 {
+        font-size: 18px;
+    }
+    
+    .shsp-text h5 a {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    
+    .shsp-text h5 {line-height: 16px;}
+    
+    .shsp-text p {
+        font-size: 14px;
+    }
+    
+    .shsp-text {
+        width: calc(100% - 70px);
+    }
+    
+    .shsp-img {
+        max-width: 60px;
+    }
+    ul.hsgt li a {
+        margin: 0 auto;
+    }
+    .ssrp-img img {
+        max-width: 60px;
+    }
+    .stat-v2 .slocation a i {
+        font-size: 12px;
+        margin-right: 3px;
+    }
+    .smps-text {
+        padding: 5px 5px !important;
+    }
+    
+    .ppfb-v2 .smps-text h4 {
+        margin: 10px auto;
+        font-size: 16px;
+    }
+    
+    .ppfb-v2 .smps-text p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    
+    .pbp-st-btn {
+    }
+    
+    .btn-style-b {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 8px 15px;
+    }
+    
+    .pbp-exerpt {
+        margin: 12px auto;
+    }
+    .section-paragraph p {
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .section-title h3 {
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .s-text-btn a {
+        font-size: 14px;
+    }
+    .stat-text a h4 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .slocation a {
+        font-size: 8px;
+        margin-top: 10px;
+    }
+    .smps-text h4 {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .st-meta p {
+        font-size: 10px;
+        line-height: 16px;
+    }
+    
+    .st-btn a {
+        font-size: 10px;
+    }
+    
+    .ssi-text h4 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    
+    .ssi-text p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+    p.ssi-price {
+        font-size: 18px;
+    }
+    
+    .shop-view-more a {
+        font-size: 14px;
+    }
+    
+    .btn-style-a {
+        font-size: 14px;
+        padding: 15px 20px;
+    }
+    
+    .nla-left h3 {
+        font-size: 18px;
+        line-height: 44px;
+    }
+    
+    .footer-text p {
+        font-size: 12px;
+        line-height: 26px;
+    }
+    
+    ul.fws li {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+    ul.fws li {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+    .footer-widget {
+        padding: 60px 0px;
+    }
+    
+    .fc-right ul li a, .fc-right ul li p {
+        font-size: 12px;
+    }
+    
+    .fc-right ul li {
+        padding: 0px 8px;
+    }
+    
+    ul.fc-social li a i {
+        font-size: 16px;
+    }
+    .ht-title h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    
+    .ht-qoutes h4 {
+        font-size: 14px;
+    }
+    
+    .ht-next-btn a {}
+    
+    .hero-slider {
+        padding-top: 68px;
+    }
+    
+    .ht-qoutes p {
+        font-size: 14px;
+    }
+    
+    .ht-qoutes p span {
+        font-size: 14px;
+    }
+    .stat-meta p {
+        line-height: 18px;
+        font-size: 10px;
+    }
+    .stat-text a h4 {
+        font-size: 14px;
+        line-height: 22px;
+        margin: 10px auto;
+    }
+    .place-orderV2 .section-title h3 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    
+}
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+    
+    .ec-text h3 {
+        line-height: 55px;
+    }
+    .ddc-title h4 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    
+    .ddc-meta {
+        margin: 10px auto;
+    }
+    
+    .ddc-meta p {
+        font-size: 12px;
+    }
+    
+    .destination-details-content h5 {
+        font-size: 16px;
+    }
+    
+    .ddc-welcome p {
+        font-size: 14px;
+    }
+    
+    .ddc-gt-single p {
+        font-size: 14px;
+    }
+    
+    .ddc-gt-single {
+        text-align: center;
+    }
+    
+    .ddc-tts-img {
+        text-align: center;
+    }
+    .gearIuse-area {
+        text-align: center;
+    }
+    .tour-date-area {
+        text-align: center;
+    }
+    .ss-widget {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    ul.dc-list li {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .destination-categoy-wrapper {
+        margin: 30px auto 50px;
+    }
+    .tpw-title h4 {
+        font-size: 30px;
+        line-height: 44px;
+    }
+    
+    .tpw-img-text p {
+        font-size: 14px;
+        line-height: 28px;
+        margin-bottom: 30px;
+    }
+    
+    
+    .innerpage-titile h2 {
+        font-size: 50px;
+    }
+    
+    .innerpage-titile {
+        padding: 25px 0px;
+        margin: 25px auto;
+    }
+    
+    .innerpage-title-area {
+        padding-top: 45px;
+    }
+    .customer-review-slider .owl-dots, .customer-review-slider .owl-nav {
+        display: none;
+    }
+    .bp-w-sidebar .section-title h3 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .hs-widget {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .section-title {
+        text-align: center;
+    }
+    .single-shop-item {
+        max-width: 350px;
+        margin: 25px auto;
+    }
+    .newsletter-area {
+        text-align: center;
+    }
+    .footer-widget {
+        text-align: center;
+        padding: 30px 0px;
+    }
+    ul.fc-social {
+        text-align: center;
+    }
+    ul.fws li {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 12px;
+    }
+    ul.fws li a{
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 12px;
+    }
+    ul.fws {
+        margin: 12px auto;
+    }
+    .fw-single {
+        margin: 25px auto;
+    }
+    .section-padding {
+        padding: 60px 0px;
+    }
+    
+    .section-title h3 {
+        font-size: 36px;
+        line-height: 50px;
+    }
+    
+    .smps-img img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .single-mps {
+        max-height: 330px;
+        overflow: hidden;
+    }
+    .ppfb-v2 .smps-text h4 {
+        font-size: 20px;
+    }
+    .pbp-exerpt {
+        margin: 15px auto;
+    }
+    .ppfb-v2 .smps-text p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .place-orderV2 .po-btn,
+    .place-orderV2 .section-title h3 {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .innerpage-titile h2 {
+        font-size: 30px;
+    }
+    .stat-v2 .stat-meta p {
+        font-size: 12px;
+    }
+    .slocation a {
+        font-size: 10px;
+    }
+    .ht-next-btn a {
+        font-size: 12px;
+    }
+    .ht-next-btn {
+        margin: 15px auto;
+    }
+    .ht-title h2 {
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .section-title h3 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .section-paragraph p {
+        font-size: 14px;
+    }
+    .s-text-btn a {
+        font-size: 14px;
+    }
+    .stat-text a h4 {
+        font-size: 20px;
+        margin: 15px auto;
+        line-height: 36px;
+    }
+    .st-btn a {
+        font-size: 12px;
+    }
+    .fc-right ul li a, .fc-right ul li p {
+        font-size: 10px;
+    }
+    .fc-right ul li {
+        padding: 0px 5px;
+    }
+    
+    .fc-right ul {
+        text-align: center;
+    }
+    form.newsletter-form .form-control {
+        height: 30px;
+        font-size: 12px;
+    }
+    
+    .newsletter-form button {
+        padding: 10px 12px;
+        font-size: 12px;
+    }
+    
+}
+
+@media only screen and (max-width: 499px) {
+    ul.hsgt li a {
+        margin: 0 auto;
+    }
+}
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    
+}
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 240px) and (max-width: 480px) {
+    .cartProductName .cancel-product {
+        margin-right: 5px;
+    }
+    table.cart-table .cartProductName {
+        text-align: center;
+    }
+    .cart-table .pq-inc-dec-btn {
+        display: none;
+    }
+    .cartProductName .cartPimg {
+        margin: 0;
+    }
+    .cart-btn-wrapper .btn-style-a {
+        font-size: 12px;
+        padding: 14px 12px;
+        margin-bottom: 15px;
+    }
+    .cart-update-procced-btn {
+        text-align: center;
+    }
+    .next-prev-story-btn a.btn-style-a {
+        margin-bottom: 20px;
+    }
+    .pic-single p {
+        font-size: 12px;
+    }
+    .po-btn a {
+        padding: 10px 14px;
+        font-size: 12px;
+    }
+    .smps-text h4 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .st-meta p {
+        line-height: 14px;
+    }
+    .hero-location-icon,
+    .hero-maps,
+    .map-area {
+        display: none;
+    }
+    .hero-v2 .ht-title h2 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .photogallery .pg-menu ul li:nth-child(5) {
+        height: 40px;
+        width: 40px;
+    }
+    .photogallery .pg-menu ul li {
+        height: 40px;
+        width: 40px;
+    }
+    .product-photo-view img {
+        width: 295px;
+        height: 400px;
+    }
+    .photogallery {
+        height: 400px;
+    }
+}
