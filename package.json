@@ -10,7 +10,9 @@
   "dependencies": {
     "@nuxtjs/style-resources": "^1.0.0",
     "bootstrap": "^4.4.1",
+    "eslint-loader": "^3.0.3",
     "jquery": "^3.4.1",
+    "jquery-ui": "^1.12.1",
     "markdown-it": "^10.0.0",
     "markdown-it-prism": "^2.0.3",
     "normalize.css": "^8.0.1",
@@ -30,7 +32,7 @@
     "frontmatter-markdown-loader": "^3.1.0",
     "node-sass": "^4.13.1",
     "responsive-loader": "^1.2.0",
-    "sass-loader": "^8.0.0",
+    "sass-loader": "^8.0.2",
     "sharp": "^0.23.4"
   }
 }

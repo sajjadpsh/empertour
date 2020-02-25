@@ -685,6 +685,8 @@
 
   import blogsEn from '~/contents/en/blogsEn.js'
   import blogsEs from '~/contents/es/blogsEs.js'
+//   import jquery from "jquery"
+//   Vue.use(jquery)
 
   export default {
     async asyncData ({app}) {

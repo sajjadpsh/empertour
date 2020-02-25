@@ -64,50 +64,61 @@ module.exports = {
             { rel: 'mask-icon', type: 'image/png', href: '/favicons/safari-pinned-tab.svg', color: '#c1c1c1' },
             {
                 rel: "stylesheet",
-                href: "@/assets/css/animate.css"
+                href: "/css/animate.css"
             },
             {
                 rel: "stylesheet",
-                href: "~/assets/css/bootstrap.min.css"
+                href: "/css/bootstrap.min.css"
             },
             {
                 rel: "stylesheet",
-                href: "~/assets/css/font-awesome.min.css"
+                href: "/css/font-awesome.min.css"
             },
             {
                 rel: "stylesheet",
-                href: "~/assets/css/jquery-ui.css"
+                href: "/css/jquery-ui.css"
             },
             {
                 rel: "stylesheet",
-                href: "~/assets/css/owl.carousel.min.css"
+                href: "/css/owl.carousel.min.css"
             },
             {
                 rel: "stylesheet",
-                href: "~/assets/css/owl.theme.default.min.css"
+                href: "/css/owl.theme.default.min.css"
             },
             {
                 rel: "stylesheet",
-                href: "~/assets/css/responsive.css"
+                href: "/css/responsive.css"
             },
             {
                 rel: "stylesheet",
-                href: "~/assets/css/style.css"
+                href: "/css/style.css"
             },
         ],
 
-        script: [
-            { src: '~/jquery-3.2.0.min.js', type: "text/javascript" },
-            { src: '~/jquery-ui.js', type: "text/javascript" },
-            { src: '~/owl.carousel.min.js', type: "text/javascript" },
-            { src: '~/jquery.counterup.min.js', type: "text/javascript" },
-            { src: '~/jquery.scrollUp.js', type: "text/javascript" },
-            { src: '~/jquery.waypoints.min.js', type: "text/javascript" },
-            { src: '~/bootstrap.min.js', type: "text/javascript" },
-            { src: '~/theme.js', type: "text/javascript" },
-            { src: '~/gmaps.js', type: "text/javascript" },
-        ],
+        // script: [
+        //     { src: 'static/jquery-3.2.0.min.js', type: "text/javascript" },
+        //     { src: 'static/jquery-ui.js', type: "text/javascript" },
+        //     { src: 'static/owl.carousel.min.js', type: "text/javascript" },
+        //     { src: 'static/jquery.counterup.min.js', type: "text/javascript" },
+        //     { src: 'static/jquery.scrollUp.js', type: "text/javascript" },
+        //     { src: 'static/jquery.waypoints.min.js', type: "text/javascript" },
+        //     { src: 'static/bootstrap.min.js', type: "text/javascript" },
+        //     { src: 'static/theme.js', type: "text/javascript" },
+        //     { src: 'static/gmaps.js', type: "text/javascript" },
+        // ],
     },
+    script: [
+        { src: '/jquery-3.2.0.min.js', type: "text/javascript" },
+        { src: '/jquery-ui.js', type: "text/javascript" },
+        { src: '/owl.carousel.min.js', type: "text/javascript" },
+        { src: '/jquery.counterup.min.js', type: "text/javascript" },
+        { src: '/jquery.scrollUp.js', type: "text/javascript" },
+        { src: '/jquery.waypoints.min.js', type: "text/javascript" },
+        { src: '/bootstrap.min.js', type: "text/javascript" },
+        { src: '/theme.js', type: "text/javascript" },
+        { src: '/gmaps.js', type: "text/javascript" },
+    ],
     /*
      ** Customize the progress-bar color
      */
@@ -122,30 +133,35 @@ module.exports = {
         'normalize.css/normalize.css',
         '@/assets/css/main.scss',
         '@/assets/css/prism-material-light.css',
-        // '~/assets/css/bootstrap.min.css',
-        // '~/assets/css/animate.css',
-        // '~/assets/css/font-awesome.min.css',
-        // '~/assets/css/jquery-ui.css',
-        // '~/assets/css/owl.carousel.min.css',
-        // '~/assets/css/owl.theme.default.min.css',
-        // '~/assets/css/responsive.css',
-        // '~/assets/css/style.css'
+        // "@/node_modules/bootstrap/dist/css/bootstrap.css",
+
+    ],
+
+    plugins: ['plugins/lazyload',
+        'plugins/globalComponents',
+        {
+            src: '~plugins/ga.js',
+            ssr: false
+        },
+        "~plugins/bootstrap.js",
+        // { src: 'plugins/jquery-3.2.0.min.js' }
     ],
 
     build: {
-        vendor: ["jquery", "bootstrap"],
+        vendor: ["jquery", "bootstrap", 'jquery-ui'],
         plugins: [
             new webpack.ProvidePlugin({
-                $: "jquery",
+                $: 'jquery',
                 jQuery: 'jquery',
-                // 'window.jQuery': 'jquery'
+                'window.jQuery': 'jquery',
+                '_': 'lodash'
             })
         ],
 
         extend(config) {
             const rule = config.module.rules.find(r => r.test.toString() === '/\\.(png|jpe?g|gif|svg|webp)$/i')
             config.module.rules.splice(config.module.rules.indexOf(rule), 1)
-
+                // if (isDev && isClient) {
             config.module.rules.push({
                     test: /\.md$/,
                     loader: 'frontmatter-markdown-loader',
@@ -183,25 +199,10 @@ module.exports = {
                 //     exclude: /(node_modules)/
                 // }
             );
+            // }
         }
     },
-    plugins: ['~/plugins/lazyload',
-        '~/plugins/globalComponents',
-        {
-            src: '~plugins/ga.js',
-            ssr: false
-        },
-        {
-            src: '~assets/js/jquery-3.2.0.min.js',
-            ssr: false
-        },
-        // '~assets/js/jquery-3.2.0.min.js',
-        // '~assets/js/jquery-ui.js',
-        // '~assets/js/owl.carousel.min.js',
-        // '~assets/js/jquery.counterup.min.js',
-        // '~assets/js/jquery.scrollUp.js',
-        // '~assets/js/jquery.waypoints.min.js'
-    ],
+
     modules: [
         '@nuxtjs/style-resources', ['nuxt-i18n', I18N],
         'nuxt-webfontloader'
@@ -214,6 +215,16 @@ module.exports = {
             '@/assets/css/base/_grid.scss',
             '@/assets/css/base/_buttons.scss'
         ],
+        // css: [
+        //     '/css/bootstrap.min.css',
+        //     '/css/animate.css',
+        //     '/css/font-awesome.min.css',
+        //     '/css/jquery-ui.css',
+        //     '/css/owl.carousel.min.css',
+        //     '/css/owl.theme.default.min.css',
+        //     '/css/responsive.css',
+        //     '/css/style.css'
+        // ]
     },
 
     webfontloader: {

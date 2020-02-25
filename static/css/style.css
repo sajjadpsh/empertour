@@ -1,0 +1,4274 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Footstep Personal Blog HTML5 Template
+    Template URI: http://demo.voidcoders.com/htmldemo/footsteps
+    Description: This is html5 template
+    Author: S M Shahadat Hossain
+    Author URI: http://shahadat.pw
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+    CSS INDEX
+    ===================
+  
+    1. Theme default CSS
+    2. Home
+        2.1 Header
+        2.2 Hero Slider
+        2.3 About Me 
+        2.4 Tips and Tricks
+        2.5 Popular Post
+        2.6 Shop
+        2.7 Map
+        2.8 Place Order
+        2.9 Newsletter 
+        2.10 Footer
+    3. Home 2
+        3.1 Header V2
+        3.2 Hero Slider V2
+        3.3 Most Popular Travel Stories V2
+        3.4 About Me V2
+        3.5 Shop V2
+        3.6 Tips and Tricks V2
+        3.7 Popular Post From Blog V2
+        3.8 Place Order V2
+        3.9 Newsletter V2
+        3.10 Footer V2
+    4. Home 3
+        4.1 Header V3
+        4.2 Hero Slider V3
+        4.3 Blog Post V3
+        4.4 Place Order V3
+        4.5 Instagram Posts V3
+        4.6 Newsletter V3
+        4.7 Footer V3
+    5. Home 4
+        5.1 Header V4
+        5.2 Hero Slider V4
+        5.3 Blog Post V4
+        5.4 Place Order V4
+        5.5 Instagram Posts V4
+        5.6 Newsletter V4
+        5.7 Footer V4
+
+
+    6. Home 5-6 With Left Right Sidebar
+        6.1 Header V5
+        6.2 Hero Slider V5
+        6.3 Blog Post V5
+        6.4 Place Order V5
+        6.5 Home 5 Sidebar
+        6.6 Instagram Posts V5
+        6.7 Newsletter V5
+        6.8 Footer V5
+    
+
+    7. About Me
+    8. Destination
+    9. Destination Overview
+    10. Travel Tips
+    11. Tips Overview
+    12. Tour Planning
+    13. Shop
+    14. Product Details
+    15. Cart
+    16.Checkout
+    17. Gear I Use
+    18. 404 Error
+    19. Contact
+-----------------------------------------------------------------------------------*/
+
+
+/*----------------------------------------*/
+
+
+/*  1. Theme default CSS
+/*----------------------------------------*/
+
+.clear {
+	clear: both
+}
+
+::-moz-selection {
+	background: #00b0ff;
+	color: #fff;
+	text-shadow: none;
+}
+
+::selection {
+	background: #00b0ff;
+	color: #fff;
+	text-shadow: none;
+}
+
+.no-mar {
+	margin: 0!important;
+}
+
+.no-pad {
+	padding: 0!important;
+}
+
+.no-padding-top {
+	padding-top: 0 !important;
+}
+
+.no-padding-bottom {
+	padding-bottom: 0 !important;
+}
+
+div#preloader {
+	background: #fff url("../img/loader.gif") no-repeat scroll center center;
+	height: 100%;
+	left: 0;
+	overflow: visible;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+}
+
+header.navbar-fixed-top {
+	animation-duration: 0.8s;
+	animation-name: fadeInDown;
+	animation-timing-function: ease-in-out;
+	box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.75);
+	left: 0;
+	position: fixed !important;
+	right: 0;
+	top: 0;
+	background-color: #113255;
+	width: 100%;
+	z-index: 999;
+}
+
+.mar-bot-50 {
+	margin-bottom: 50px;
+}
+
+.mar-bot-40 {
+	margin-bottom: 40px;
+}
+
+.mar-bot-35 {
+	margin-bottom: 35px;
+}
+
+.mar-bot-30 {
+	margin-bottom: 30px;
+}
+
+.mar-top-30 {
+	margin-top: 30px;
+}
+
+.mar-top-80 {
+	margin-top: 80px;
+}
+
+.mar-top-80 {
+	margin-top: 80px;
+}
+
+.mar-top-55 {
+	margin-top: 55px;
+}
+
+.mar-top-108 {
+	margin-top: 108px;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*:focus {
+	outline: 0;
+}
+
+html {
+	font-size: 62.5%;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	background: #fff;
+	font-weight: normal;
+	font-size: 15px;
+	letter-spacing: 1.5px;
+	color: #888;
+	line-height: 30px;
+	-webkit-font-smoothing: antialiased;
+	/* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+button,
+input,
+textarea {
+	letter-spacing: 1px;
+}
+
+
+/* 
+Table Of Contents
+=========================
+- Default Typography
+- Custom Typography
+=========================
+*/
+
+
+/* 
+--------------------------
+- Include Font Face CSS
+--------------------------
+*/
+
+
+/* --------------------------- */
+
+
+/* 
+--------------------------
+- Default Typography
+--------------------------
+*/
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-family: 'Merriweather', serif;
+	font-weight: 500;
+	color: #000;
+	letter-spacing: 1.5px;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	font-weight: inherit;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+	font-size: 36px;
+	line-height: 70px;
+	letter-spacing: 1px;
+	margin-bottom: 0px;
+}
+
+h2 {
+	font-size: 22px;
+	line-height: 24px;
+	margin-bottom: 0px;
+}
+
+h3 {
+	font-size: 24px;
+	line-height: 30px;
+	margin-bottom: 0px;
+}
+
+h4 {
+	font-size: 20px;
+	line-height: 27px;
+}
+
+h5 {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+h6 {
+	font-size: 14px;
+	line-height: 24px;
+}
+
+p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	letter-spacing: 0;
+	line-height: 28px;
+	margin: 0;
+}
+
+p img {
+	margin: 0;
+}
+
+span {
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+/* em and strong */
+
+em {
+	font: 15px/30px;
+}
+
+strong,
+b {
+	font: 15px/30px;
+}
+
+small {
+	font-size: 11px;
+	line-height: inherit;
+}
+
+
+/*  blockquotes */
+
+blockquote {
+	border-left: 0 none;
+	font-family: 'Montserrat', sans-serif;
+	margin: 10px 0;
+	padding-left: 40px;
+	position: relative;
+}
+
+blockquote::before {
+	color: #4e5665;
+	content: "";
+	font-family: FontAwesome;
+	font-size: 36px;
+	left: 20px;
+	line-height: 0;
+	margin: 0;
+	opacity: 0.5;
+	position: absolute;
+	top: 20px;
+}
+
+blockquote p {
+	font-style: italic;
+	padding: 0;
+	font-size: 18px;
+	line-height: 36px;
+}
+
+blockquote cite {
+	display: block;
+	font-size: 12px;
+	font-style: normal;
+	line-height: 18px;
+}
+
+blockquote cite:before {
+	content: "\2014 \0020";
+}
+
+blockquote cite a,
+blockquote cite a:visited {
+	color: #8B9798;
+	border: none
+}
+
+
+/* abbreviations */
+
+abbr {
+	color: #444;
+	font-weight: 700;
+	font-variant: small-caps;
+	text-transform: lowercase;
+	letter-spacing: .6px;
+}
+
+abbr:hover {
+	cursor: help;
+}
+
+
+/* links */
+
+a,
+a:visited {
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+	color: #111;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	outline: 0;
+}
+
+a:hover,
+a:active {
+	color: #ff7050;
+	text-decoration: none;
+	outline: 0;
+}
+
+a:focus {
+	text-decoration: none;
+	outline: 0;
+}
+
+p a,
+p a:visited {
+	line-height: inherit;
+	outline: 0;
+}
+
+a.active-page {
+	color: #e6ae48!important;
+}
+
+
+/* list */
+
+ul,
+ol {
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+ul {
+	margin: 0;
+}
+
+ol {
+	list-style: decimal;
+}
+
+ol,
+ul.square,
+ul.circle,
+ul.disc {
+	margin-left: 0px;
+}
+
+ul.square {
+	list-style: square outside;
+}
+
+ul.circle {
+	list-style: circle outside;
+}
+
+ul.disc {
+	list-style: disc outside;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+	margin: 0;
+}
+
+ul ul li,
+ul ol li,
+ol ol li,
+ol ul li {
+	margin-bottom: 0px;
+}
+
+li {
+	line-height: 18px;
+	margin-bottom: 0px;
+}
+
+ul.large li {}
+
+li p {}
+
+
+/* definition list */
+
+dl {
+	margin: 12px 0;
+}
+
+dt {
+	margin: 0;
+	color: #11ABB0;
+}
+
+dd {
+	margin: 0 0 0 20px;
+}
+
+button {}
+
+.btn-style-a {
+	color: #fff !important;
+	font-size: 16px;
+	padding: 18px 28px;
+	background-color: #ff7050;
+	letter-spacing: 0px;
+	line-height: 10px;
+	border: none;
+	border-radius: 5px;
+	display: inline-block;
+	transition: .5s ease;
+}
+
+.btn-style-b {
+	color: #0e2a47;
+	font-size: 16px;
+	padding: 18px 28px;
+	background-color: #69e781;
+	letter-spacing: 0px;
+	line-height: 10px;
+	border: none;
+	border-radius: 5px;
+	display: inline-block;
+	transition: .5s ease;
+}
+
+.btn-style-a:hover,
+.btn-style-b:hover {
+	cursor: pointer;
+	color: #fff;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.section-padding {
+	padding: 100px 0px;
+}
+
+.section-title {
+	position: relative;
+	margin-bottom: 60px;
+}
+
+.section-title-center {
+	text-align: center;
+	position: relative;
+	max-width: 725px;
+	margin: 0 auto 60px;
+}
+
+.section-title h3 {
+	position: relative;
+	color: #333333;
+	font-size: 50px;
+	line-height: 75px;
+	letter-spacing: 0px;
+	font-weight: 600;
+}
+
+.section-title-center h3 {
+	max-width: 660px;
+	margin: 0px auto;
+	padding: 15px 0px 0px;
+}
+
+.section-title h3 span {
+	font-family: 'Merriweather', serif;
+	color: #ff7050;
+	text-decoration: underline;
+	/* border-bottom: 2px solid #ff7050; */
+}
+
+.section-title-v2 h3 span {
+	color: #00af80;
+	text-decoration: underline;
+	/* border-bottom: 2px solid #00af80; */
+}
+
+.bg-lightGray {
+	background-color: #f9f9f9;
+}
+
+.bg-dark-blue {
+	background-color: #0e2a47 !important;
+}
+
+.section-paragraph p {
+	color: #4c4c4c;
+	font-size: 16px;
+	line-height: 29px;
+	margin-bottom: 42px;
+}
+
+.section-paragraph {
+	position: relative;
+}
+
+.section-title:before {
+	position: absolute;
+	content: '';
+	right: 73px;
+	bottom: 20px;
+	background-image: url(../img/common/dotsingle.png);
+	height: 145px;
+	width: 200%;
+}
+
+.section-title-center:before {
+	position: absolute;
+	content: '';
+	left: 0;
+	bottom: 18px;
+	background-image: url(../img/common/dotsingle.png);
+	height: 100%;
+	width: 725px;
+}
+
+#scrollUp {
+	bottom: 10px;
+	right: 10px;
+	background-color: #ff7050;
+	color: #fff;
+	height: 30px;
+	width: 30px;
+	padding-top: 0px;
+	text-align: center;
+	transition: .5s ease;
+	animation: mover 1s infinite alternate;
+}
+
+
+/* 
+--------------------------
+- Custom Typography
+--------------------------
+*/
+
+/*  2. Home
+/*----------------------------------------*/
+
+/*2.1 Header*/
+
+.header-area {
+	transition: .2s ease;
+	z-index: 9;
+	width: 100%;
+}
+
+.headerV1 {
+	position: fixed;
+}
+
+.footstep-nav {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footstep-nav .navbar-nav {
+	padding: 15px 0px;
+}
+
+.footstep-nav .navbar-nav li {
+	padding: 0px 10px;
+}
+
+.footstep-nav .navbar-nav li a {
+	font-size: 16px;
+	color: #fff;
+	letter-spacing: 0px;
+	padding-top: 8px;
+}
+
+.footstep-nav .navbar-nav li a:hover {
+	color: #ff7050;
+}
+
+.footstep-nav .navbar-nav li:last-child {
+	position: relative;
+	padding-left: 40px;
+}
+
+.footstep-nav .navbar-nav li:last-child:after {
+	position: absolute;
+	content: '';
+	height: 20px;
+	width: 1px;
+	background-color: rgba(255, 255, 255, 0.15);
+	left: -5px;
+	top: 7px;
+}
+
+.footstep-nav .navbar-nav li:last-child i {
+	position: absolute;
+	display: inline-block;
+	float: left;
+	color: #fff;
+	left: 10px;
+	top: 8px;
+}
+
+.footstep-nav .navbar-nav li:last-child a {
+	float: right;
+	color: #fff !important;
+	font-size: 16px;
+	padding: 15px 20px;
+	background-color: #ff7050;
+	letter-spacing: 0px;
+	line-height: 10px;
+	border: none;
+	border-radius: 5px;
+	display: inline-block;
+	margin-top: -3px;
+	margin-bottom: -5px;
+}
+
+.footstep-nav .navbar-nav li:last-child a:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.footstep-nav .dropdown-menu {
+	background-color: #113255;
+	padding: 0;
+}
+
+.footstep-nav .dropdown-menu a {
+	padding: 10px 25px;
+	border-bottom: 1px solid #cecece;
+}
+
+.footstep-nav .dropdown-menu a:last-child {
+	border-bottom: none;
+}
+
+/*End Header*/
+
+/* 2.2 Hero */
+
+.hero-area {
+	position: relative;
+	min-height: 465px;
+	overflow: hidden;
+}
+
+.hero-slider {
+	position: relative;
+	background: linear-gradient(rgba(46, 49, 146, 0.6), rgba(46, 49, 146, 0.6)), url(../img/slider/hero-slider-1.png);
+	padding-top: 100px;
+	min-height: 400px;
+}
+
+.hero-text {
+	position: relative;
+	text-align: left;
+}
+
+.ht-next-btn {
+	position: relative;
+	margin: 25px auto;
+}
+
+.ht-next-btn a {
+	position: relative;
+	color: #fff;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 0px;
+	padding-left: 30px;
+	padding-right: 10px;
+	z-index: 0;
+}
+
+.ht-next-btn a:before {
+	position: absolute;
+	content: '';
+	background-color: #ff7050;
+	height: 100%;
+	width: 4px;
+	top: 0;
+	left: 0;
+	transition: .5s ease;
+	z-index: -1;
+}
+
+.ht-next-btn a:hover:before {
+	width: 100%;
+}
+
+.ht-next-btn a i {
+	padding-left: 12px;
+	font-size: 18px;
+}
+
+.ht-title {
+	position: relative;
+}
+
+.ht-title h2 {
+	color: #fff;
+	font-size: 50px;
+	font-weight: 600;
+	letter-spacing: 0px;
+	line-height: 60px;
+	max-width: 416px;
+}
+
+.ht-qoutes {
+	position: relative;
+	margin: 25px auto;
+}
+
+.ht-qoutes h4 {
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 600;
+	letter-spacing: 0px;
+	text-transform: uppercase;
+	border-bottom: 1px solid #fff;
+}
+
+.ht-qoutes p {
+	color: #e5e5e5;
+	font-size: 16px;
+	max-width: 350px;
+	margin-top: 20px;
+	line-height: 24px;
+}
+
+.ht-qoutes p span {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.scroll-down {
+	position: relative;
+	margin-bottom: 25px;
+}
+
+.scroll-down p {
+	font-size: 16px;
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+.scroll-down a {
+	display: inline-block;
+	background-color: #fff;
+	text-align: center;
+	padding: 0px 12px 0px 12px;
+	border-radius: 50%;
+}
+
+.scroll-down a i {
+	color: #333333;
+	font-size: 22px;
+	font-weight: 600;
+	padding-top: 8px;
+	-webkit-animation: mover 1s infinite alternate;
+	animation: mover 1s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+	0% {
+		transform: translateY(2px);
+	}
+	100% {
+		transform: translateY(-2px);
+	}
+}
+
+@keyframes mover {
+	0% {
+		transform: translateY(2px);
+	}
+	100% {
+		transform: translateY(-2px);
+	}
+}
+
+
+/* Hero 1 Slider CSS */
+
+.hero1-slider .owl-item {
+	color: white;
+	text-align: center;
+	padding: 0px;
+}
+
+.hero1-slider .owl-prev {
+	float: left;
+	font-size: 20px;
+	text-transform: uppercase;
+	padding: 20px;
+}
+
+.hero1-slider .owl-next {
+	float: right;
+	font-size: 20px;
+	text-transform: uppercase;
+	padding: 20px;
+}
+
+.hero1-slider .owl-dots {
+	counter-reset: slides-num;
+	/* Initialize counter. */
+	position: absolute;
+	bottom: 25px;
+	right: 25%;
+	margin-top: 15px;
+}
+
+.hero1-slider .owl-dots:after {
+	content: counter(slides-num);
+	/* get total number of items - more info on http://www.sitepoint.com/a-little-known-way-to-replace-some-scripts-with-css-counters/ */
+	display: inline-block;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 700;
+	vertical-align: middle;
+	padding-left: 5px;
+}
+
+.hero1-slider .owl-dot {
+	display: inline-block;
+	counter-increment: slides-num;
+	/* Increment counter */
+	margin-right: 5px;
+}
+
+.hero1-slider .owl-dot span {
+	display: none;
+}
+
+.hero1-slider .owl-dot.active:before {
+	content: counter(slides-num) "/";
+	/* Use the same counter to get current item. */
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 20px;
+	position: absolute;
+	color: #fff;
+	left: 0;
+	top: 0;
+}
+
+.hero1-slider .info {
+	text-align: center;
+	margin-top: 110px;
+}
+
+
+/* Hero 1 Slider CSS END*/
+
+
+/* Hero Pop Up */
+
+.current-where-i {
+	background-color: #fff;
+	min-height: 250px;
+	min-width: 360px;
+	position: absolute;
+	bottom: 80px;
+	right: 0;
+	z-index: 1;
+	transition: .5s ease;
+}
+
+.cwi-bottom {
+	background-color: #ff7050;
+	width: 100%;
+	position: relative;
+	height: 50px;
+	overflow: hidden;
+}
+
+.cwi-content {
+	position: relative;
+	max-width: 360px;
+}
+
+.cwi-bottom>a {
+	display: block;
+	color: #fff;
+	font-size: 16px;
+	letter-spacing: 0px;
+	font-weight: 500;
+	width: 40%;
+	height: 100%;
+	float: left;
+	padding-left: 15px;
+	padding-top: 10px;
+	text-transform: uppercase;
+	border-right: 1px solid rgba(255, 255, 255, .5);
+}
+
+.cwi-bottom ul {
+	width: 60%;
+	float: right;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	text-align: right;
+	margin-top: 7px;
+}
+
+.cwi-bottom ul li {
+	display: inline-block;
+	padding: 10px 15px;
+}
+
+.cwi-bottom ul li a {
+	color: #fff;
+	font-size: 20px;
+}
+
+.cwi-text {
+	width: 75%;
+	margin-top: 20px;
+	padding-left: 20px;
+}
+
+.cwi-img {
+	position: absolute;
+	right: 0;
+	bottom: 50px;
+	height: 199px;
+	width: 166px;
+}
+
+.cwi-close {
+	background-color: #ff7050;
+	height: 20px;
+	width: 20px;
+	text-align: center;
+	margin-bottom: -20px;
+	cursor: pointer;
+}
+
+.cwi-close i {
+	color: #fff;
+	position: absolute;
+	left: 4px;
+	top: 3px;
+}
+
+.cwi-text h4 {
+	font-size: 24px;
+	color: #333333;
+	line-height: 30px;
+	letter-spacing: 0px;
+	margin-bottom: 30px;
+}
+
+.cwi-text p {
+	font-size: 14px;
+	letter-spacing: 0px;
+	color: #4c4c4c;
+	margin-bottom: 30px;
+	line-height: 24px;
+}
+
+
+/*-------Hero CSS End----------*/
+
+
+/* 2.3 About Me */
+
+.about-area .section-paragraph {}
+
+.about-me-img {
+	max-width: 540px;
+}
+
+.s-text-btn {
+	position: relative;
+	margin: 40px auto 25px;
+}
+
+.s-text-btn a {
+	position: relative;
+	color: #333333;
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0px;
+	padding-left: 25px;
+	padding-right: 10px;
+	z-index: 0;
+}
+
+.s-text-btn a:before {
+	position: absolute;
+	content: '';
+	background-color: #ff7050;
+	height: 100%;
+	width: 4px;
+	top: 0;
+	left: 0;
+	transition: .5s ease;
+	z-index: -1;
+}
+
+.s-text-btn a:hover:before {
+	width: 100%;
+}
+
+.s-text-btn a i {
+	padding-left: 12px;
+	font-size: 18px;
+}
+
+
+/* ------- About Me CSS End ------- */
+
+
+/* 2.4 Tips and Tricks */
+
+.tripsandtricks-area .section-paragraph {
+	margin-bottom: 85px;
+}
+
+.trips-carousel .owl-nav {
+	display: none;
+}
+
+.trips-carousel .owl-dots {
+	margin-top: 30px;
+}
+
+.single-tat {
+	position: relative;
+	margin: 15px auto;
+	max-width: 350px;
+	transition: .5s ease;
+}
+
+.single-tat:hover {
+	box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.75);
+}
+.trips-carousel .single-tat:hover {
+    box-shadow: none;
+}
+.stat-text {
+	position: relative;
+	background-color: #fff;
+	max-width: 320px;
+	padding: 20px;
+	margin-top: -50px;
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+}
+
+.stat-meta p {
+	position: relative;
+	color: #ff7050;
+	font-size: 14px;
+	letter-spacing: 0px;
+}
+
+.stat-meta p:before {
+	position: absolute;
+	content: '';
+	background-color: #ff7050;
+	height: 100%;
+	width: 3px;
+	left: -20px;
+}
+
+.stat-text a h4 {
+	color: #333333;
+	font-size: 25px;
+	letter-spacing: 0px;
+	line-height: 39px;
+	font-weight: 600;
+	margin: 25px auto;
+}
+
+.stat-location-comment {
+	position: relative;
+	border-top: 1px solid #e6e6e6;
+}
+
+.stat-location-comment ul {
+	padding: 0;
+	list-style-type: none;
+	width: 100%;
+}
+
+.stat-location-comment ul li {
+	display: inline-block;
+	width: calc(50% - 3px);
+}
+
+.stat-location-comment ul li:first-child {
+	text-align: left;
+}
+
+.stat-location-comment ul li:last-child {
+	text-align: right;
+}
+
+.slocation a {
+	color: #4c4c4c;
+	display: block;
+	font-size: 14px;
+	letter-spacing: 0px;
+	margin-top: 20px;
+}
+
+.slocation a i {
+	color: #ff7050;
+	margin-right: 10px;
+	font-size: 16px;
+}
+
+
+/*------Tips and Tricks CSS End------*/
+
+
+/* 2.5 Popular Post */
+
+.single-mps {
+	position: relative;
+	margin: 15px 0px;
+}
+
+.smps-text {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	padding: 25px 35px;
+	background-color: rgba(80, 70, 175, .60);
+}
+
+.smp-mini .smps-text {
+	padding: 25px 25px;
+}
+
+.smps-text h4 {
+	color: #fff;
+	font-size: 25px;
+	line-height: 39px;
+	font-weight: 600;
+	letter-spacing: 0px;
+}
+
+.st-btn {
+	position: absolute;
+	bottom: 25px;
+}
+
+.st-meta {
+	margin: 15px 0px;
+	position: relative;
+}
+
+.st-meta p {
+	color: #fff;
+	font-size: 14px;
+}
+
+.st-btn a {
+	position: relative;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0px;
+	padding-left: 25px;
+	padding-right: 10px;
+	z-index: 0;
+}
+
+.st-btn a:before {
+	position: absolute;
+	content: '';
+	background-color: #fff;
+	height: 100%;
+	width: 4px;
+	top: 0;
+	left: 0;
+	transition: .5s ease;
+	z-index: -1;
+}
+
+.st-btn a:hover {
+	color: #ff7050;
+}
+
+.st-btn a:hover:before {
+	width: 100%;
+}
+
+.st-btn a i {
+	padding-left: 12px;
+	font-size: 18px;
+}
+
+
+/*-------Popular Post End-------*/
+
+
+/* 2.6 Shop */
+
+.ssi-img {
+	position: relative;
+}
+
+.ssi-img:hover .ssi-hover {
+	opacity: 1;
+}
+
+.ssi-text {
+	position: relative;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+}
+
+.ssi-text h4 {
+	color: #333;
+	font-size: 25px;
+	font-weight: 600;
+	letter-spacing: 0px;
+}
+
+.ssi-text p {
+	color: #4c4c4c;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 0px;
+	margin: 8px auto;
+}
+
+p.ssi-price {
+	font-size: 25px;
+	color: #ff7050;
+	font-family: 'Merriweather', serif;
+	font-weight: 600;
+}
+
+.ssi-hover {
+	position: absolute;
+	background-color: rgba(255, 112, 80, .95);
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	text-align: center;
+	padding-top: 45%;
+	opacity: 0;
+	transition: .5s ease;
+}
+
+.ssi-hover a {
+	font-size: 16px;
+	letter-spacing: 0px;
+	color: #ff7050;
+	padding: 10px 25px;
+	border-radius: 5px;
+	display: inline-block;
+	margin: 25px auto;
+	text-transform: uppercase;
+	background-color: #fff;
+}
+
+.shop-view-more {
+	position: relative;
+	margin: 40px auto 25px;
+}
+
+.shop-view-more a {
+	position: relative;
+	color: #333333;
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0px;
+	padding-left: 25px;
+	padding-right: 10px;
+	z-index: 0;
+}
+
+.shop-view-more a:before {
+	position: absolute;
+	content: '';
+	background-color: #ff7050;
+	height: 100%;
+	width: 4px;
+	top: 0;
+	left: 0;
+	transition: .5s ease;
+	z-index: -1;
+}
+
+.shop-view-more a:hover:before {
+	width: 100%;
+}
+
+.shop-view-more a i {
+	padding-left: 12px;
+	font-size: 18px;
+}
+
+
+/*------- Shop CSS End-------*/
+
+
+/* 2.7 Map */
+
+#gmap {
+	width: 100%;
+	height: 600px;
+}
+
+.gm-style .gm-style-iw {
+	max-width: 350px;
+	overflow: hidden;
+	margin-left: -14px;
+	margin-top: -10px;
+}
+
+.mpUp-wrapper {
+	width: 350px !important;
+	overflow: hidden;
+}
+
+.gmap-wt>div>div:nth-child(2)>div {
+	max-width: 350px !important;
+	overflow: hidden !important;
+	position: relative;
+}
+
+.gmap-wt>div>div>div:nth-child(2) {
+	max-width: 350px !important;
+	overflow: hidden !important;
+}
+
+.gmap-we {
+	overflow: hidden;
+	max-width: 350px !important;
+	min-height: 460px !important;
+}
+
+.mp-popup {
+	position: relative;
+	max-width: 350px;
+	background-color: #fff;
+}
+
+.popup-btn {
+	z-index: 9;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.mpp-text {
+	position: relative;
+	padding: 20px;
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+	z-index: 1;
+}
+
+.mpp-meta p {
+	position: relative;
+	color: #ff7050;
+	font-size: 14px;
+	letter-spacing: 0px;
+}
+
+.mpp-text a h4 {
+	color: #333333;
+	font-size: 19px;
+	letter-spacing: 0px;
+	line-height: 30px;
+	font-weight: 600;
+	margin: 10px auto;
+}
+
+.mp-popup:before {
+	position: absolute;
+	content: url(../img/icon/mp-popup-caret.png);
+	bottom: 25px;
+	left: -18px;
+	z-index: 1;
+}
+
+.mpp-text {
+	position: relative;
+	padding: 20px;
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+	background-color: #fff;
+}
+
+.mpopUp-close {
+	cursor: pointer;
+	position: absolute;
+	right: 4px;
+	top: 4px;
+	background-color: #fff;
+	display: inline-block;
+	height: 28px;
+	width: 28px;
+	text-align: center;
+	padding: 0px 0px 0px 3px;
+}
+
+.mpopUp-close i {
+	font-size: 18px;
+}
+
+
+/* ---------Map CSS End--------- */
+
+
+/* 2.8 Place Order */
+
+.place-order-area {
+	position: relative;
+	background-color: #f9f9f9;
+	overflow: hidden;
+}
+
+.place-order-area .section-title:before {
+	display: none;
+}
+
+.place-order-area:before {
+	position: absolute;
+	content: url(../img/bg/section-bg-1.png);
+	left: 50px;
+	bottom: -90px;
+}
+
+.po-st {
+	text-align: center;
+}
+
+.po-sp {
+	text-align: center;
+}
+
+.po-sp p {
+	max-width: 630px;
+	margin: 0 auto 42px;
+}
+
+.po-btn {
+	position: relative;
+	text-align: center;
+}
+
+.po-btn a {
+	color: #fff;
+}
+
+
+/* --------Place Order CSS END-------- */
+
+
+/* 2.9 Newsletter  */
+
+.newsletter-area {
+	position: relative;
+}
+
+.newsletter-area:before {
+	position: absolute;
+	content: url(../img/bg/section-bg-2.png);
+	right: 50px;
+	bottom: 0;
+}
+
+.nla-left h3 {
+	color: #333;
+	letter-spacing: 0px;
+	font-size: 30px;
+	line-height: 44px;
+	font-weight: 600;
+}
+
+.nla-left h3 span {
+	color: #ff7050;
+}
+
+.nla-left h3 span {
+	color: #ff7050;
+	border-bottom: 2px solid #ff7050;
+}
+
+.newsletter-form {
+	position: relative;
+	margin: 20px auto;
+}
+
+form.newsletter-form .form-control {
+	height: 60px;
+	border-radius: 5px !important;
+	max-width: 350px;
+	font-size: 16px;
+	padding-left: 15px;
+}
+
+.newsletter-form button {
+	margin-left: 10px;
+}
+
+
+/* --------Newsletter CSS END-------- */
+
+
+/* 2.10 Footer */
+
+.footer-widget {
+	position: relative;
+	padding: 100px 0px;
+	border: 1px solid #ebebeb;
+	border-right: none;
+	border-left: none;
+}
+
+.footer-text {
+	position: relative;
+}
+
+.footer-text p {
+	color: #4c4c4c;
+	font-size: 16px;
+	line-height: 29px;
+	margin-bottom: 38px;
+	margin-top: 40px;
+}
+
+.footer-text p:last-child {
+	margin-bottom: 0px;
+}
+
+.fw-single {
+	position: relative;
+}
+
+.fw-single h4 {
+	font-size: 16px;
+	font-weight: 600;
+	color: #333;
+	letter-spacing: 0px;
+}
+
+ul.fws {
+	padding: 0;
+	list-style-type: none;
+	margin: 42px auto;
+}
+
+ul.fws li {
+	font-size: 16px;
+	color: #4c4c4c;
+	letter-spacing: 0px;
+	line-height: 29px;
+	margin-bottom: 20px;
+}
+
+ul.fws li a {
+	font-size: 16px;
+	color: #4c4c4c;
+	letter-spacing: 0px;
+	line-height: 29px;
+	margin-bottom: 20px;
+}
+
+ul.fws li span {
+	font-weight: 600;
+}
+
+.footer-contact ul.fws li {
+	margin-bottom: 16px;
+}
+
+.footer-copyright {
+	position: relative;
+	padding: 30px 0px;
+}
+
+ul.fc-social {
+	position: relative;
+	padding: 0px;
+	list-style-type: none;
+}
+
+ul.fc-social li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+ul.fc-social li a i {
+	font-size: 20px;
+}
+
+.fc-right ul {
+	position: relative;
+	padding: 0;
+	list-style-type: none;
+	text-align: right;
+}
+
+.fc-right ul li {
+	display: inline-block;
+	padding: 0px 15px;
+	border-right: 1px solid #666;
+}
+
+.fc-right ul li a,
+.fc-right ul li p {
+	font-size: 14px;
+	letter-spacing: 0px;
+	color: #666666;
+	line-height: 16px;
+}
+
+.fc-right ul li a:hover {
+	color: #ff7050;
+}
+
+.fc-right ul li:last-child {
+	padding-right: 0px;
+	border-right: none;
+}
+
+.fc-right ul li:first-child {
+	padding-left: 0px;
+}
+
+
+/*------- Footer CSS END -------*/
+
+
+/*  3. Home 2
+/*----------------------------------------*/
+
+
+/* 3.1 Header V2 */
+
+.headerV2 {
+	position: relative;
+}
+
+.footstep-nav-v2 {
+	border-bottom: 1px solid #e4e4e4;
+	transition: .5s ease;
+}
+
+.navbar2-fixed-top {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #fff;
+	box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.75);
+}
+
+.footstep-nav-v2 .navbar-nav li a {
+	color: #333333;
+}
+
+.footstep-nav-v2 .navbar-nav li a:hover {
+	color: #00af80;
+}
+
+.footstep-nav-v2 .navbar-nav .dropdown-menu a {
+	color: #fff;
+}
+
+.footstep-nav-v2 .navbar-nav li:last-child a {
+	background-color: #69e781;
+}
+
+.footstep-nav-v2 .navbar-nav li:last-child i {
+	color: #333333;
+}
+
+.footstep-nav-v2 .navbar-nav li:last-child:after {
+	background-color: rgba(51, 51, 51, 0.15);
+	;
+}
+.bg-dark-blue .footstep-nav-v2 .navbar-nav li:last-child i {
+    color: #fff;
+}
+
+
+
+/* -----Header V2 CSS End----- */
+
+.hero-v2 {
+	max-height: 560px;
+	overflow: hidden;
+}
+
+/* 3.2 Hero Slider V2 */
+
+.hero-v2 .hero-slider {
+	padding-top: 0;
+	background: linear-gradient(rgba(14, 42, 71, .6), rgba(14, 42, 71, .6)), url(../img/slider/hero-sliderv1-1.png);
+	background-size: 100% 100%;
+}
+
+.hero-v2 .hero-text {
+	position: relative;
+	text-align: center;
+	margin-top: 100px;
+}
+
+.ht-counter-area {
+	position: relative;
+	margin: 25px auto;
+}
+
+.ht-counter-area p {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.ht-counter-area p span {
+	color: #69e781;
+}
+
+.hero-v2 .ht-title h2 {
+	max-width: 600px;
+	margin: 35px auto;
+}
+
+.hero-v2 .scroll-down {
+	margin-bottom: 15px;
+}
+
+.hero-v2 .scroll-down a {
+	margin: 0 auto;
+}
+
+.ht-rmore-btn {
+	position: relative;
+	margin-bottom: 100px;
+}
+
+.hero-v2 .hero1-slider .owl-dots {
+	bottom: 35px;
+	left: 25%;
+}
+
+
+/* ------Hero Slider V2 CSS End------ */
+
+
+/* ---------Hero Area Map--------- */
+
+.hero-maps {
+	position: absolute;
+	opacity: 0;
+	top: -200%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: 1.5s ease;
+	z-index: 1;
+}
+
+.show-hero-map {
+	opacity: 1;
+	top: 0;
+}
+
+.hero-location-icon {
+	max-width: 1366px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 9;
+}
+
+.hli-btn {
+	cursor: pointer;
+	position: absolute;
+	background-color: #69e781;
+	height: 60px;
+	width: 60px;
+	bottom: 15px;
+	right: 15px;
+	border-radius: 50%;
+	padding-top: 14px;
+	text-align: center;
+}
+
+.hli-btn i {
+	font-size: 30px;
+	color: #0e2a47;
+}
+
+
+/* ---------Hero Area Map CSS END--------- */
+
+
+/* 3.3 Most Popular Travel Stories V2 */
+
+.stat-v2 .stat-meta p:before {
+	background-color: #00af80;
+}
+
+.stat-v2 .stat-meta p {
+	color: #00af80;
+}
+
+.stat-v2 .slocation a i {
+	color: #00af80;
+}
+
+.stat-v2 .stat-text {
+	max-width: 100%;
+	margin-top: 0;
+}
+
+
+/* ------Most Popular Travel Stories CSS End------ */
+
+
+/* 3.4 About Me V2 */
+
+.about-area-v2 {
+	position: relative;
+	overflow: hidden;
+}
+
+.about-area-v2 .section-title {
+	margin-top: 60px;
+}
+
+.rm-text-btn {
+	position: relative;
+	margin: 40px auto 25px;
+}
+
+.st-from-right.section-title:before {
+	position: absolute;
+	content: '';
+	left: 73px;
+	bottom: 20px;
+	background-image: url(../img/common/dotsingle.png);
+	height: 145px;
+	width: 200%;
+}
+
+
+/* -----3.4 About Me CSS END----- */
+
+
+/* 3.5 Shop V2 */
+
+.ssi-V2 .ssi-hover {
+	background-color: rgba(105, 231, 129, .95);
+}
+
+.ssi-V2 .ssi-hover a {
+	color: #00af80;
+}
+
+.ssi-V2 p.ssi-price {
+	color: #00af80;
+}
+
+.shop-show-more-btn {
+	position: relative;
+	margin: 40px auto 25px;
+}
+
+
+/*-------- Shop --------*/
+
+
+/* 3.6 Tips and Tricks V2 */
+
+.stat-focused {
+	position: relative;
+	width: 100%;
+	float: left;
+	max-width: unset;
+}
+
+.tta-V2 .single-tat:hover {
+	box-shadow: none;
+}
+
+.tta-V2 .stat-meta p:before {
+	background-color: #00af80;
+}
+
+.tta-V2 .slocation a i {
+	color: #00af80;
+}
+
+.tta-V2 .stat-text {
+	margin-top: -70px;
+}
+
+.stat-focused .stat-img {
+	max-width: 42%;
+	float: left;
+}
+
+.tta-V2 .stat-focused .stat-text {
+	float: left;
+	margin-top: 0px;
+	max-width: calc(100% - 38%);
+	margin-left: -15px;
+}
+
+.tta-V2 .stat-without-img .stat-text {
+	margin-top: 0px;
+	max-width: 350px;
+}
+
+.stat-v2-exerpt p {
+	margin: 25px auto;
+	font-size: 16px;
+	line-height: 29px;
+	color: #4c4c4c;
+	letter-spacing: 0px;
+}
+
+.stat-without-img .stat-meta p:before,
+.stat-focused .stat-meta p:before {
+	display: none;
+}
+
+.tta-V2 .stat-text a h4 {
+	margin: 15px auto;
+}
+
+.tta-V2 .stat-meta p {
+	color: #4c4c4c;
+}
+
+.tta-V2 .slocation a {
+	margin-top: 22px;
+}
+
+
+/* -------- Tips and Tricks V2 CSS END----------- */
+
+
+/* 3.7 Popular Post From Blog */
+
+.ppfb-v2 .smps-text {
+	background-color: rgba(14, 42, 71, .70);
+}
+
+.ppfb-v2 .smps-text p {
+	color: #fff;
+	font-size: 16px;
+	line-height: 29px;
+}
+
+.pbp-exerpt {
+	margin: 40px auto;
+}
+
+.ppfb-v2 .smps-text h4 {
+	margin: 15px auto;
+}
+
+.ppfb-v2 .smp-mini .st-meta {
+	margin: 0px auto;
+}
+
+
+/* ------Popular Post From Blog CSS End------ */
+
+
+/* 3.8 Place Order V2 */
+
+.place-orderV2 {
+	position: relative;
+	overflow: hidden;
+	background-color: #f9f9f9;
+}
+
+.place-orderV2 .section-title:before {
+	display: none;
+}
+
+.place-orderV2 .section-title {
+	margin-bottom: 0px;
+}
+
+.place-orderV2:before {
+	position: absolute;
+	content: url(../img/bg/section-bg-1.png);
+	left: 50px;
+	bottom: -90px;
+}
+
+.place-orderV2 .section-title h3 {
+	font-size: 36px;
+	text-align: left;
+	line-height: 56px;
+}
+
+.place-orderV2 .po-btn {
+	position: relative;
+	margin: 35px auto;
+	text-align: right;
+}
+
+
+/* -----Place Order CSS END----- */
+
+
+/* 3.9 Newsletter V2*/
+
+.nla-leftV2 h3 span {
+	color: #69e781;
+	border-bottom: 2px solid #69e781;
+}
+
+
+/* -------- Newsletter CSS END -------- */
+
+
+/* 3.10 Footer V2 */
+
+.ft-aV2 {}
+
+.ft-aV2 a:hover,
+.ft-aV2 .fc-right ul li a:hover {
+	color: #69e781;
+}
+
+
+/* ---------- Footer CSS END---------- */
+
+
+/* -------------------------------------- */
+
+
+/*  4. Home 3
+/*----------------------------------------*/
+
+/* 4.1 Header V3 */
+
+    /* Inherit From Home-1 And Home-2 CSS */
+
+/* ------- Header CSS END------- */
+
+
+/* 4.2 Hero Slider V3 */
+
+    /* Inherit From Home-1 And Home-2 CSS */
+
+/* ------- Hero Slider V3 CSS END------- */
+
+
+/* 4.3 Blog Post V3 */
+
+.stat-fullwidth {
+	max-width: 100%;
+	margin-top: 0px;
+}
+
+.stat-fullwidth .stat-img iframe {
+	margin-top: 15px;
+}
+
+.stat-fullwidth .stat-img img {
+	width: 100%;
+	max-height: 450px;
+}
+
+.stat-fullwidth iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+}
+
+.stat-fullwidth .stat-text p {
+	color: #4c4c4c;
+	font-size: 16px;
+	line-height: 28px;
+	margin-bottom: 25px;
+}
+
+
+/* ------- Blog Post CSS END------- */
+
+
+/* 4.4 Place Order V3 */
+
+    /* Inherit From Home-1 And Home-2 CSS */
+
+/* ------- Place Order CSS END------- */
+
+
+/* 4.5 Instagram Posts V3 */
+
+.instaPost-slider-wrapper {
+	position: relative;
+}
+
+.instaPost-follow {
+	position: absolute;
+	top: calc(50% - 23px);
+	left: calc(50% - 105px);
+	display: inline-block;
+	z-index: 1;
+}
+
+.instaPost-follow a {
+	display: inline-block;
+}
+
+
+/* ------- Instagram Posts CSS END------- */
+
+
+/* 4.6 Newsletter V3 */
+
+    /* Inherit From Home-1 And Home-2 CSS */
+
+/* ------- Newsletter CSS END------- */
+
+
+/* 4.7 Footer V3 */
+
+    /* Inherit From Home-1 And Home-2 CSS */
+
+/* ------- Footer CSS END------- */
+
+
+/* -------------------------------------- */
+
+/*  5. Home 4
+/*----------------------------------------*/
+
+
+/* 5.1 Header V4 */
+
+.bg-dark-blue .navbar-nav li a {
+	color: #fff;
+}
+
+.bg-dark-blue .footstep-nav-v2 {
+	border-bottom: 1px solid #0e2a47;
+}
+
+.bg-dark-blue .navbar2-fixed-top {
+	background-color: #0e2a47;
+}
+
+
+/* ------- Header CSS END------- */
+
+
+/* 5.2 Hero Slider V4 */
+
+    /* Inherit From Home-1 And Home-2 CSS */
+
+/* ------- Hero Slider CSS END------- */
+
+
+/* 5.3 Blog Post V4 */
+
+    /* Inherit From Home-1,Home-2 And Home-3 CSS */
+
+/* ------- Blog Post CSS END------- */
+
+
+/* 5.4 Place Order V4 */
+
+    /* Inherit From Home-1 And Home-2 CSS */
+
+/* ------- Place Order CSS END------- */
+
+
+/* 5.5 Instagram Posts V4 */
+
+    /* Inherit From Home-1 And Home-2 CSS */
+
+/* ------- Instagram Posts CSS END------- */
+
+
+/* 5.6 Newsletter V4 */
+
+.bg-dark-blue .nla-left h3 {
+	color: #fff;
+}
+
+.bg-dark-blue form.newsletter-form .form-control {
+	background-color: transparent;
+	border-color: #4c6075;
+}
+
+
+/* ------- Newsletter CSS END------- */
+
+
+/* 5.7 Footer V4 */
+
+.bg-dark-blue .footer-widget {
+	border-color: #4c6075;
+}
+
+.bg-dark-blue .footer-text p,
+.bg-dark-blue .fw-single h4,
+.bg-dark-blue ul.fws li,
+.bg-dark-blue ul.fws li a,
+.bg-dark-blue .fc-right ul li a,
+.bg-dark-blue .fc-right ul li p,
+.bg-dark-blue ul.fc-social li a {
+	color: #fff;
+}
+
+
+/* ------- Footer CSS END------- */
+
+
+/* -------------------------------------- */
+
+
+/*  6. Home 5-6 With Left Right Sidebar
+/*----------------------------------------*/
+
+
+/* 6.1 Header V5 */
+
+    /* Inherit From Home-1 And Home-2 CSS */
+
+/* ------- Header CSS END------- */
+
+
+/* 6.2 Hero Slider V5 */
+    
+    /* Inherit From Home-1 And Home-2 CSS */
+
+/* ------- Hero Slider CSS END------- */
+
+
+/* 6.3 Blog Post V5 */
+
+.blog-postV3 {
+	position: relative;
+	background-color: #f9f9f9;
+}
+
+.bp-w-sidebar .section-title h3 {
+	font-size: 34px;
+	line-height: 56px;
+}
+
+
+/* ------- Blog Post CSS END------- */
+
+
+/* 6.4 Place Order V5 */
+
+.blog-postV3 .place-order-area {
+	background-color: #ebebeb;
+	overflow: hidden;
+}
+
+
+/* ------- Place Order CSS END------- */
+
+
+/* 6.5 Home 5 Sidebar */
+
+.sidebar-single-slide {
+	position: relative;
+}
+
+.sss-text {
+	position: absolute;
+	top: 0;
+	text-align: left;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 0px 20px;
+	background-color: rgba(14, 42, 71, .90);
+}
+
+.hs-widget {
+	position: relative;
+	max-width: 350px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.hs-widget>h4 {
+	font-size: 25px;
+	letter-spacing: 0px;
+	font-weight: 600;
+	color: #333333;
+	display: block;
+	text-align: center;
+	padding: 15px 10px;
+	border: 1px solid #e6e6e6;
+	background-color: #fff;
+}
+
+.hs-aboutme {
+	border: 1px solid #e6e6e6;
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+	background-color: #fff;
+}
+
+.hs-aboutme p {
+	padding: 30px;
+	color: #4c4c4c;
+	line-height: 22px;
+	font-size: 16px;
+	letter-spacing: 0px;
+	text-align: left;
+}
+
+.hs-aboutme a {
+	margin-bottom: 30px;
+}
+
+.hs-aboutme>h4 {
+	border: none;
+}
+
+.hs-category ul {
+	position: relative;
+	padding: 0;
+	list-style-type: none;
+	text-align: left;
+	margin: 30px;
+	padding-bottom: 30px;
+}
+
+.hs-category {
+	background-color: #fff;
+}
+
+.hs-category ul li {
+	margin-bottom: 30px;
+}
+
+.hs-category ul li:last-child {
+	margin-bottom: 0px;
+}
+
+.hs-category ul li a {
+	font-size: 16px;
+	letter-spacing: 0px;
+	display: block;
+	position: relative;
+}
+
+.hs-category ul li a:hover {
+	color: #00af80;
+}
+
+.hs-category ul li a span.c-count {
+	float: right;
+}
+
+.hs-pp-wrap {
+	position: relative;
+	margin: 30px auto;
+}
+
+.sss-meta p {
+	font-size: 14px;
+	color: #fffefe;
+	letter-spacing: 0px;
+	font-weight: 400;
+}
+
+.sss-meta {
+	margin: 25px auto 15px;
+}
+
+.sss-text a h4 {
+	font-size: 25px;
+	font-weight: 600;
+	letter-spacing: 0px;
+	color: #fff;
+	line-height: 36px;
+}
+
+.sidebarPost-carousel .owl-dots {
+	display: none;
+}
+
+.sidebarPost-carousel .owl-nav {
+	text-align: left;
+	position: absolute;
+	bottom: 25px;
+	left: 20px;
+}
+
+.sidebarPost-carousel .owl-nav button.owl-prev,
+.sidebarPost-carousel .owl-nav button.owl-next {
+	background-color: #f9f9f9 !important;
+	display: inline-block !important;
+	padding: 2px 10px !important;
+	border-radius: 0px;
+	font-size: 22px;
+	color: #00af80;
+}
+
+.sidebarPost-carousel .owl-nav button:hover {
+	color: #000 !important;
+}
+
+.hs-rp-wrap {
+	position: relative;
+	margin: 30px auto;
+}
+
+.single-hrp {
+	position: relative;
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+	width: 100%;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.ssrp-img {
+	max-width: 100px;
+	float: left;
+}
+
+.ssrp-img img {}
+
+.ssrp-text {
+	width: calc(100% - 100px);
+	display: inline-block;
+	text-align: left;
+	padding: 0px 5px 0px 12px;
+}
+
+.ssrp-text .sss-meta {
+	margin: 0 auto;
+}
+
+.ssrp-text .sss-meta p {
+	color: #00af80;
+	line-height: 16px;
+	margin-bottom: 10px;
+}
+
+.ssrp-text h5 {
+	letter-spacing: 0px;
+	color: #333333;
+}
+
+.ssrp-text h5 a {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 26px;
+}
+
+.single-hrp:last-child {
+	border-bottom: none;
+	padding-bottom: 0px;
+}
+
+.gear-iUse {
+	background-color: #fff;
+	border: 1px solid #e6e6e6;
+	border-top: none;
+}
+
+.hs-gi-use-text h4 {
+	font-size: 25px;
+	letter-spacing: 0px;
+	color: #333333;
+	font-weight: 600;
+}
+
+.hs-gi-use-text {
+	position: relative;
+	margin: 30px auto;
+}
+
+.hs-gi-use-text p {
+	max-width: 260px;
+	margin: 0 auto;
+	font-size: 16px;
+	color: #4c4c4c;
+	line-height: 24px;
+	font-weight: 400;
+	margin-top: 25px;
+}
+
+.gear-iUse a {
+	margin-bottom: 30px;
+	font-weight: 600;
+}
+
+.hs-product-wrapper {
+	position: relative;
+	margin: 30px auto;
+}
+
+.single-hsp {
+	position: relative;
+	width: 100%;
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.shsp-img {
+	position: relative;
+	max-width: 100px;
+	float: left;
+}
+
+.shsp-img a {
+	display: block;
+	background-color: rgba(255, 112, 80, .90);
+	color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	font-size: 36px;
+	width: 100%;
+	padding-top: 22px;
+	text-align: center;
+	opacity: 0;
+	transition: .5s ease;
+}
+
+.shsp-img:hover a {
+	opacity: 1;
+}
+
+.shsp-text {
+	width: calc(100% - 100px);
+	display: inline-block;
+	text-align: left;
+	padding: 0px 5px 0px 12px;
+}
+
+.shsp-text h5 {
+	color: #333333;
+	letter-spacing: 0px;
+}
+
+.shsp-text h5 a {
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 0px;
+	line-height: 26px;
+}
+
+.single-hsp:last-child {
+	border-bottom: none;
+	padding-bottom: 0px;
+}
+
+.shsp-text p {
+	color: #00af80;
+	font-size: 16px;
+	font-weight: 600;
+	margin-top: 5px;
+}
+
+.hsg-t {
+	position: relative;
+}
+
+ul.hsgt {
+	padding: 0;
+	margin: 15px auto;
+	list-style-type: none;
+}
+
+ul.hsgt li {
+	display: inline-block;
+	width: 170px;
+	margin: 15px auto;
+}
+
+ul.hsgt li a {
+	display: block;
+	position: relative;
+	background-color: #00af80;
+	border-radius: 5px;
+	padding: 8px;
+}
+
+.hsgt-icon {
+	width: 40px;
+	height: 40px;
+	padding: 5px 0px;
+	float: left;
+}
+
+.hsgt-icon i {
+	font-size: 30px;
+	color: #fff;
+}
+
+.hsgt-c {
+	width: calc(100% - 40px);
+	display: inline-block;
+	text-align: left;
+	padding-left: 5px;
+}
+
+.hsgt-c p {
+	color: #fff;
+	font-size: 18px;
+	letter-spacing: 0px;
+	font-weight: 600;
+	line-height: 20px;
+}
+
+.hsgt-c p span {
+	font-size: 14px;
+	font-weight: 300;
+}
+
+a.hs-facebook {
+	background-color: #3b5998 !important;
+	margin-right: 12px;
+}
+
+a.hs-twitter {
+	background-color: #1da1f2 !important;
+	margin-left: 12px;
+}
+
+a.hs-youtube {
+	background-color: #ff0000 !important;
+	margin-right: 12px;
+}
+
+a.hs-instagram {
+	background-color: #c13584 !important;
+	margin-left: 12px;
+}
+
+
+/* ------- Home 5 Sidebar CSS END------- */
+
+
+/* 6.6 Instagram Posts V5 */
+
+    /* Inherit From Home-1 And Home-2 CSS */
+
+/* ------- Instagram Posts CSS END------- */
+
+
+/* 6.7 Newsletter V5 */
+
+    /* Inherit From Home-1 And Home-2 CSS */
+
+/* ------- Newsletter CSS END------- */
+
+
+/* 6.8 Footer V5 */
+
+
+/* ------- Footer CSS END------- */
+
+
+/* -------------------------------------- */
+
+
+/*  7. About Me
+/*----------------------------------------*/
+
+.innerpage-titile {
+	position: relative;
+	text-align: center;
+	margin: 50px auto;
+	padding: 50px 0px;
+}
+
+.innerpage-titile h2 {
+	font-size: 68px;
+	color: #fff;
+	line-height: 75px;
+	font-weight: 600;
+}
+
+.innerpage-title-area {
+	position: relative;
+	padding-top: 80px;
+	background: linear-gradient(rgba(46, 49, 146, 0.6), rgba(46, 49, 146, 0.6)), url(../img/bg/innerpage-title-bg.png);
+}
+
+.hamc-img {
+	position: relative;
+	margin: 45px auto;
+}
+
+.mst-wrapper {
+	position: relative;
+}
+
+.mst-wrapper>h3 {
+	color: #333333;
+	font-size: 30px;
+	letter-spacing: 0px;
+	font-weight: 600;
+	margin-bottom: 40px;
+}
+
+ul.st-list {
+	position: relative;
+	padding: 0;
+	margin: 25px auto;
+	list-style-type: none;
+}
+
+ul.st-list li p {
+	margin: 10px auto;
+}
+
+ul.st-list li {
+	padding-left: 18px;
+	position: relative;
+}
+
+ul.st-list li:after {
+	position: absolute;
+	content: '\f105';
+	font-family: fontAwesome;
+	left: 0;
+	top: 5px;
+	font-size: 18px;
+}
+
+.mst-wrapper .section-paragraph>h4 {
+	color: #333333;
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 0px;
+	margin-bottom: 45px;
+}
+
+.about-page-brand-slider {
+	position: relative;
+	padding: 50px 0px;
+}
+
+.brand-slider-wrapper {
+	position: relative;
+	margin: 60px auto;
+}
+
+.bsw-silder {}
+
+.single-bsw-item {
+	position: relative;
+	text-align: center;
+	border: 2px solid #d7d7d7;
+	max-width: 250px;
+	margin: 0 auto;
+	padding: 30px;
+	height: 120px;
+}
+
+.single-bsw-item img {
+	width: 100%;
+	height: 100%;
+}
+
+.bsw-silder .owl-nav {
+	display: none;
+}
+
+.bsw-silder .owl-dots {
+	display: none;
+}
+
+.customer-review-slider {
+	position: relative;
+	margin: 40px auto 0px;
+}
+
+.single-creview {
+	position: relative;
+	background-color: #fff;
+	margin: 25px auto;
+	padding: 35px;
+	box-shadow: 0px 2px 13px 0px rgba(0, 0, 0, 0.08);
+}
+
+.screview-text p {
+	color: #4c4c4c;
+	font-size: 16px;
+	line-height: 29px;
+	letter-spacing: 0px;
+}
+
+.screview-text {
+	position: relative;
+	margin: 25px auto;
+}
+
+.screview-author {
+	position: relative;
+	margin: 50px auto 0px;
+}
+
+.screview-author h4 {
+	font-size: 20px;
+	color: #404040;
+	font-weight: 500;
+}
+
+.screview-author p {
+	font-size: 16px;
+	color: #666666;
+}
+
+
+/* --------About Me CSS END-------- */
+
+
+/* -------------------------------------- */
+
+
+/*  8. Destination
+/*----------------------------------------*/
+
+.destination-categoy-wrapper {
+	position: relative;
+	margin: 60px auto 80px;
+}
+
+.want-toGo-area .single-tat:hover {
+	box-shadow: none;
+}
+
+ul.dc-list {
+	position: relative;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+ul.dc-list li {
+	display: inline-block;
+	border: 1px solid #cecece;
+	margin-right: -6px;
+	width: 20%;
+	text-align: center;
+	transition: .5s ease;
+}
+
+ul.dc-list li a {
+	display: block;
+	font-size: 18px;
+	letter-spacing: 0px;
+	color: #4c4c4c;
+	padding: 15px 25px;
+	font-weight: 500;
+}
+
+ul.dc-list li.active {
+	background-color: #ff7050;
+	border-color: #ff7050;
+}
+
+ul.dc-list li.active a {
+	color: #fff;
+}
+
+ul.dc-list li:hover {
+	background-color: #ff7050;
+	border-color: #ff7050;
+}
+
+ul.dc-list li:hover a {
+	color: #fff;
+}
+
+
+/* --------Destination CSS End-------- */
+
+
+/* -------------------------------------- */
+
+
+/*  9. Destination Overview
+/*----------------------------------------*/
+
+.destination-details-content {}
+
+.destination-details-content h5 {
+	color: #333333;
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 30px;
+	letter-spacing: 0px;
+	margin-bottom: 30px;
+}
+
+.destination-details-content h6 {
+	font-size: 18px;
+	color: #333333;
+	letter-spacing: 0;
+	font-weight: 600;
+	margin-bottom: 25px;
+}
+
+.ddc-title {}
+
+.ddc-title h4 {
+	color: #333333;
+	font-size: 50px;
+	letter-spacing: 0px;
+	line-height: 68px;
+	font-weight: 600;
+}
+
+.ddc-meta {
+	position: relative;
+	margin: 30px auto;
+}
+
+.ddc-meta p {
+	position: relative;
+	color: #4c4c4c;
+	font-size: 16px;
+	letter-spacing: 0px;
+}
+
+.ddc-welcome {}
+
+.ddc-welcome img {
+	margin-bottom: 40px;
+}
+
+.ddc-welcome p {
+	color: #4c4c4c;
+	font-size: 16px;
+	line-height: 29px;
+	margin-bottom: 42px;
+}
+
+.ddc-welcome h5 {}
+
+.ddc-gt-single {}
+
+.ddc-gt {}
+
+.ddc-gt-single img {
+	margin-bottom: 100px;
+}
+
+.ddc-gt-single h6 {}
+
+.ddc-gt-single p {
+	color: #4c4c4c;
+	font-size: 16px;
+	line-height: 29px;
+	margin-bottom: 42px;
+}
+
+.ddc-where-stay img {
+	margin-bottom: 40px;
+}
+
+.ddc-where-stay h5 {}
+
+.ddc-where-stay p {
+	color: #4c4c4c;
+	font-size: 16px;
+	line-height: 29px;
+	margin-bottom: 42px;
+}
+
+.ddc-things-toSee {}
+
+.ddc-tts-img {}
+
+.ddc-tts-img img {
+	margin-bottom: 40px;
+}
+
+.ddc-tts-text {}
+
+.ddc-tts-text h5 {}
+
+.ddc-tts-text p {
+	color: #4c4c4c;
+	font-size: 16px;
+	line-height: 29px;
+	margin-bottom: 42px;
+}
+
+.ddc-tts-stext p {
+	color: #4c4c4c;
+	font-size: 16px;
+	line-height: 29px;
+	margin-bottom: 42px;
+}
+
+.ddc-tts-stext h6 {}
+
+.ddc-gt img {
+	margin-bottom: 40px;
+}
+
+
+/* --------Destination Overview CSS End-------- */
+
+
+/* -------------------------------------- */
+
+
+/*  10. Travel Tips
+/*----------------------------------------*/
+
+.travel-tips-title {
+	background-image: linear-gradient(rgba(46, 49, 146, 0.6), rgba(46, 49, 146, 0.6)), url(../img/bg/innerpage-title-bg-3.png);
+}
+
+
+/* --------Travel Tips CSS End-------- */
+
+
+/* -------------------------------------- */
+
+
+/*  11. Tips Overview
+/*----------------------------------------*/
+
+    /* Inherit Destination Overview CSS */
+
+/* --------Tips Overview CSS End-------- */
+
+
+/* -------------------------------------- */
+
+
+/*  12. Tour Planning
+/*----------------------------------------*/
+
+.tour-date-area .section-title {
+	margin-top: 60px;
+}
+
+.tp-welcome {
+	position: relative;
+}
+
+.tpw-title {}
+
+.tpw-title h4 {
+	font-size: 50px;
+	color: #333333;
+	letter-spacing: 0px;
+	font-weight: 600;
+	line-height: 68px;
+	max-width: 980px;
+}
+
+.tpw-img-text h5 {
+	color: #333333;
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 30px;
+	letter-spacing: 0px;
+	margin-bottom: 30px;
+}
+
+.tpw-img-text img {
+	margin-bottom: 40px;
+	margin-top: 30px;
+}
+
+.tpw-img-text p {
+	color: #4c4c4c;
+	font-size: 16px;
+	line-height: 29px;
+	margin-bottom: 42px;
+}
+
+.tour-date-area {
+	position: relative;
+	overflow: hidden;
+}
+
+.next-prev-story-btn {
+	position: relative;
+	margin: 40px auto 0px;
+	max-width: 480px;
+	text-align: center;
+}
+
+
+/* --------Tour Planning CSS End-------- */
+
+
+/* -------------------------------------- */
+
+
+/*  13. Shop
+/*----------------------------------------*/
+
+.shop-title {
+	background: linear-gradient(rgba(46, 49, 146, 0.6), rgba(46, 49, 146, 0.6)), url(../img/bg/innerpage-title-bg-4.png);
+}
+
+.shop-item-wrapper {
+	position: relative;
+}
+
+.shop-item-wrapper .single-shop-item {
+	margin-bottom: 30px;
+}
+
+.ss-widget {
+	position: relative;
+	max-width: 350px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.ss-widget>h4 {
+	font-size: 25px;
+	letter-spacing: 0px;
+	font-weight: 600;
+	color: #333333;
+	display: block;
+	text-align: center;
+	padding: 15px 10px;
+	border: 1px solid #e6e6e6;
+	background-color: #fff;
+}
+
+.ss-category {
+	position: relative;
+	border: 1px solid #e6e6e6;
+}
+
+.ss-category ul {
+	position: relative;
+	padding: 0;
+	list-style-type: none;
+	text-align: left;
+	margin: 30px;
+	padding-bottom: 30px;
+}
+
+.ss-category ul li {
+	margin-bottom: 30px;
+}
+
+.ss-category ul li:last-child {
+	margin-bottom: 0px;
+}
+
+.ss-category ul li a {
+	font-size: 16px;
+	letter-spacing: 0px;
+	display: block;
+	position: relative;
+}
+
+.ss-category ul li a:hover {
+	color: #00af80;
+}
+
+.ss-category ul li a span.c-count {
+	float: right;
+}
+
+.priceRangeSlider {
+	position: relative;
+	margin: 40px auto 68px;
+}
+
+.priceRangeSlider .ui-slider-range {
+	background-color: #ff7050;
+}
+
+.priceRangeSlider .ui-widget.ui-widget-content {
+	border: none;
+	background-color: #b7b7b7;
+	height: 3px;
+}
+
+.priceRangeSlider .ui-slider .ui-slider-handle {
+	background-color: #fff;
+	border-radius: 50%;
+	top: -7px;
+	border-color: #ff7050;
+	cursor: pointer;
+}
+
+.pr-amountMin,
+.pr-amountMax {
+	display: inline-block;
+	max-width: 50%;
+	float: left;
+	margin-top: 20px;
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 0px;
+	color: #333333 !important;
+}
+
+.pr-amountMax {
+	text-align: right;
+}
+
+.pr-amountMin {
+	text-align: left;
+}
+
+.ss-filter-rating ul li a i {
+	color: #fecb00;
+}
+
+.ss-filter-cat ul li a img {
+	margin-right: 8px;
+	margin-top: -5px;
+}
+
+
+/* --------Shop CSS End-------- */
+
+
+/* -------------------------------------- */
+
+
+/*  14. Product Details
+/*----------------------------------------*/
+
+
+/* Product Details Photo Gallery */
+
+.photogallery {
+	display: -webkit-flex;
+	display: flex;
+	height: 588px;
+	margin: 0px auto;
+	width: 100%;
+}
+
+.photogallery .pg-menu {
+	display: inline-block;
+	margin: 0;
+	overflow: hidden;
+	padding: 0px;
+	position: relative;
+}
+
+.photogallery .pg-menu ul {
+	list-style-type: none;
+	height: 100%;
+	margin: 0px;
+	padding: 0;
+	overflow-y: auto;
+}
+
+.photogallery .pg-menu ul li {
+	height: 110px;
+	margin: 5px auto;
+	width: 90px;
+	overflow: hidden;
+	position: relative;
+}
+
+.photogallery .pg-menu ul li:first-child {
+	margin-top: 0px;
+}
+
+.photogallery .pg-menu ul li:nth-child(5) {
+	height: 100px;
+}
+
+.photogallery .pg-menu ul li img {
+	opacity: 1;
+	height: 100%;
+	width: 100%;
+	border: 1px solid #ff7050;
+	padding: 2px;
+}
+
+.photogallery .pg-menu ul li img.activeImage {
+	opacity: 1;
+}
+
+.photogallery .pg-menu ul li img:hover {
+	cursor: pointer;
+}
+
+.photogallery .pg-menu ul li span {
+	display: none;
+}
+
+.photogallery .product-photo-view {
+	display: inline-block;
+	-webkit-flex: 1;
+	/* Safari 6.1+ */
+	-ms-flex: 1;
+	/* IE 10 */
+	flex: 1;
+	margin: 0px;
+	width: 45%;
+	vertical-align: top;
+}
+
+.photogallery .product-photo-view .galleryimage {
+	display: block;
+	margin: auto;
+}
+
+.photogallery img {
+	width: 100%;
+	height: 100%;
+}
+
+.product-photo-view img {
+	height: 588px;
+	width: 440px;
+	border: 1px solid #e3e6e9;
+}
+
+.product-thumbs-slider ::-webkit-scrollbar {
+	width: 0px;
+	/* remove scrollbar space */
+	background: transparent;
+	/* optional: just make scrollbar invisible */
+}
+
+
+/* optional: show position indicator in red */
+
+.product-thumbs-slider ::-webkit-scrollbar-thumb {
+	background: #FF0000;
+}
+
+.photogallery .product-photo-view .galleryimage {
+	display: block;
+	margin: auto;
+}
+
+.product-thumbs-slider {
+	position: relative;
+	margin-right: -15px;
+}
+
+.photogallery .pg-menu ul li.pgm-active {
+	position: relative;
+}
+
+.photogallery .pg-menu ul li.pgm-active:after {
+	position: absolute;
+	content: '';
+	height: calc(100% - 4px);
+	width: calc(100% - 4px);
+	background-color: rgba(255, 112, 80, 0.90);
+	z-index: 1;
+	top: 2px;
+	left: 2px;
+}
+
+.pgm-scroll-btn {
+	font-size: 24px !important;
+	color: #808080 !important;
+	display: block;
+	z-index: 9;
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	width: 100%;
+	height: 26px;
+	text-align: center;
+	background-color: #ecf0f1;
+	cursor: pointer;
+}
+
+.pgm-scroll-btn i {}
+
+
+/* Product Details Photo Gallery CSS END */
+
+.bg-red {
+	background-color: #e36968;
+}
+
+.bg-yellow {
+	background-color: #ffc741;
+}
+
+.bg-blue {
+	background-color: #21c2f8;
+}
+
+.bg-green {
+	background-color: #a9d260;
+}
+
+.pic-color {
+	position: relative;
+	width: 50%;
+	display: inline-block;
+	float: left;
+}
+
+.pic-color ul {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.pic-color ul li {
+	display: inline-block;
+}
+
+.picc-color-box {
+	height: 30px;
+	width: 30px;
+	position: relative;
+}
+
+.p-border {
+	border: 2px solid #e3e6e9;
+}
+
+.pColor-input {
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.products-info-wrapper {}
+
+.pi-content-title {
+	position: relative;
+	border-bottom: 1px solid #e3e6e9;
+}
+
+.pi-content-title h4 {
+	font-size: 25px;
+	font-weight: 600;
+	letter-spacing: 0px;
+	color: #333333;
+}
+
+.pi-content-title p {
+	color: #4c4c4c;
+	font-size: 16px;
+	margin: 20px auto 30px;
+}
+
+.pic-price-box {
+	position: relative;
+	margin: 30px auto;
+}
+
+.pic-price-box p {
+	color: #808080;
+	font-size: 14px;
+}
+
+.pic-price-box .pic-price {
+	color: #ff7050;
+	font-size: 25px;
+	font-weight: 600;
+}
+
+.pic-description {
+	position: relative;
+	border-bottom: 1px solid #e3e6e9;
+}
+
+.pic-description p {
+	margin-bottom: 30px;
+}
+
+.pic-delevery-info {
+	position: relative;
+	border-bottom: 1px solid #e3e6e9;
+}
+
+.pic-delevery-info ul {
+	position: relative;
+	margin: 30px auto;
+	padding: 0;
+	list-style-type: none;
+	background-color: #f9fafb;
+}
+
+.pic-delevery-info ul li {
+	display: inline-block;
+	border: 1px solid #e3e6e9;
+	margin-left: -6px;
+	width: 33.4%;
+}
+
+.pic-delevery-info ul li:first-child {
+	margin-left: 0px;
+}
+
+.pic-single {
+	position: relative;
+	padding: 20px;
+}
+
+.pic-single span {
+	color: #4c4c4c;
+	font-size: 14px;
+	letter-spacing: 0px;
+	line-height: 25px;
+}
+
+.pic-single p {
+	font-size: 18px;
+	color: #ff7050;
+	font-weight: 600;
+	line-height: 18px;
+}
+
+.pic-color-quantity {
+	position: relative;
+	width: 100%;
+	margin-top: 30px;
+	padding-bottom: 20px;
+}
+
+.pic-quantity {
+	position: relative;
+	width: 50%;
+	display: inline-block;
+}
+
+.pic-quantity .form-group {
+	text-align: right;
+	float: right;
+	margin-bottom: 0px;
+}
+
+.pq-inc-dec-btn {
+	color: #808080;
+	background-color: #fdfdfd;
+	border: 1px solid #e3e6e9;
+	height: 30px;
+	width: 30px;
+	text-align: center;
+	padding: 0px;
+	cursor: pointer;
+}
+
+.pic-quantity .pqNumber {
+	height: 30px;
+	border: 1px solid #e3e6e9;
+	margin-left: 10px;
+	margin-right: 10px;
+	max-width: 70px;
+	text-align: center;
+}
+
+.pic-cart {
+	position: relative;
+	width: 100%;
+}
+
+.pic-left {
+	position: relative;
+	display: inline-block;
+	float: left;
+	max-width: 200px;
+	margin-right: 25px;
+}
+
+.pic-right {
+	position: relative;
+	width: calc(100% - 225px);
+	float: left;
+}
+
+.pic-right p {
+	color: #4c4c4c;
+	font-size: 14px;
+	font-weight: 500;
+	display: inline-block;
+}
+
+
+/* --------Product Details CSS End-------- */
+
+
+/* -------------------------------------- */
+
+
+/*  15. Cart
+/*----------------------------------------*/
+
+.cart-area {}
+
+.cart-content-wrapper {}
+
+table.cart-table {
+	position: relative;
+	text-align: center;
+	border: 1px solid #e3e6e9;
+	border-radius: 5px;
+	margin-bottom: 30px;
+}
+
+.cart-table thead tr {}
+
+.cart-table thead tr td {
+	border: none;
+	padding: 12px 0px;
+	color: #333333;
+	font-size: 18px;
+	letter-spacing: 0px;
+	font-weight: 500;
+}
+
+table.cart-table thead {
+	background-color: #f9f9f9;
+}
+
+table.cart-table tbody {}
+
+table.cart-table tbody tr {}
+
+table.cart-table tbody tr td {
+	font-size: 16px;
+	color: #333333;
+	letter-spacing: 0px;
+	vertical-align: middle;
+	padding: 15px 5px;
+}
+
+table.cart-table .cartProductName {
+	text-align: left;
+	padding-left: 2%;
+}
+
+.cartProductName {}
+
+.cartProductName .cancel-product {
+	color: #ff0000;
+	font-size: 22px;
+	margin-right: 15px;
+	display: inline-block;
+	position: relative;
+	height: 35px;
+	width: 25px;
+	vertical-align: middle;
+}
+
+.ct-quantity {
+	text-align: center;
+}
+
+.ct-quantity .form-group {
+	max-width: 150px;
+	margin: 0 auto;
+}
+
+.cartProductName {}
+
+.cartProductName .cartPimg {
+	margin: 0 25px;
+}
+
+.cartProductName .cancel-product i {
+	position: absolute;
+	top: 5px;
+	cursor: pointer;
+}
+
+.cartProductName .cancel-product i.fa {}
+
+.cart-table .pq-inc-dec-btn {
+	color: #808080;
+	background-color: #fdfdfd;
+	border: 1px solid #e3e6e9;
+	height: 30px;
+	width: 30px;
+	text-align: center;
+	padding: 0px;
+	cursor: pointer;
+}
+
+.cart-table .pqNumber {
+	height: 30px;
+	border: 1px solid #e3e6e9;
+	margin-left: 10px;
+	margin-right: 10px;
+	max-width: 70px;
+	text-align: center;
+}
+
+.cart-btn-wrapper {
+	position: relative;
+}
+
+.cart-update-procced-btn {
+	position: relative;
+	text-align: right;
+}
+
+.cart-update-procced-btn a {
+	margin-left: 20px;
+}
+
+.cart-update-procced-btn a:first-child {
+	margin-left: 0px;
+}
+
+.cart-cupon {}
+
+.cart-cupon input {
+	height: 45px;
+	font-size: 16px;
+	width: 100%;
+	max-width: 300px;
+	border-radius: 5px;
+	border: 1px solid #e3e6e9;
+	padding: 0px 12px;
+	margin-right: 10px;
+}
+
+.cartTotalContent {
+	position: relative;
+	margin: 25px auto;
+	padding-top: 75px;
+}
+
+table.cartTotalTable {
+	position: relative;
+}
+
+.cartTotalContent h4 {
+	font-size: 25px;
+	letter-spacing: 0px;
+	font-weight: 400;
+	margin-bottom: 25px;
+}
+
+table.cartTotalTable tr td {
+	font-size: 16px;
+	color: #333333;
+	letter-spacing: 0px;
+	font-weight: 500;
+	padding: 10px 20px;
+}
+
+table.cartTotalTable tr td .price {
+	color: #ff7050;
+}
+
+
+/* --------Cart CSS End-------- */
+
+
+/* -------------------------------------- */
+
+
+/*  16. Checkout
+/*----------------------------------------*/
+
+.checkout-area {
+	position: relative;
+}
+
+.checkout-area h4 {}
+
+.billing-details {}
+
+.billing-details h4,
+.order-details h4 {
+	color: #333333;
+	font-size: 30px;
+	letter-spacing: 0px;
+	font-weight: 600;
+	margin-bottom: 50px;
+}
+
+.billing-details .form-group {
+	margin-bottom: 0px;
+}
+
+.billing-details .form-group label {}
+
+.billing-details label {
+	color: #333333;
+	font-size: 16px;
+	letter-spacing: 0px;
+	font-weight: 500;
+}
+
+.billing-details .form-group .form-control {}
+
+.billing-details .form-control {
+	font-size: 14px;
+	height: 40px;
+	color: #999999;
+	border: 1px solid #e6e6e6;
+	margin-bottom: 20px;
+	letter-spacing: 0px;
+}
+
+.billing-details .form-control input {}
+
+.billing-details .form-control img {}
+
+.billing-details .form-check {
+	color: #333333;
+	margin-bottom: 40px;
+}
+
+.billing-details .form-check label {
+	font-size: 14px;
+	line-height: 0px;
+	margin-left: 15px;
+}
+
+.billing-details .form-check input[type=checkbox] {
+	width: 18px;
+	height: 25px;
+}
+
+.billing-details .form-check .staaddress {
+	font-size: 30px;
+	margin-top: 15px;
+	color: #2c3e50;
+	letter-spacing: 0px;
+}
+
+.billing-details textarea {
+	min-height: 130px;
+	letter-spacing: 0px;
+	padding: 10px 15px;
+	color: #999999;
+}
+
+.order-details {}
+
+.billing-details,
+.order-details {}
+
+.od-info-wrapper {
+	position: relative;
+	background-color: #f5f5f5;
+	padding: 12px 25px;
+}
+
+.od-info-wrapper {}
+
+table.prodactInfoTabel {}
+
+table.prodactInfoTabel thead {}
+
+table.prodactInfoTabel thead tr {}
+
+table.prodactInfoTabel thead tr th {
+	border: none;
+	color: #333333;
+	letter-spacing: 0px;
+	font-size: 16px;
+	width: 50%;
+	padding-bottom: 12px;
+}
+
+table.prodactInfoTabel tbody {}
+
+table.prodactInfoTabel tbody tr {}
+
+table.prodactInfoTabel tbody tr td {
+	font-size: 16px;
+	letter-spacing: 0px;
+	color: #333333;
+	font-weight: 600;
+	line-height: 40px;
+}
+
+table.prodactInfoTabel tbody tr td .price {
+	color: #ff7050;
+}
+
+.payment-info-wrapper {
+	position: relative;
+	padding-top: 25px;
+}
+
+.payment-info-wrapper h4 {}
+
+.payment-info-wrapper p {
+	color: #4c4c4c;
+	font-size: 14px;
+	letter-spacing: 0px;
+	font-weight: 500;
+	line-height: 30px;
+	max-width: 412px;
+	margin: 0px 0px 15px;
+}
+
+.piMethodSingle {
+	position: relative;
+	border-bottom: 1px solid #d7d7d7;
+}
+
+.piMethodSingle label {
+	color: #333333;
+	font-size: 16px;
+	letter-spacing: 0px;
+	font-weight: 500;
+	padding: 12px 0px;
+	margin-bottom: 0px;
+}
+
+.piMethodSingle img {
+	float: right;
+	margin-top: 14px;
+}
+
+.checkout-condition-text p {
+	margin-top: 25px;
+}
+
+.checkout-condition-text label {
+	color: #333333;
+	letter-spacing: 0px;
+	padding-left: 20px;
+}
+
+.checkout-condition-text input[type=checkbox] {
+	width: 18px;
+	height: 25px;
+}
+
+.piMethodSingle input[type=radio] {
+	margin-right: 12px;
+}
+
+.checkout-condition-text {
+	position: relative;
+	margin: 12px auto;
+}
+
+.ckeckoutOrder-btn {
+	cursor: pointer;
+}
+
+.ckeckoutOrder-btn {
+	cursor: pointer;
+	margin: 50px auto;
+	display: block;
+	width: 260px;
+	height: 50px;
+}
+
+
+/* --------Checkout CSS End-------- */
+
+
+/* -------------------------------------- */
+
+
+/*  17. Gear I Use
+/*----------------------------------------*/
+
+.gearIuse-area {
+	position: relative;
+	overflow: hidden;
+}
+
+.gearIuse-area .section-title {
+	margin-top: 60px;
+}
+
+
+/* --------Gear I Use CSS End-------- */
+
+
+/* -------------------------------------- */
+
+
+/*  18. 404 Error
+/*----------------------------------------*/
+
+.error-area {
+	position: relative;
+}
+
+.errorTitle {
+	background: linear-gradient(rgba(46, 49, 146, 0.6), rgba(46, 49, 146, 0.6)), url(../img/bg/innerpage-title-bg-5.png);
+}
+
+.error-content {
+	position: relative;
+	margin: 0 auto;
+	max-width: 650px;
+	text-align: center;
+}
+
+.ec-text {
+	position: relative;
+	margin-top: 80px;
+}
+
+.ec-img {}
+
+.ec-text h3 {
+	font-size: 40px;
+	letter-spacing: 0px;
+	margin: 25px auto;
+}
+
+.ec-text p {
+	color: #4c4c4c;
+	font-size: 18px;
+}
+
+.ec-text a {
+	margin: 80px auto 0px;
+}
+
+
+/* --------404 Error CSS End-------- */
+
+
+/* -------------------------------------- */
+
+
+/*  19. Contact
+/*----------------------------------------*/
+
+.contact-form-wrapper {
+	position: relative;
+	max-width: 650px;
+	margin: 0 auto;
+}
+
+.cform-top-text {
+	text-align: center;
+	padding: 0px 0px 25px;
+}
+
+.cform-top-text h4 {
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	color: #464646;
+	font-size: 16px;
+	font-weight: 600;
+	letter-spacing: 0px;
+}
+
+.contact-content-area {}
+
+.contact-content-area form {
+	text-align: center;
+}
+
+.contact-content-area form input {
+	margin: 10px auto;
+	border-radius: 0px;
+	border: 1px solid #dfdfdf;
+	height: 42px;
+	font-size: 14px;
+	letter-spacing: 0px;
+	color: #333;
+	border-radius: 5px;
+}
+
+.contact-content-area form textarea {
+	margin: 10px auto;
+	border: 1px solid #dfdfdf;
+	height: 120px;
+	border-radius: 5px;
+}
+
+.form-control:focus {
+	border-color: rgba(128, 130, 132, 0.31);
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(54, 60, 64, 0.6);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(80, 80, 80, 0.6);
+}
+
+.contact-content-area form button {
+	color: #ffffff;
+	font-size: 16px;
+	padding: 18px 28px;
+	background-color: #ff7050;
+	letter-spacing: 0px;
+	line-height: 10px;
+	border: none;
+	border-radius: 5px;
+	display: inline-block;
+	transition: .5s ease;
+	margin-bottom: 10px;
+	border: 1px solid #faad83;
+}
+
+.contact-content-area form button:hover,
+.contact-content-area form button:active,
+.contact-content-area form button:focus {
+	color: #faad83;
+	background-color: #ffffff;
+	border: 1px solid #faad83;
+	outline: none;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contact-content-area form button:active:hover {
+	color: #faad83;
+	background-color: #ffffff;
+	border: 1px solid #faad83;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cf-msg {
+	padding: 10px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.cf-msg p {
+	margin-bottom: 0;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0;
+	color: #000;
+	text-transform: capitalize;
+}
+
+.cf-msg .alert.alert-success {}
+
+
+/* --------Contact CSS End-------- */
