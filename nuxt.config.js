@@ -95,18 +95,6 @@ module.exports = {
                 href: "/css/style.css"
             },
         ],
-
-        // script: [
-        //     { src: 'static/jquery-3.2.0.min.js', type: "text/javascript" },
-        //     { src: 'static/jquery-ui.js', type: "text/javascript" },
-        //     { src: 'static/owl.carousel.min.js', type: "text/javascript" },
-        //     { src: 'static/jquery.counterup.min.js', type: "text/javascript" },
-        //     { src: 'static/jquery.scrollUp.js', type: "text/javascript" },
-        //     { src: 'static/jquery.waypoints.min.js', type: "text/javascript" },
-        //     { src: 'static/bootstrap.min.js', type: "text/javascript" },
-        //     { src: 'static/theme.js', type: "text/javascript" },
-        //     { src: 'static/gmaps.js', type: "text/javascript" },
-        // ],
     },
     script: [
         { src: '/jquery-3.2.0.min.js', type: "text/javascript" },
@@ -131,8 +119,8 @@ module.exports = {
      */
     css: [
         'normalize.css/normalize.css',
-        '@/assets/css/main.scss',
-        '@/assets/css/prism-material-light.css',
+        // '@/assets/css/main.scss',
+        // '@/assets/css/prism-material-light.css',
         // "@/node_modules/bootstrap/dist/css/bootstrap.css",
 
     ],
@@ -144,7 +132,7 @@ module.exports = {
             ssr: false
         },
         "~plugins/bootstrap.js",
-        // { src: 'plugins/jquery-3.2.0.min.js' }
+        // { src: 'plugins/jquery-3.2.0.min.js', ssr: false }
     ],
 
     build: {

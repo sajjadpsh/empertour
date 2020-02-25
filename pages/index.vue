@@ -1,12 +1,13 @@
 <template>
 
-  <div class="page-index container">
-    <div class="container">
+  <!-- <div class="page-index container"> -->
+    <!-- <div class="container"> -->
       <!-- <BlogSection :blogs="blogs"/> -->
+      <div>
       <header id="header" class="header-area headerV2 bg-dark-blue">
         <nav class="navbar navbar-expand-lg footstep-nav footstep-nav-v2">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="~/assets/img/common/logo-4.png" alt="" class="logo"></a>
+                <a class="navbar-brand" href="#"><img src="/assets/img/common/logo-4.png" alt="" class="logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars" aria-hidden="true"></i>
                 </button>
@@ -81,7 +82,7 @@
                 <div class="col-md-12">
                     <div class="single-tat stat-v2 stat-fullwidth">
                         <div class="stat-img">
-                            <img src="~/assets/img/blog/tat-1-fw.png" alt="">
+                            <img src="/assets/img/blog/tat-1-fw.png" alt="">
                         </div>
                         <div class="stat-text">
                             <div class="stat-meta">
@@ -112,7 +113,7 @@
                 <div class="col-md-4">
                     <div class="single-tat stat-v2">
                         <div class="stat-img">
-                            <img src="~/assets/img/blog/tat-2.png" alt="">
+                            <img src="/assets/img/blog/tat-2.png" alt="">
                         </div>
                         <div class="stat-text">
                             <div class="stat-meta">
@@ -139,7 +140,7 @@
                 <div class="col-md-4">
                     <div class="single-tat stat-v2">
                         <div class="stat-img">
-                            <img src="~/assets/img/blog/tat-3.png" alt="">
+                            <img src="/assets/img/blog/tat-3.png" alt="">
                         </div>
                         <div class="stat-text">
                             <div class="stat-meta">
@@ -166,7 +167,7 @@
                 <div class="col-md-4">
                     <div class="single-tat stat-v2">
                         <div class="stat-img">
-                            <img src="~/assets/img/blog/tat-2.png" alt="">
+                            <img src="/assets/img/blog/tat-2.png" alt="">
                         </div>
                         <div class="stat-text">
                             <div class="stat-meta">
@@ -193,7 +194,7 @@
                 <div class="col-md-12">
                     <div class="single-tat stat-v2 stat-fullwidth">
                         <div class="stat-img">
-                            <!-- <img src="~/assets/img/blog/tat-3.png" alt=""> -->
+                            <!-- <img src="/assets/img/blog/tat-3.png" alt=""> -->
                             <!-- <iframe src="https://player.vimeo.com/video/110353157" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
                             <!-- <iframe src="https://www.youtube.com/embed/fEErySYqItI" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
                         </div>
@@ -241,7 +242,7 @@
                 <div class="col-md-4">
                     <div class="single-tat stat-v2">
                         <div class="stat-img">
-                            <img src="~/assets/img/blog/tat-4.png" alt="">
+                            <img src="/assets/img/blog/tat-4.png" alt="">
                         </div>
                         <div class="stat-text">
                             <div class="stat-meta">
@@ -268,7 +269,7 @@
                 <div class="col-md-4">
                     <div class="single-tat stat-v2">
                         <div class="stat-img">
-                            <img src="~/assets/img/blog/tat-5.png" alt="">
+                            <img src="/assets/img/blog/tat-5.png" alt="">
                         </div>
                         <div class="stat-text">
                             <div class="stat-meta">
@@ -295,7 +296,7 @@
                 <div class="col-md-4">
                     <div class="single-tat stat-v2">
                         <div class="stat-img">
-                            <img src="~/assets/img/blog/tat-6.png" alt="">
+                            <img src="/assets/img/blog/tat-6.png" alt="">
                         </div>
                         <div class="stat-text">
                             <div class="stat-meta">
@@ -322,7 +323,7 @@
                 <div class="col-md-4">
                     <div class="single-tat stat-v2">
                         <div class="stat-img">
-                            <img src="~/assets/img/blog/tat-7.png" alt="">
+                            <img src="/assets/img/blog/tat-7.png" alt="">
                         </div>
                         <div class="stat-text">
                             <div class="stat-meta">
@@ -349,7 +350,7 @@
                 <div class="col-md-4">
                     <div class="single-tat stat-v2">
                         <div class="stat-img">
-                            <img src="~/assets/img/blog/tat-8.png" alt="">
+                            <img src="/assets/img/blog/tat-8.png" alt="">
                         </div>
                         <div class="stat-text">
                             <div class="stat-meta">
@@ -376,7 +377,7 @@
                 <div class="col-md-4">
                     <div class="single-tat stat-v2">
                         <div class="stat-img">
-                            <img src="~/assets/img/blog/tat-9.png" alt="">
+                            <img src="/assets/img/blog/tat-9.png" alt="">
                         </div>
                         <div class="stat-text">
                             <div class="stat-meta">
@@ -403,7 +404,7 @@
                 <div class="col-md-12">
                     <div class="single-tat stat-v2 stat-fullwidth">
                         <div class="stat-img">
-                            <!-- <img src="~/assets/img/blog/tat-3.png" alt=""> -->
+                            <!-- <img src="/assets/img/blog/tat-3.png" alt=""> -->
                             <iframe src="https://www.youtube.com/embed/fEErySYqItI" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                         </div>
                         <div class="stat-text">
@@ -431,7 +432,7 @@
                 <div class="col-md-4">
                     <div class="single-tat stat-v2">
                         <div class="stat-img">
-                            <img src="~/assets/img/blog/tat-2.png" alt="">
+                            <img src="/assets/img/blog/tat-2.png" alt="">
                         </div>
                         <div class="stat-text">
                             <div class="stat-meta">
@@ -458,7 +459,7 @@
                 <div class="col-md-4">
                     <div class="single-tat stat-v2">
                         <div class="stat-img">
-                            <img src="~/assets/img/blog/tat-3.png" alt="">
+                            <img src="/assets/img/blog/tat-3.png" alt="">
                         </div>
                         <div class="stat-text">
                             <div class="stat-meta">
@@ -485,7 +486,7 @@
                 <div class="col-md-4">
                     <div class="single-tat stat-v2">
                         <div class="stat-img">
-                            <img src="~/assets/img/blog/tat-2.png" alt="">
+                            <img src="/assets/img/blog/tat-2.png" alt="">
                         </div>
                         <div class="stat-text">
                             <div class="stat-meta">
@@ -525,32 +526,32 @@
                         <div class="instaPost-carousel owl-carousel owl-theme">
                             <div class="item">
                                 <div class="insta-single">
-                                    <img src="~/assets/img/slider/insta-post-1.png" alt="">
+                                    <img src="/assets/img/slider/insta-post-1.png" alt="">
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="insta-single">
-                                    <img src="~/assets/img/slider/insta-post-2.png" alt="">
+                                    <img src="/assets/img/slider/insta-post-2.png" alt="">
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="insta-single">
-                                    <img src="~/assets/img/slider/insta-post-3.png" alt="">
+                                    <img src="/assets/img/slider/insta-post-3.png" alt="">
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="insta-single">
-                                    <img src="~/assets/img/slider/insta-post-4.png" alt="">
+                                    <img src="/assets/img/slider/insta-post-4.png" alt="">
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="insta-single">
-                                    <img src="~/assets/img/slider/insta-post-5.png" alt="">
+                                    <img src="/assets/img/slider/insta-post-5.png" alt="">
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="insta-single">
-                                    <img src="~/assets/img/slider/insta-post-6.png" alt="">
+                                    <img src="/assets/img/slider/insta-post-6.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -596,7 +597,7 @@
                     <div class="col-md-4">
                         <div class="fw-left">
                             <div class="footer-logo">
-                                <img src="~/assets/img/common/logo-4.png" alt="">
+                                <img src="/assets/img/common/logo-4.png" alt="">
                             </div>
                             <div class="footer-text">
                                 <p>I’m a location independent blogger, digital influencer, small group tour organizer and world traveler with a serious passion for the sun, the sea and adventure. </p>
@@ -676,74 +677,63 @@
         </div>
     </footer>
     </div>
-  </div>
+  <!-- </div> -->
     
 </template>
 
-<script>
-  import BlogSection from "~/components/Sections/BlogSection"
+// <script>
+//   import BlogSection from "/components/Sections/BlogSection"
 
-  import blogsEn from '~/contents/en/blogsEn.js'
-  import blogsEs from '~/contents/es/blogsEs.js'
-//   import jquery from "jquery"
-//   Vue.use(jquery)
+//   import blogsEn from '/contents/en/blogsEn.js'
+//   import blogsEs from '/contents/es/blogsEs.js'
 
-  export default {
-    async asyncData ({app}) {
 
-      const blogs = app.i18n.locale === 'en' ? blogsEn : blogsEs
+//   export default {
+//     async asyncData ({app}) {
+
+//       const blogs = app.i18n.locale === 'en' ? blogsEn : blogsEs
       
-      async function asyncImport (blogName) {
-        const wholeMD = await import(`~/contents/${app.i18n.locale}/blog/${blogName}.md`)
-        return wholeMD.attributes
-      }
+//       async function asyncImport (blogName) {
+//         const wholeMD = await import(`/contents/${app.i18n.locale}/blog/${blogName}.md`)
+//         return wholeMD.attributes
+//       }
 
-      return Promise.all(blogs.map(blog => asyncImport(blog)))
-      .then((res) => {
-        return {
-          blogs: res
-        }
-      })
-    },
+//       return Promise.all(blogs.map(blog => asyncImport(blog)))
+//       .then((res) => {
+//         return {
+//           blogs: res
+//         }
+//       })
+//     },
     
-    components: { BlogSection },
+//     components: { BlogSection },
 
-    transition: {
-      name: 'slide-fade'
-    },
+//     transition: {
+//       name: 'slide-fade'
+//     },
 
-    head () {
-      return {
-        title: this.$t('indexPageHead.title'),
-        htmlAttrs: {
-          lang: this.$i18n.locale,
-        },
-        script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' },
-            // { src: '~/assets/js/jquery-3.2.0.min.js', type: "text/javascript" },
-            // { src: '~/assets/js/jquery-ui.js', type: "text/javascript" },
-            // { src: '~/assets/js/owl.carousel.min.js', type: "text/javascript" },
-            // { src: '~/assets/js/jquery.counterup.min.js', type: "text/javascript" },
-            // { src: '~/assets/js/jquery.scrollUp.js', type: "text/javascript" },
-            // { src: '~/assets/js/jquery.waypoints.min.js', type: "text/javascript" },
-            // { src: '~/assets/js/bootstrap.min.js', type: "text/javascript" },
-            // { src: '~/assets/js/theme.js', type: "text/javascript" },
-            // { src: '~/assets/js/gmaps.js', type: "text/javascript" }
-            ],
-        meta: [
-          { name: "author", content: "Marina Aisa" },
-          { name: "description", property: "og:description", content: this.$t('indexPageHead.description'), hid: "description" },
-          { property: "og:title", content: this.$t('indexPageHead.title') },
-          { property: "og:image", content: this.ogImage },
-          { name: "twitter:description", content: this.$t('indexPageHead.description') },
-          { name: "twitter:image", content: this.ogImage }
-        ]
-      };
-    },
+//     head () {
+//       return {
+//         title: this.$t('indexPageHead.title'),
+//         htmlAttrs: {
+//           lang: this.$i18n.locale,
+//         },
+//         script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' },],
+//         meta: [
+//           { name: "author", content: "Marina Aisa" },
+//           { name: "description", property: "og:description", content: this.$t('indexPageHead.description'), hid: "description" },
+//           { property: "og:title", content: this.$t('indexPageHead.title') },
+//           { property: "og:image", content: this.ogImage },
+//           { name: "twitter:description", content: this.$t('indexPageHead.description') },
+//           { name: "twitter:image", content: this.ogImage }
+//         ]
+//       };
+//     },
 
-    computed: {
-      ogImage: function () {
-        return;
-      }
-    }
-  }
-</script>
+//     computed: {
+//       ogImage: function () {
+//         return;
+//       }
+//     }
+//   }
+// </script>

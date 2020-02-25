@@ -3,7 +3,7 @@
          <header id="header" class="header-area headerV1">
         <nav class="navbar navbar-expand-lg footstep-nav footstep-nav-v1">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="~/assets"/img/common/logo.png" alt="" class="logo"></a>
+                <a class="navbar-brand" href="#"><img src="/assest/img/common/logo.png" alt="" class="logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars" aria-hidden="true"></i>
@@ -98,7 +98,7 @@
                             <h4>Please, feel yourself comfortable to fill in our contact form</h4>
                         </div>
                         <div class="cf-msg"></div>
-                        <form method="post" action="~/assets"/php/mail.php" id="cf">
+                        <form method="post" action="/assest/php/mail.php" id="cf">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
@@ -148,32 +148,32 @@
                         <div class="instaPost-carousel owl-carousel owl-theme">
                             <div class="item">
                                 <div class="insta-single">
-                                    <img src="~/assets"/img/slider/insta-post-1.png" alt="">
+                                    <img src="/assest/img/slider/insta-post-1.png" alt="">
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="insta-single">
-                                    <img src="~/assets"/img/slider/insta-post-2.png" alt="">
+                                    <img src="/assest/img/slider/insta-post-2.png" alt="">
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="insta-single">
-                                    <img src="~/assets"/img/slider/insta-post-3.png" alt="">
+                                    <img src="/assest/img/slider/insta-post-3.png" alt="">
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="insta-single">
-                                    <img src="~/assets"/img/slider/insta-post-4.png" alt="">
+                                    <img src="/assest/img/slider/insta-post-4.png" alt="">
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="insta-single">
-                                    <img src="~/assets"/img/slider/insta-post-5.png" alt="">
+                                    <img src="/assest/img/slider/insta-post-5.png" alt="">
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="insta-single">
-                                    <img src="~/assets"/img/slider/insta-post-6.png" alt="">
+                                    <img src="/assest/img/slider/insta-post-6.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -219,7 +219,7 @@
                     <div class="col-md-4">
                         <div class="fw-left">
                             <div class="footer-logo">
-                                <img src="~/assets"/img/common/logo-2.png" alt="">
+                                <img src="/assest/img/common/logo-2.png" alt="">
                             </div>
                             <div class="footer-text">
                                 <p>I’m a location independent blogger, digital influencer, small group tour organizer and world traveler with a serious passion for the sun, the sea and adventure. </p>
