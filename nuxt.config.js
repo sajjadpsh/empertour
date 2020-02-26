@@ -63,6 +63,11 @@ module.exports = {
             { rel: 'apple-touch-icon', href: '/favicons/apple-touch-icon-180x180.png', sizes: '180x180' },
             { rel: 'mask-icon', type: 'image/png', href: '/favicons/safari-pinned-tab.svg', color: '#c1c1c1' },
             {
+                href: 'http://www.fontonline.ir/css/BYekan.css',
+                rel: 'stylesheet',
+                type: 'text/css'
+            },
+            {
                 rel: "stylesheet",
                 href: "/css/animate.css"
             },
@@ -97,15 +102,15 @@ module.exports = {
         ],
     },
     script: [
-        { src: '/jquery-3.2.0.min.js', type: "text/javascript" },
-        { src: '/jquery-ui.js', type: "text/javascript" },
-        { src: '/owl.carousel.min.js', type: "text/javascript" },
-        { src: '/jquery.counterup.min.js', type: "text/javascript" },
-        { src: '/jquery.scrollUp.js', type: "text/javascript" },
-        { src: '/jquery.waypoints.min.js', type: "text/javascript" },
-        { src: '/bootstrap.min.js', type: "text/javascript" },
-        { src: '/theme.js', type: "text/javascript" },
-        { src: '/gmaps.js', type: "text/javascript" },
+        { src: 'js/jquery-3.2.0.min.js', type: "text/javascript" },
+        { src: 'js/jquery-ui.js', type: "text/javascript" },
+        { src: 'js/owl.carousel.min.js', type: "text/javascript" },
+        { src: 'js/jquery.counterup.min.js', type: "text/javascript" },
+        { src: 'js/jquery.scrollUp.js', type: "text/javascript" },
+        { src: 'js/jquery.waypoints.min.js', type: "text/javascript" },
+        { src: 'js/bootstrap.min.js', type: "text/javascript" },
+        { src: 'js/theme.js', type: "text/javascript" },
+        { src: 'js/gmaps.js', type: "text/javascript" },
     ],
     /*
      ** Customize the progress-bar color
@@ -118,11 +123,8 @@ module.exports = {
      ** Build configuration
      */
     css: [
-        // 'normalize.css/normalize.css',
-        // '@/assets/css/main.scss',
-        // '@/assets/css/prism-material-light.css',
-        // "@/node_modules/bootstrap/dist/css/bootstrap.css",
-
+        'normalize.css/normalize.css',
+        '@/assets/css/prism-material-light.css',
     ],
 
     plugins: ['plugins/lazyload',

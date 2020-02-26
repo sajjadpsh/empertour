@@ -1,7 +1,7 @@
 <template>
-  <div class="layout">
+  <div class="body">
     <Header/>
-    <nuxt class="nuxt-content"/>
+    <nuxt/>
     <Footer/>
   </div>
 </template>
@@ -14,14 +14,23 @@
     }
   }
 </script>
-<style lang="scss">
-.layout {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
 
-.nuxt-content {
-  flex-grow: 1;
-}
-</style>
+<style scoped>
+        .body {
+            background: #fff;
+            color: #777777;
+            font-size: 14px;
+            line-height: 31px;
+            font-weight: 400;
+            padding: 0;
+            font-family: BYekan, 'BYekan', tahoma;
+            direction: rtl;
+            text-align: right;
+        }
+        
+        * {
+            font-family: BYekan, 'BYekan', tahoma;
+            direction: rtl;
+            text-align: right;
+        }
+    </style>
