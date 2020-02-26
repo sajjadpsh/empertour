@@ -118,7 +118,7 @@ module.exports = {
      ** Build configuration
      */
     css: [
-        'normalize.css/normalize.css',
+        // 'normalize.css/normalize.css',
         // '@/assets/css/main.scss',
         // '@/assets/css/prism-material-light.css',
         // "@/node_modules/bootstrap/dist/css/bootstrap.css",
@@ -136,15 +136,15 @@ module.exports = {
     ],
 
     build: {
-        vendor: ["jquery", "bootstrap", 'jquery-ui'],
-        plugins: [
-            new webpack.ProvidePlugin({
-                $: 'jquery',
-                jQuery: 'jquery',
-                'window.jQuery': 'jquery',
-                '_': 'lodash'
-            })
-        ],
+        // vendor: ["jquery", "bootstrap", 'jquery-ui'],
+        // plugins: [
+        //     new webpack.ProvidePlugin({
+        //         $: 'jquery',
+        //         jQuery: 'jquery',
+        //         'window.jQuery': 'jquery',
+        //         '_': 'lodash'
+        //     })
+        // ],
 
         extend(config) {
             const rule = config.module.rules.find(r => r.test.toString() === '/\\.(png|jpe?g|gif|svg|webp)$/i')

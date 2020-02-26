@@ -1,15 +1,16 @@
 <template>
   <div class="layout">
+    <Header/>
     <nuxt class="nuxt-content"/>
-    <!-- <Footer/> -->
+    <Footer/>
   </div>
 </template>
 <script>
   import Footer from '~/components/Sections/Footer'
-
+  import Header from '~/components/Sections/Header'
   export default {
     components: {
-      Footer
+      Footer,Header
     }
   }
 </script>
