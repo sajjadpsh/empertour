@@ -134,7 +134,8 @@ module.exports = {
             ssr: false
         },
         "~plugins/bootstrap.js",
-        // { src: 'plugins/jquery-3.2.0.min.js', ssr: false }
+        // { src: '~plugins/jquery-3.2.0.min.js', ssr: false },
+        // "~plugins/owl.carousel.min.js"
     ],
 
     build: {

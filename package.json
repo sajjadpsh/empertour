@@ -10,6 +10,7 @@
   "dependencies": {
     "@nuxtjs/style-resources": "^1.0.0",
     "bootstrap": "^4.4.1",
+    "carousel": "0.0.3",
     "eslint-loader": "^3.0.3",
     "jquery": "^3.4.1",
     "jquery-ui": "^1.12.1",
@@ -19,6 +20,7 @@
     "nuxt": "^2.11.0",
     "nuxt-i18n": "^6.4.1",
     "nuxt-webfontloader": "^1.1.0",
+    "owl.carousel": "^2.3.4",
     "popper.js": "^1.16.1",
     "vue-lazyload": "^1.3.3",
     "webpack": "^4.41.6"

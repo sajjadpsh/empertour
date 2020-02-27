@@ -1,5 +1,34 @@
 <template>
   <div>
+      <section id="hero" class="hero-area hero-first hero-v2">
+        <div class="hero1-slider">
+            <div class="item">
+                <div class="hero-slider">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="hero-text">
+                                    <div class="ht-counter-area">
+                                        <p>THE COUNTER: <span class="counter-up">70</span> Countries <span class="counter-up">1036</span> Cities</p>
+                                    </div>
+                                    <div class="ht-title">
+                                        <h2>Leave your mark on all over the world.</h2>
+                                    </div>
+                                    <div class="ht-rmore-btn">
+                                        <a href="#" class="btn-style-b">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-maps">
+            <div id="gmap" class="gmap-wrapper"></div>
+        </div>
+    </section>
+
       <section id="blog-post3" class="blog-postV3 section-padding bg-dark-blue">
         <div class="container">
             <div class="row">
