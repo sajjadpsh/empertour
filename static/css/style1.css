@@ -1197,13 +1197,12 @@ button {}
 }
 
 .stat-meta p:before {
+    position: absolute;
     content: '';
     background-color: #ff7050;
     height: 100%;
     width: 3px;
     left: -20px;
-    direction: rtl;
-    text-align: right;
 }
 
 .stat-text a h4 {
@@ -1232,11 +1231,11 @@ button {}
 }
 
 .stat-location-comment ul li:first-child {
-    text-align: right;
+    text-align: left;
 }
 
 .stat-location-comment ul li:last-child {
-    text-align: left;
+    text-align: right;
 }
 
 .slocation a {
@@ -1942,9 +1941,7 @@ ul.fc-social li a i {
 /* 3.3 Most Popular Travel Stories V2 */
 
 .stat-v2 .stat-meta p:before {
-    background-color: #040f80;
-    direction: rtl;
-    text-align: left;
+    background-color: #00af80;
 }
 
 .stat-v2 .stat-meta p {

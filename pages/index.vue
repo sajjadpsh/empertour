@@ -9,13 +9,13 @@
                             <div class="col-md-12">
                                 <div class="hero-text">
                                     <div class="ht-counter-area">
-                                        <p>THE COUNTER: <span class="counter-up">70</span> Countries <span class="counter-up">1036</span> Cities</p>
+                                        <p>یه عددی از  <span class="counter-up">70</span> عدد از <span class="counter-up">1036</span> شهر ها چرت و پرنت</p>
                                     </div>
                                     <div class="ht-title">
-                                        <h2>Leave your mark on all over the world.</h2>
+                                        <h2>بیان از امپراتور استفاده کنید به خدا از همه بهتره</h2>
                                     </div>
                                     <div class="ht-rmore-btn">
-                                        <a href="#" class="btn-style-b">Read More</a>
+                                        <a href="#" class="btn-style-b">مطالب بیشتر</a>
                                     </div>
                                 </div>
                             </div>
@@ -48,10 +48,10 @@
                             <div class="stat-location-comment">
                                 <ul>
                                     <li class="slocation">
-                                        <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>تهران، ایران</a>
+                                        <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> تهران، ایران </a>
                                     </li>
                                     <li class="slocation">
-                                        <a href="#"><i class="fa fa-comments" aria-hidden="true"></i>نظرات <span>(25)</span></a>
+                                        <a href="#"><i class="fa fa-comments" aria-hidden="true"></i> نظرات <span>(25)</span></a>
                                     </li>
                                 </ul>
                             </div>
@@ -65,18 +65,18 @@
                         </div>
                         <div class="stat-text">
                             <div class="stat-meta">
-                                <p><span class="sm-date">30 بهمن</span> - <span class="sm-category">دسته بندی مربوط</span></p>
+                                <p><span class="sm-date"> 30 بهمن </span> - <span class="sm-category">دسته بندی مربوط</span></p>
                             </div>
                             <a href="#">
                                 <h4>سید سجاد پیشوایان</h4>
                             </a>
                             <div class="stat-location-comment">
                                 <ul>
-                                    <li class="slocation">
-                                        <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>مشهد</a>
+                                    <li class="slocation city">
+                                        <a href="#" class=""><i class="fa fa-map-marker " aria-hidden="true"></i> مشهد </a>
                                     </li>
                                     <li class="slocation">
-                                        <a href="#"><i class="fa fa-comments" aria-hidden="true"></i>نظر <span>(25)</span></a>
+                                        <a href="#"><i class="fa fa-comments" aria-hidden="true"></i> نظر <span>(25)</span></a>
                                     </li>
                                 </ul>
                             </div>
@@ -90,18 +90,19 @@
                         </div>
                         <div class="stat-text">
                             <div class="stat-meta">
-                                <p><span class="sm-date">September 17, 2018</span> - <span class="sm-category">Tips & Tricks</span></p>
+                                <p><span class="sm-date"> آبان 1398 </span> - <span class="sm-category"> دسته بندی 
+                                    </span></p>
                             </div>
                             <a href="#">
-                                <h4>سی سیز سیزر سسیرسس </h4>
+                                <h4>سامی سامی سامی </h4>
                             </a>
                             <div class="stat-location-comment">
                                 <ul>
                                     <li class="slocation">
-                                        <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>Georgia</a>
+                                        <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> تهران </a>
                                     </li>
                                     <li class="slocation">
-                                        <a href="#"><i class="fa fa-comments" aria-hidden="true"></i>Comment <span>(25)</span></a>
+                                        <a href="#"><i class="fa fa-comments" aria-hidden="true"></i> نظرات <span>(20)</span></a>
                                     </li>
                                 </ul>
                             </div>
@@ -115,31 +116,42 @@
                         </div>
                         <div class="stat-text">
                             <div class="stat-meta">
-                                <p><span class="sm-date">September 19, 2018</span> - <span class="sm-category">Tips & Tricks</span></p>
+                                <p><span class="sm-date">5 بهمن 1398 </span> - <span class="sm-category"> دسته بندی </span></p>
                             </div>
                             <a href="#">
-                                <h4>محمد باقر اینا</h4>
+                                <h4> محمد باقریب اینا </h4>
                             </a>
                             <div class="stat-location-comment">
                                 <ul>
                                     <li class="slocation">
-                                        <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>شیراز</a>
+                                        <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i> شیراز </a>
                                     </li>
                                     <li class="slocation">
-                                        <a href="#"><i class="fa fa-comments" aria-hidden="true"></i>نظرات <span>(25)</span></a>
+                                        <a href="#">
+                                            <i class="fa fa-comments" aria-hidden="true">
+                                                </i> نظرات <span>(25)</span>
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                
             </div>
-            
         </div>
     </section>
   </div>
 </template>
+
+
+
+<style scoped>
+    .city{
+   color: aqua;
+        
+    }
+</style>
+
 
 <script>
 

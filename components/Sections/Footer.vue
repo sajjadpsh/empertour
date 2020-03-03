@@ -21,10 +21,10 @@
                                 <div class="fw-single footer-contact">
                                     <h4>ارتباط با ما</h4>
                                     <ul class="fws">
-                                        <li><span>Add:</span> 221B Baker St <br>London, NW1 6XE <br>UK</li>
-                                        <li><span>T:</span> +010 222 9999</li>
-                                        <li><span>E:</span> info@footsteps.com</li>
-                                        <li><span>W:</span> www.footsteps.com</li>
+                                        <li><span>نشانی:</span> متاسفانه ایران <br>تهران  <br>خیابون حافط</li>
+                                        <li><span>تلفن:</span>09367405960</li>
+                                        <li><span>پست الکترونیک:</span> a.varaste.n@gmail.com</li>
+                                        <li><span>تارنما:</span> www.empertour.com</li>
                                     </ul>
                                 </div>
                             </div>
@@ -32,11 +32,11 @@
                                 <div class="fw-single footer-links">
                                     <h4>حساب</h4>
                                     <ul class="fws">
-                                        <li><a href="#">My Lists</a></li>
-                                        <li><a href="#">My Requests</a></li>
-                                        <li><a href="#">My Credits</a></li>
-                                        <li><a href="#">My Info</a></li>
-                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="#">لیست های من</a></li>
+                                        <li><a href="#">درخواست های من</a></li>
+                                        <li><a href="#">اعتبارات من</a></li>
+                                        <li><a href="#">سرخی من</a></li>
+                                        <li><a href="#">زردی تو!</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -44,11 +44,11 @@
                                 <div class="fw-single">
                                     <h4>سفر</h4>
                                     <ul class="fws footer-links">
-                                        <li><a href="#">Travel</a></li>
-                                        <li><a href="#">Why Travel</a></li>
-                                        <li><a href="#">Become a Traveler</a></li>
+                                        <li><a href="#">خود سفر</a></li>
+                                        <li><a href="#">سفر های من</a></li>
+                                        <li><a href="#">سفر در اوج بیماری</a></li>
                                         <li><a href="#">چیزای دیگه</a></li>
-                                        <li><a href="#">Traveling FAQs</a></li>
+                                        <li><a href="#">سفر کنیم تا بقیه رو</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -57,10 +57,23 @@
                 </div>
             </div>
         </div>
-        <div class="footer-copyright">
+        <div class="footer-copyright" style="direction: ltr;
+        text-align: left;">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
+                <div class="row copyCont">
+                    <div class="col-md-6 copyCont ">
+                        <div class="fc-right ">
+                            <ul>
+                                <li>
+                                    <p>آریا وارسته نژاد این رو تست میکنه</p>
+                                </li>
+                                <li><a href="#">قانونام</a></li>
+                                <li><a href="#">و چیزای دیگه</a></li>
+                                <li><a href="#">بفرمااینم نقشه </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 soCont">
                         <div class="fc-left">
                             <ul class="fc-social">
                                 <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -70,18 +83,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="fc-right">
-                            <ul>
-                                <li>
-                                    <p>© همه حق ها مال خودمه</p>
-                                </li>
-                                <li><a href="#">قانونام</a></li>
-                                <li><a href="#">و چیزای دیگه</a></li>
-                                <li><a href="#">Site Map</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -97,3 +99,15 @@ export default {
 }
 </script>
 
+<style scoped>
+    .footer-copyright{
+      
+    }
+    .copyCont{
+        text-align: left;
+        direction: ltr;
+    }
+    .soCont{
+        text-align: right
+    }
+</style>

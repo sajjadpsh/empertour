@@ -139,65 +139,56 @@ module.exports = {
     ],
 
     build: {
-        // vendor: ["jquery", "bootstrap", 'jquery-ui'],
-        // plugins: [
-        //     new webpack.ProvidePlugin({
-        //         $: 'jquery',
-        //         jQuery: 'jquery',
-        //         'window.jQuery': 'jquery',
-        //         '_': 'lodash'
-        //     })
-        // ],
-
         extend(config) {
             const rule = config.module.rules.find(r => r.test.toString() === '/\\.(png|jpe?g|gif|svg|webp)$/i')
             config.module.rules.splice(config.module.rules.indexOf(rule), 1)
-                // if (isDev && isClient) {
             config.module.rules.push({
-                    test: /\.md$/,
-                    loader: 'frontmatter-markdown-loader',
-                    include: path.resolve(__dirname, 'contents'),
-                    options: {
-                        mode: [Mode.VUE_RENDER_FUNCTIONS, Mode.VUE_COMPONENT],
-                        vue: {
-                            root: "dynamicMarkdown"
-                        },
-                        markdown(body) {
-                            return md.render(body)
-                        }
+                test: /\.md$/,
+                loader: 'frontmatter-markdown-loader',
+                include: path.resolve(__dirname, 'contents'),
+                options: {
+                    mode: [Mode.VUE_RENDER_FUNCTIONS, Mode.VUE_COMPONENT],
+                    vue: {
+                        root: "dynamicMarkdown"
+                    },
+                    markdown(body) {
+                        return md.render(body)
                     }
-                }, {
-                    test: /\.(jpe?g|png)$/i,
-                    loader: 'responsive-loader',
-                    options: {
-                        placeholder: true,
-                        quality: 60,
-                        size: 1400,
-                        adapter: require('responsive-loader/sharp')
-                    }
-                }, {
-                    test: /\.(gif|svg)$/,
-                    loader: 'url-loader',
-                    query: {
-                        limit: 1000,
-                        name: 'img/[name].[hash:7].[ext]'
-                    }
-                },
-                // {
-                //     enforce: "pre",
-                //     test: /\.(js|vue)$/,
-                //     loader: "eslint-loader",
-                //     exclude: /(node_modules)/
-                // }
-            );
-            // }
+                }
+            }, {
+                test: /\.(jpe?g|png)$/i,
+                loader: 'responsive-loader',
+                options: {
+                    placeholder: true,
+                    quality: 60,
+                    size: 1400,
+                    adapter: require('responsive-loader/sharp')
+                }
+            }, {
+                test: /\.(gif|svg)$/,
+                loader: 'url-loader',
+                query: {
+                    limit: 1000,
+                    name: 'img/[name].[hash:7].[ext]'
+                }
+            }, );
         }
     },
 
     modules: [
         '@nuxtjs/style-resources', ['nuxt-i18n', I18N],
-        'nuxt-webfontloader'
+        'nuxt-webfontloader',
+        '@nuxtjs/axios',
+        '@nuxtjs/auth'
     ],
+
+    auth: {
+        // Options
+    },
+
+    // router: {
+    //     middleware: ['auth']
+    // },
 
     styleResources: {
         scss: [

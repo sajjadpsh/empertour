@@ -8,6 +8,8 @@
     "npm": ">=5.0.0"
   },
   "dependencies": {
+    "@nuxtjs/auth": "^4.8.5",
+    "@nuxtjs/axios": "^5.9.5",
     "@nuxtjs/style-resources": "^1.0.0",
     "bootstrap": "^4.4.1",
     "carousel": "0.0.3",
