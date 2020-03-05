@@ -1,7 +1,5 @@
 <template>
-  <div class="row">
-    <div class="col-md-4" v-for="post in posts" :key="post.id" :post="posts">
-      <div class="single-tat stat-v2">
+    <div class="single-tat stat-v2 stat-fullwidth">
         <div class="stat-img">
           <img src="/img/blog/tat-2.png" alt />
         </div>
@@ -27,34 +25,14 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
 </template>
 
-<script lang="js">
-
-import axios from "axios";
-
-  export default {
-    mounted: function() {
-    return axios
-      .get("http://localhost:3000/test.json")
-      .then(res => {
-        this.posts = res.data.slice(1, 4);
-      })
-      .catch(e => {
-        console.log(e);
-      });
-  },
-  data: function() {
-    return {
-      posts: []
-    };
-  },
+<script>
+export default {
     props: {
       post: {
         type: Object
       }
     }
-  }
+}
 </script>
