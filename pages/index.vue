@@ -32,10 +32,9 @@
         <div id="gmap" class="gmap-wrapper"></div>
       </div>
     </section>
-
     <section id="blog-post3" class="blog-postV3 section-padding bg-dark-blue">
       <div class="container">
-        <BlogSection :posts="posts" />
+        <BlogSection/>
       </div>
     </section>
   </div>

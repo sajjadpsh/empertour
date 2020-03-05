@@ -1,9 +1,8 @@
 <template>
-    <div class="row">
-      <FullPost />
-      <OneThirdPost
-      />
-    </div>
+  <div class="row">
+    <FullPost />
+    <OneThirdPost/>
+  </div>
 </template>
 <script>
 // import postCard from "~/components/postCard.vue";
@@ -13,11 +12,16 @@ import OneThirdPost from "~/components/OneThirdPost.vue";
 
 export default {
   components: { FullPost, OneThirdPost },
-  props: {
-    posts: {
-      type: Array
-    }
-  }
+  // data: function() {
+  //   return {
+  //     posts: []
+  //   };
+  // },
+  // props: {
+  //   posts: {
+  //     type: Array
+  //   }
+  // }
 };
 </script>
 
