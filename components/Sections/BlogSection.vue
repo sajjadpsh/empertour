@@ -1,49 +1,23 @@
 <template>
-  <section>
-    <div class="blogs__top">
-      <div>
-        <h2>{{ $t('posts') }}</h2>
-        <span class="emoji-title emoji--writing"/>
-      </div>
-      <LangSwitcher/>
+    <div class="row">
+      <FullPost />
+      <OneThirdPost
+      />
     </div>
-    <ul class="blogs">
-      <blog-card
-        v-for="blog in blogs"
-        :key="blog.name"
-        :blog="blog" />
-    </ul>
-  </section>
 </template>
 <script>
-import BlogCard from "~/components/BlogCard.vue";
-import LangSwitcher from '~/components/LangSwitcher'
+// import postCard from "~/components/postCard.vue";
+// import LangSwitcher from "~/components/LangSwitcher";
+import FullPost from "~/components/FullPost.vue";
+import OneThirdPost from "~/components/OneThirdPost.vue";
 
 export default {
-  components: { BlogCard, LangSwitcher },
+  components: { FullPost, OneThirdPost },
   props: {
-    blogs: {
+    posts: {
       type: Array
     }
   }
-}
+};
 </script>
-<style lang="scss">
-.blogs {
-  margin: 0;
-  
-  @media (min-width: $screen-sm){
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 50px;
-    display: grid;
-  }
-
-  &__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 4rem;
-  }
-}
-</style>
 

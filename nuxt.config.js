@@ -1,6 +1,5 @@
 const builtAt = new Date().toISOString()
 const path = require('path')
-const webpack = require('webpack')
 
 const { I18N } = require('./locales/i18n-nuxt-config')
 import fs from 'fs'
@@ -26,7 +25,7 @@ const productionUrl = {
     en: "/en",
     es: "/es"
 };
-const baseUrl = 'https://marinaaisa.com';
+const baseUrl = 'https://localhost:3000';
 
 module.exports = {
     env: {
@@ -102,13 +101,16 @@ module.exports = {
         ],
     },
     script: [
-        { src: 'js/jquery-3.2.0.min.js', type: "text/javascript" },
+        // { src: 'js/jquery-3.2.0.min.js', type: "text/javascript" },
+        { src: 'https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' },
+        { src: 'https://code.jquery.com/jquery-3.4.1.slim.min.js' },
         { src: 'js/jquery-ui.js', type: "text/javascript" },
         { src: 'js/owl.carousel.min.js', type: "text/javascript" },
         { src: 'js/jquery.counterup.min.js', type: "text/javascript" },
         { src: 'js/jquery.scrollUp.js', type: "text/javascript" },
         { src: 'js/jquery.waypoints.min.js', type: "text/javascript" },
-        { src: 'js/bootstrap.min.js', type: "text/javascript" },
+        // { src: 'js/bootstrap.min.js', type: "text/javascript" },
+        { src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js' },
         { src: 'js/theme.js', type: "text/javascript" },
         { src: 'js/gmaps.js', type: "text/javascript" },
     ],
@@ -134,6 +136,7 @@ module.exports = {
             ssr: false
         },
         "~plugins/bootstrap.js",
+        '~/plugins/axios'
         // { src: '~plugins/jquery-3.2.0.min.js', ssr: false },
         // "~plugins/owl.carousel.min.js"
     ],
@@ -177,13 +180,16 @@ module.exports = {
 
     modules: [
         '@nuxtjs/style-resources', ['nuxt-i18n', I18N],
-        'nuxt-webfontloader',
-        '@nuxtjs/axios',
+        'nuxt-webfontloader', ['@nuxtjs/axios', { debug: true }],
         '@nuxtjs/auth'
     ],
 
     auth: {
         // Options
+    },
+
+    axios: {
+        // proxyHeaders: false
     },
 
     // router: {

@@ -1,0 +1,55 @@
+[{
+        "content": "content1",
+        "title": "title1",
+        "postedAt": "2020/03/01",
+        "comments": [{
+            "authorName": "Mohammad Sami",
+            "authorEmail": "samimd.77@gmail.com",
+            "content": "this is a comment on a post",
+            "dateSubmitted": "2020-03-01T21:26:24.35Z",
+            "verified": false
+        }],
+        "likes": 0,
+        "views": 0,
+        "authorId": "5b9172edd1c0366c44105e76",
+        "tags": [],
+        "category": "some category",
+        "id": "5e5c253c70e09d40fc8e91a1"
+    },
+    {
+        "content": "content2",
+        "title": "title2",
+        "postedAt": "2020-03-01T21:12:24.372Z",
+        "comments": [],
+        "likes": 0,
+        "views": 0,
+        "authorId": "5b9172edd1c0366c44105e76",
+        "tags": [],
+        "category": "some category",
+        "id": "5e5c253870e09d40fc8e91a0"
+    },
+    {
+        "content": "content3",
+        "title": "title3",
+        "postedAt": "2020-03-01T21:12:19.893Z",
+        "comments": [],
+        "likes": 0,
+        "views": 0,
+        "authorId": "5b9172edd1c0366c44105e76",
+        "tags": [],
+        "category": "some category",
+        "id": "5e5c253370e09d40fc8e919f"
+    },
+    {
+        "content": "this is blog post content",
+        "title": "this is post title",
+        "postedAt": "2020-03-01T21:11:07.363Z",
+        "comments": [],
+        "likes": 0,
+        "views": 0,
+        "authorId": "5b9172edd1c0366c44105e76",
+        "tags": [],
+        "category": "some category",
+        "id": "5e5c24ef70e09d40fc8e919e"
+    }
+]
