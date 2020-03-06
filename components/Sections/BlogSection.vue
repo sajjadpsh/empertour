@@ -1,19 +1,18 @@
 <template>
   <div class="row">
-    <div class="col-md-12" v-for="(post,index) in firstPost" :key="index">
-      <PostArea :post="post"/>
+    <div class="col-md-12" v-for="post in firstPost" :key="post.id">
+      <PostCard :post="post" />
     </div>
-    <div class="col-md-4" v-for="(post,index) in posts" :key="index">
-      <PostArea :post="post"/>
+    <div class="col-md-4" v-for="post in posts" :key="post.id">
+      <PostCard :post="post" />
     </div>
   </div>
 </template>
 <script>
-
-import PostArea from "~/components/PostArea.vue";
-import axios from 'axios'
+import PostCard from "~/components/PostCard.vue";
+import axios from "axios";
 export default {
-  components: { PostArea },
+  components: { PostCard },
   mounted: function() {
     return axios
       .get("http://localhost:3000/test.json")
@@ -28,16 +27,8 @@ export default {
   data: function() {
     return {
       posts: [],
-      firstPost:[]
+      firstPost: []
     };
-  },
-  props: {
-    posts: {
-      type: Array
-    },
-    firstPost:{
-      type: Array
-    }
   }
 };
 </script>

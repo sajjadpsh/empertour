@@ -10,7 +10,7 @@
               <span class="sm-category">{{post.category}}</span>
             </p>
           </div>
-          <nuxt-link :to="localePath({ name: 'dest', params: { slug: post.id }})">
+          <nuxt-link :to="localePath({ name: 'post-id', params: { id: post.id }})">
             <h4>{{post.title}}</h4>
           </nuxt-link>
           <p style="font-family: BYekan, 'BYekan', tahoma;">{{post.content}}</p>
