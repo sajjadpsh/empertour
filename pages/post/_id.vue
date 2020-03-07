@@ -135,7 +135,7 @@
                   </div>
                 </div>
               </div>
-              <p class="elevate-cover__description">{{ description }}</p>
+              <!-- <p class="elevate-cover__description">{{ description }}</p> -->
             </div>
           </div>
         </div>

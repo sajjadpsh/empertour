@@ -13,7 +13,7 @@
           <nuxt-link :to="localePath({ name: 'post-id', params: { id: post.id }})">
             <h4>{{post.title}}</h4>
           </nuxt-link>
-          <p style="font-family: BYekan, 'BYekan', tahoma;">{{post.content}}</p>
+          <!-- <p style="font-family: BYekan, 'BYekan', tahoma;">{{post.content}}</p> -->
           <div class="stat-location-comment">
             <ul>
               <li class="slocation city">

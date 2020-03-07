@@ -149,25 +149,32 @@
 // import axios from '@nuxtjs/axios'
 
 // export default {
-//     async asyncData ({params, app}) {
-//       const dataobject = await axios.get('localhost:3000/posts')
+// async asyncData ({params, app}) {
+//       const fileContent = await import(`~/contents/${app.i18n.locale}/blog/${params.slug}.md`)
+//       const attr = fileContent.attributes
 //       return {
 //         name: params.slug,
-//         title: dataobject.title,
-//         trans: dataobject.trans,
-//         year: dataobject.year,
-//         id: dataobject.id,
-//         cardAlt: dataobject.cardAlt,
-//         noMainImage: dataobject.noMainImage,
-//         description: dataobject.description,
-//         extraComponent: dataobject.extraComponent,
-//         renderFunc: `(${dataobject.vue.render})`,
-//         staticRenderFuncs: `[${dataobject.vue.staticRenderFns}]`,
+//         title: attr.title,
+//         trans: attr.trans,
+//         year: attr.year,
+//         id: attr.id,
+//         cardAlt: attr.cardAlt,
+//         noMainImage: attr.noMainImage,
+//         description: attr.description,
+//         extraComponent: attr.extraComponent,
+//         renderFunc: `(${fileContent.vue.render})`,
+//         staticRenderFuncs: `[${fileContent.vue.staticRenderFns}]`,
 //         image: {
-//           main: dataobject.image && dataobject.image.main,
-//           og: dataobject.image && dataobject.image.og
+//           main: attr.image && attr.image.main,
+//           og: attr.image && attr.image.og
 //         }
 //       }
 //     },
+
+//     nuxtI18n: {
+//       seo: false
+//     },
+
+//     components: { DynamicMarkdown},
 // }
 </script>

@@ -25,7 +25,7 @@ const productionUrl = {
     en: "/en",
     es: "/es"
 };
-const baseUrl = 'https://localhost:3000';
+const baseUrl = 'http://blogapi.empertour.ir';
 
 module.exports = {
     env: {
@@ -189,7 +189,8 @@ module.exports = {
     },
 
     axios: {
-        // proxyHeaders: false
+        proxyHeaders: false
+            // proxy: 'http://localhost:3000'
     },
 
     // router: {
