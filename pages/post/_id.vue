@@ -1,53 +1,54 @@
 <template>
-  <div class="blogSelected">
-    <div class="intro">
-      <div class="elevate-cover">
-        <div class="elevate-cover__textOffset">
-          <div class="elevate-cover__left">
-            <nuxt-link :to="localePath('index')">
-              {{ $t('comeBack') }}
-            </nuxt-link>
-          </div>
-          <div class="elevate-cover__left">
-            <span class="blogSelected-year">{{ year }}</span>
-            —
-            <!-- <template v-if="trans">
-              <nuxt-link
-                v-for="(locale, i) in showLocales"
-                :key="i"
-                :to="`${locale.code == 'en' ? '' : '/' + locale.code}/blog/${trans}`"
-              >
-                  {{ $t('changeLanguagePost') }}
-              </nuxt-link>
-            </template> -->
-            <!-- <span v-else>{{ $t('soonLanguagePost') }}</span> -->
-            <h1 class="elevate-cover__title">
-              {{ title }}
-            </h1>
-            <p class="elevate-cover__description">{{ description }}</p>
+  <div>
+    <section class="innerpage-title-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="innerpage-titile">
+              <h2>خلاصه</h2>
+            </div>
           </div>
         </div>
-        <!-- <ImageResponsive
-          :imageURL="'blog/' + id + '/_main.jpg'"
-          v-if="!noMainImage"
-          width="100%"
-          class="elevate-cover__img"
-          :alt="'Blog picture'" /> -->
-        <!-- <component
-          v-else
-          class="elevate-cover__img"
-          :is="extraComponentLoader"
-        /> -->
       </div>
-    </div>
-    <div class="container small">
-      <client-only>
-        <DynamicMarkdown
-          :render-func="renderFunc"
-          :static-render-funcs="staticRenderFuncs"
-          :extra-component="extraComponent" />
-      </client-only>
-    </div>
+    </section>
+    <section class="destination-overview-area section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="destination-details-content">
+              <nuxt-link :to="localePath('index')">{{ $t('comeBack') }}</nuxt-link>
+              <div class="ddc-title">
+                <h4>تایتل</h4>
+              </div>
+              <div class="ddc-meta">
+                <p>
+                  <span class="sm-date">تاریخ</span> -
+                  <span class="sm-category">کتگوری</span>
+                </p>
+              </div>
+              <!-- <ImageResponsive
+                :imageURL="'blog/' + id + '/_main.jpg'"
+                v-if="!noMainImage"
+                width="100%"
+                class="elevate-cover__img"
+                :alt="'Blog picture'"
+              />-->
+              <!-- <component class="elevate-cover__img" :is="extraComponentLoader" /> -->
+              <div class="container small" v-for="item in firstpost" :key="item.id">
+                <p>{{item.content}}</p>
+                <!-- <client-only>
+                  <DynamicMarkdown
+                    :render-func="renderFunc"
+                    :static-render-funcs="staticRenderFuncs"
+                    :extra-component="extraComponent"
+                  />
+                </client-only>-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -58,87 +59,41 @@
 
   export default {
 
-    async asyncData ({params, app}) {
-      const fileContent = await import(`~/contents/fa/${params.id}.md`)
-      const attr = fileContent.attributes
-      return {
-        name: params.id,
-        title: attr.title,
-        trans: attr.trans,
-        year: attr.year,
-        id: attr.id,
-        cardAlt: attr.cardAlt,
-        noMainImage: attr.noMainImage,
-        description: attr.description,
-        extraComponent: attr.extraComponent,
-        renderFunc: `(${fileContent.vue.render})`,
-        staticRenderFuncs: `[${fileContent.vue.staticRenderFns}]`,
-        image: {
-          main: attr.image && attr.image.main,
-          og: attr.image && attr.image.og
+    mounted: function() {
+    return (
+      this.$axios
+        .get("http://localhost:3000/test.json",{
+        // .get("http://blogapi.empertour.ir/post?skip=0&limit=-1", {
+          headers: { "Access-Control-Allow-Origin": "" }
+        })
+        .then(res => {
+          this.firstpost = res.data;
+          // this.extraComponent= res.data.extraComponent,
+          // this.renderFunc= `(${res.data.vue.render})`,
+          // this.staticRenderFuncs= `[${res.data.vue.staticRenderFns}]`,
+          }
+        )
+        .catch(e => {
+          // console.log(e);
+        })
+    )
+  },
+data: function() {
+    return {
+      firstpost: []
+    };
+  },
+  extraComponentLoader () {
+        if (!this.extraComponent) {
+          return null
         }
-      }
-    },
-
-    nuxtI18n: {
-      seo: false
-    },
+        return () => import(`~/components/blog/${this.extraComponent}.vue`)
+      },
 
     components: { DynamicMarkdown},
 
-    // head () {
-    //   return {
-    //     title: this.pageTitle,
-    //     htmlAttrs: {
-    //       lang: this.$i18n.locale,
-    //     },
-    //     meta: [
-    //       { name: "author", content: "Marina Aisa" },
-    //       { name: "description", property: "og:description", content: this.description, hid: "description" },
-    //       { property: "og:title", content: this.pageTitle },
-    //       { property: "og:image", content: this.ogImage },
-    //       { name: "twitter:description", content: this.description },
-    //       { name: "twitter:image", content: this.ogImage }
-    //     ],
-    //     link: [
-    //       this.hreflang
-    //     ]
-    //   };
-    // },
 
-    // transition: {
-    //   name: 'slide-fade'
-    // },
-
-    // computed: {
-    //   ogImage () {
-    //     return `${process.env.baseUrl}/images/blog/${this.id}/_thumbnail.jpg`;
-    //   },
-    //   pageTitle () {
-    //     return this.title + ' – Marina Aisa';
-    //   },
-    //   showLocales () {
-    //     return this.$i18n.locales.filter(locale => locale.code !== this.$i18n.locale)
-    //   },
-    //   hreflang () {
-    //     if (!this.trans) {
-    //       return ''
-    //     }
-    //     return {
-    //       hid: 'alternate-hreflang-' + this.showLocales[0].iso,
-    //       rel: 'alternate',
-    //       href: `${process.env.baseUrl + (this.showLocales[0].code === 'en' ? '' : '/es')}/blog/${this.trans}`,
-    //       hreflang: this.showLocales[0].code
-    //     }
-    //   },
-
-    //   extraComponentLoader () {
-    //     if (!this.extraComponent) {
-    //       return null
-    //     }
-    //     return () => import(`~/components/blog/${this.extraComponent}.vue`)
-    //   }
-    // }
+      
   }
 </script>
 
@@ -149,18 +104,18 @@
 .blogSelected-horizontalImage {
   height: 56rem;
   background-size: contain;
-  transition: all ease .35s;
+  transition: all ease 0.35s;
   opacity: 0;
 
-  &[lazy='loading'] {
+  &[lazy="loading"] {
     filter: blur(15px);
-    background-repeat: no-repeat!important;
-    background-size: contain!important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
   }
-  &[lazy='loaded'] {
+  &[lazy="loaded"] {
     opacity: 1;
-    background-repeat: no-repeat!important;
-    background-size: contain!important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
   }
   .intro {
     display: flex;
@@ -171,11 +126,12 @@
   flex-direction: column;
   min-height: 459px;
 
-  @media (min-width: $screen-md){
+  @media (min-width: $screen-md) {
     flex-direction: row;
   }
 
-  &__img, &__textOffset {
+  &__img,
+  &__textOffset {
     width: 100%;
   }
 
@@ -185,7 +141,7 @@
     padding: 2.4rem;
     margin-bottom: auto;
 
-    @media (min-width: $screen-md){
+    @media (min-width: $screen-md) {
       margin-left: auto;
       padding: 2.4rem 4rem 2.4rem 2.4rem;
     }
@@ -199,10 +155,10 @@
 
   &__title {
     font-size: 3rem;
-    font-family: 'Tiempos Headline', Arial, sans-serif;
+    font-family: "Tiempos Headline", Arial, sans-serif;
     color: $secondary;
 
-    @media (min-width: $screen-sm){
+    @media (min-width: $screen-sm) {
       font-size: 4rem;
     }
   }
@@ -210,8 +166,8 @@
   &__description {
     margin: 0;
     opacity: 0;
-    animation: fadeinmove .5s ease;
-    animation-delay: .5s;
+    animation: fadeinmove 0.5s ease;
+    animation-delay: 0.5s;
     animation-fill-mode: forwards;
   }
 }
@@ -228,7 +184,7 @@
     display: block;
   }
 
-  @media (min-width: $screen-sm){
+  @media (min-width: $screen-sm) {
     padding: 7.2rem 0;
     font-size: 19px;
   }
@@ -237,7 +193,7 @@
     padding-bottom: 3.2rem;
     padding-bottom: 2rem;
 
-    @media (max-width: $screen-sm){
+    @media (max-width: $screen-sm) {
       font-size: 2rem;
     }
   }
@@ -271,9 +227,9 @@
     display: inline;
     color: $secondary;
     font-size: 14px;
-    padding: .2em .4em;
+    padding: 0.2em 0.4em;
 
-    @media (min-width: $screen-sm){
+    @media (min-width: $screen-sm) {
       font-size: 16px;
     }
   }

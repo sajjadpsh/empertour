@@ -25,11 +25,11 @@ const productionUrl = {
     en: "/en",
     es: "/es"
 };
-const baseUrl = 'http://localhost:3000';
+// const baseUrl = 'http://blogapi.empertour.ir';
 
 module.exports = {
     env: {
-        baseUrl,
+        // baseUrl,
         productionUrl
     },
     head: {
@@ -190,21 +190,22 @@ module.exports = {
 
     axios: {
         // debug: process.env.NODE_ENV !== 'productionUrl',
-        baseURL: 'http://blogapi.empertour.ir',
+        // baseURL: 'http://blogapi.empertour.ir',
         // browserBaseURL: process.env.NODE_ENV === 'production' ? 'http://blogapi.empertour.ir' : 'http://localhost:3000',
-        credentials: false,
-        proxyHeaders: false,
-        init(axios, ctx) {
-            axios.defaults.xsrfHeaderName = 'X-CSRF-TOKEN'
-        }
+        // credentials: false,
+        // proxyHeaders: false,
+        // proxy: true,
+        // init(axios, ctx) {
+        //     axios.defaults.xsrfHeaderName = 'X-CSRF-TOKEN'
+        // }
     },
-    // proxy: {
-    //     '/api': {
-    //         target: 'http://blogapi.empertour.ir',
-    //         pathRewrite: { '^ / api /': '' },
-    //         changeOrigin: true
-    //     }
-    // },
+    proxy: {
+        // '/post?skip=0&limit=-1': {
+        //     target: 'http://blogapi.empertour.ir',
+        //     pathRewrite: { '^ / post?skip=0&limit=-1 /': '/' },
+        //     changeOrigin: true
+        // }
+    },
 
     // router: {
     //     middleware: ['auth']
