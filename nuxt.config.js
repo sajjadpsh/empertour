@@ -25,7 +25,7 @@ const productionUrl = {
     en: "/en",
     es: "/es"
 };
-const baseUrl = 'http://blogapi.empertour.ir';
+const baseUrl = 'http://localhost:3000';
 
 module.exports = {
     env: {
@@ -181,7 +181,7 @@ module.exports = {
     modules: [
         '@nuxtjs/style-resources', ['nuxt-i18n', I18N],
         'nuxt-webfontloader', ['@nuxtjs/axios', { debug: true }],
-        '@nuxtjs/auth'
+        '@nuxtjs/auth', '@nuxtjs/proxy'
     ],
 
     auth: {
@@ -189,9 +189,22 @@ module.exports = {
     },
 
     axios: {
-        proxyHeaders: false
-            // proxy: 'http://localhost:3000'
+        // debug: process.env.NODE_ENV !== 'productionUrl',
+        baseURL: 'http://blogapi.empertour.ir',
+        // browserBaseURL: process.env.NODE_ENV === 'production' ? 'http://blogapi.empertour.ir' : 'http://localhost:3000',
+        credentials: false,
+        proxyHeaders: false,
+        init(axios, ctx) {
+            axios.defaults.xsrfHeaderName = 'X-CSRF-TOKEN'
+        }
     },
+    // proxy: {
+    //     '/api': {
+    //         target: 'http://blogapi.empertour.ir',
+    //         pathRewrite: { '^ / api /': '' },
+    //         changeOrigin: true
+    //     }
+    // },
 
     // router: {
     //     middleware: ['auth']

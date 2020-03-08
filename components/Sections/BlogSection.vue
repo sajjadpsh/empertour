@@ -11,14 +11,18 @@
 <script>
 import PostCard from "~/components/PostCard.vue";
 import axios from "@nuxtjs/axios";
+// import axios from "axios";
+
 export default {
   components: { PostCard },
 
   mounted: function() {
     return (
       this.$axios
-        // .get("http://localhost:3000/test.json")
-        .get("http://blogapi.empertour.ir/post?skip=0&limit=-1")
+        .get("http://localhost:3000/test.json",{
+        // .get('http://blogapi.empertour.ir/post?skip=0&limit=1',{
+          headers: { 'Access-Control-Allow-Origin': true },
+        })
         .then(res => {
           // this.firstpost = res.data.slice(0, 1);
           this.posts = res.data;

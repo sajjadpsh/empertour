@@ -1,146 +1,281 @@
 <template>
-  <div>
-    <section class="innerpage-title-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="innerpage-titile">
-              <h2>خلاصه</h2>
-            </div>
+  <div class="blogSelected">
+    <div class="intro">
+      <div class="elevate-cover">
+        <div class="elevate-cover__textOffset">
+          <div class="elevate-cover__left">
+            <nuxt-link :to="localePath('index')">
+              {{ $t('comeBack') }}
+            </nuxt-link>
+          </div>
+          <div class="elevate-cover__left">
+            <span class="blogSelected-year">{{ year }}</span>
+            —
+            <!-- <template v-if="trans">
+              <nuxt-link
+                v-for="(locale, i) in showLocales"
+                :key="i"
+                :to="`${locale.code == 'en' ? '' : '/' + locale.code}/blog/${trans}`"
+              >
+                  {{ $t('changeLanguagePost') }}
+              </nuxt-link>
+            </template> -->
+            <!-- <span v-else>{{ $t('soonLanguagePost') }}</span> -->
+            <h1 class="elevate-cover__title">
+              {{ title }}
+            </h1>
+            <p class="elevate-cover__description">{{ description }}</p>
           </div>
         </div>
+        <!-- <ImageResponsive
+          :imageURL="'blog/' + id + '/_main.jpg'"
+          v-if="!noMainImage"
+          width="100%"
+          class="elevate-cover__img"
+          :alt="'Blog picture'" /> -->
+        <!-- <component
+          v-else
+          class="elevate-cover__img"
+          :is="extraComponentLoader"
+        /> -->
       </div>
-    </section>
-    <!-- /Innerpage Title Area -->
-
-    <!-- Destination Overview -->
-
-    <section class="destination-overview-area section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="destination-details-content">
-              <nuxt-link :to="localePath('index')">{{ $t('comeBack') }}</nuxt-link>
-              <div class="ddc-title">
-                <h4>تایتل</h4>
-              </div>
-              <div class="ddc-meta">
-                <p>
-                  <span class="sm-date">تاریخ</span> -
-                  <span class="sm-category">کتگوری</span>
-                </p>
-              </div>
-              <div class="ddc-welcome">
-                <img src="/img/blog/do-1.png" alt />
-                <h5>اکتشافات، اختراعات و دستاورد ها</h5>
-                <p>
-                  محققان دانشگاه صنعتی امیرکبیر در آزمایشگاه سیستم‌های هوشمند دانشکده مهندسی کامپیوتر زبان مدل‌سازی برای توسعه نرم افزارها طراحی و پیاده‌سازی کردند که امکان انجام عملیات و بازیابی داده‌ها را در تمامی مراحل ساخت و بروزرسانی نرم
-                  افزار فراهم کرده است. به گزارش روابط عمومی دانشگاه صنعتی امیرکبیر : دکتر احمد عبداله زاده بارفروش و محمد قائمی‌فرد‌ محققان این طرح، عنوان پژوهش اجرا شد ه را "فرایند مبتنی بر مدل برای ارتباط زبان‌های برنامه نویسی و پایگاه‌داده‌ها"
-                  دانستند و یاد‌آور شدند: هدف از این اختراع، ساخت زبان مدل‌سازی بود که عملیات داده‌ای را در تمامی مراحل ساخت و بروزرسانی نرم‌افزار مد نظر قرار دهد.
-                </p>
-              </div>
-
-              <div class="ddc-getting-there">
-                <div class="row">
-                  <div class="col-md-4">
-                    <div class="ddc-gt-single ddc-gt">
-                      <img src="/img/blog/do-2.png" alt />
-                      <h5>محققان این طرح با تاکید</h5>
-                      <h6>گذشته عملیات و بازیابی :</h6>
-                      <p>
-                        در حین توسعه نرم‌افزار، در فاز پیاده‌سازی متمرکز بوده است، اظهار کردند: علاوه بر این، عدم انتخاب نوع زبان برنامه‌نویسی یا پایگاه ‌داده‌ در ابتدای کار نیز پر اهمیت است. در زبان مدل‌سازی ارائه شده این هدف نیز محقق
-                        شده چون امکان تبدیل نمودارهای این زبان‌ مدل‌سازی به ک
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="ddc-gt-single">
-                      <img src="/img/blog/do-3.png" alt />
-                      <h6>زبان‌های برنامه‌نویسی:</h6>
-                      <p>
-                        مودارهای این زبان‌ مدل‌سازی به کد‌های زبان‌های برنامه‌نویسی مختلف وجود دارد. استاد دانشکده مهندسی کامپیوتر اضافه کرد: این اختراع نه تنها اهداف از پیش تعیین شده را به طور کامل برآورد کرده، بلکه ویژگی‌های جدیدی نیز
-                        در حین توسعه زبان مدل‌سازی به آن اضافه شده است. بر
-                      </p>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="ddc-gt-single">
-                      <img src="/img/blog/do-4.png" alt />
-                      <h6>وب‌سرویس‌ها :</h6>
-                      <p>به هنگام تولید کدهای وب سرویس از نمودارها، امکان بررسی اینکه چه کسی می‌تواند از این وب سرویس ها استفاده کند مهیا شده است..</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="ddc-where-stay">
-                <img src="/img/blog/do-5.png" alt />
-                <h5>عمال محدودیت</h5>
-                <p>
-                  روی داده‌های ورودی می‌توان از امن بودن وب سرویس‌ها اطمینان حاصل کرد. وب‌سرویس‌ها نوعی خدمات بر بستر وب هستند. برای مثال، اکثر بانک‌ها وب‌سرویس‌هایی را برای فروشگاه‌های اینترنتی به منظور انجام تراکنش‌های مالی فراهم می‌کنند.
-                  وی با تاکید بر اهمیت استخراج صحیح نیازمندی‌ها، در تناقض نبودن آنها در توسعه نرم‌افزار و برنامه‌های کاربردی سازمانی به طور خاص، یادآور شد: تغییر نیازمندی‌ها در .
-                </p>
-                <p>اده سازی نرم‌افزار به طور خودکار انجام شود. محمد قائمی‌فرد‌ درک کامل از پایگاه داده‌ها و زبان‌های برنامه نویسی مخ.</p>
-              </div>
-              <div class="ddc-things-toSee">
-                <div class="row">
-                  <div class="col-md-4">
-                    <div class="ddc-tts-img">
-                      <img src="/img/blog/do-6.png" alt />
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="ddc-tts-img">
-                      <img src="/img/blog/do-7.png" alt />
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="ddc-tts-img">
-                      <img src="/img/blog/do-8.png" alt />
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="ddc-tts-text">
-                      <h5>Things to See in Liubljana</h5>
-                      <p>
-                        As mentioned earlier, Ljubljana is famous for its preservation of ancient buildings that are hundreds of years old. Old Town Ljubljana has been rebuilt several times following some earthquakes but has always been
-                        rebuilt according to its old Roman outline. This makes it quite a sight to behold and a perfect spot for picture-taking. Its ancient buildings give the feel on stepping into another era entirely.Ljubljana is
-                        famous for its bridges, most notably its Triple Bridge (Tromostovje) and its Dragon Bridge (Zmajski Most).
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-4">
-                    <div class="ddc-tts-stext">
-                      <h6>Triple Bridge (Tromostovje):</h6>
-                      <p>The Triple Bridge, as the name implies, isn’t a bridge but a collection of three bridges. The Triple Bridge can in some ways be seen as a bridge between the past and the present. It is used to link Ljubljana’s historic</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="ddc-tts-stext">
-                      <h6>Dragon Bridge (Zmajski most):</h6>
-                      <p>The Dragon Bridge gets its name from an old legend that the founder of Ljubljana once killed a dragon. The bridge has four dragon statues along with sixteen smaller dragons and is designed in the Vienna</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="ddc-tts-stext">
-                      <h6>Ljubljana Castle:</h6>
-                      <p>
-                        What’s an ancient European city without a castle? Well, Ljubljana has just that in form of the Ljubljana castle. Located above downtown Ljubljana in a place called Castle Hill, the Ljubljana castle is considered
-                        the
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- <p class="elevate-cover__description">{{ description }}</p> -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /Destination Overview -->
+    </div>
+    <div class="container small">
+      <client-only>
+        <DynamicMarkdown
+          :render-func="renderFunc"
+          :static-render-funcs="staticRenderFuncs"
+          :extra-component="extraComponent" />
+      </client-only>
+    </div>
   </div>
 </template>
+
+<script lang="js">
+
+  import DynamicMarkdown from "~/components/Markdown/DynamicMarkdown.vue"
+
+
+  export default {
+
+    async asyncData ({params, app}) {
+      const fileContent = await import(`~/contents/fa/${params.id}.md`)
+      const attr = fileContent.attributes
+      return {
+        name: params.id,
+        title: attr.title,
+        trans: attr.trans,
+        year: attr.year,
+        id: attr.id,
+        cardAlt: attr.cardAlt,
+        noMainImage: attr.noMainImage,
+        description: attr.description,
+        extraComponent: attr.extraComponent,
+        renderFunc: `(${fileContent.vue.render})`,
+        staticRenderFuncs: `[${fileContent.vue.staticRenderFns}]`,
+        image: {
+          main: attr.image && attr.image.main,
+          og: attr.image && attr.image.og
+        }
+      }
+    },
+
+    nuxtI18n: {
+      seo: false
+    },
+
+    components: { DynamicMarkdown},
+
+    // head () {
+    //   return {
+    //     title: this.pageTitle,
+    //     htmlAttrs: {
+    //       lang: this.$i18n.locale,
+    //     },
+    //     meta: [
+    //       { name: "author", content: "Marina Aisa" },
+    //       { name: "description", property: "og:description", content: this.description, hid: "description" },
+    //       { property: "og:title", content: this.pageTitle },
+    //       { property: "og:image", content: this.ogImage },
+    //       { name: "twitter:description", content: this.description },
+    //       { name: "twitter:image", content: this.ogImage }
+    //     ],
+    //     link: [
+    //       this.hreflang
+    //     ]
+    //   };
+    // },
+
+    // transition: {
+    //   name: 'slide-fade'
+    // },
+
+    // computed: {
+    //   ogImage () {
+    //     return `${process.env.baseUrl}/images/blog/${this.id}/_thumbnail.jpg`;
+    //   },
+    //   pageTitle () {
+    //     return this.title + ' – Marina Aisa';
+    //   },
+    //   showLocales () {
+    //     return this.$i18n.locales.filter(locale => locale.code !== this.$i18n.locale)
+    //   },
+    //   hreflang () {
+    //     if (!this.trans) {
+    //       return ''
+    //     }
+    //     return {
+    //       hid: 'alternate-hreflang-' + this.showLocales[0].iso,
+    //       rel: 'alternate',
+    //       href: `${process.env.baseUrl + (this.showLocales[0].code === 'en' ? '' : '/es')}/blog/${this.trans}`,
+    //       hreflang: this.showLocales[0].code
+    //     }
+    //   },
+
+    //   extraComponentLoader () {
+    //     if (!this.extraComponent) {
+    //       return null
+    //     }
+    //     return () => import(`~/components/blog/${this.extraComponent}.vue`)
+    //   }
+    // }
+  }
+</script>
+
+<style lang="scss">
+.overflowhidden {
+  overflow: hidden;
+}
+.blogSelected-horizontalImage {
+  height: 56rem;
+  background-size: contain;
+  transition: all ease .35s;
+  opacity: 0;
+
+  &[lazy='loading'] {
+    filter: blur(15px);
+    background-repeat: no-repeat!important;
+    background-size: contain!important;
+  }
+  &[lazy='loaded'] {
+    opacity: 1;
+    background-repeat: no-repeat!important;
+    background-size: contain!important;
+  }
+  .intro {
+    display: flex;
+  }
+}
+.elevate-cover {
+  display: flex;
+  flex-direction: column;
+  min-height: 459px;
+
+  @media (min-width: $screen-md){
+    flex-direction: row;
+  }
+
+  &__img, &__textOffset {
+    width: 100%;
+  }
+
+  &__left {
+    max-width: 500px;
+    width: 100%;
+    padding: 2.4rem;
+    margin-bottom: auto;
+
+    @media (min-width: $screen-md){
+      margin-left: auto;
+      padding: 2.4rem 4rem 2.4rem 2.4rem;
+    }
+  }
+
+  &__textOffset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 3rem;
+    font-family: 'Tiempos Headline', Arial, sans-serif;
+    color: $secondary;
+
+    @media (min-width: $screen-sm){
+      font-size: 4rem;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    opacity: 0;
+    animation: fadeinmove .5s ease;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+  }
+}
+.dynamicMarkdown {
+  padding: 3.2rem 0;
+  font-size: 16px;
+  line-height: 1.7;
+  color: $secondary;
+
+  > *:not(.datagrid):not(.image-placeholder) {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  @media (min-width: $screen-sm){
+    padding: 7.2rem 0;
+    font-size: 19px;
+  }
+
+  h2 {
+    padding-bottom: 3.2rem;
+    padding-bottom: 2rem;
+
+    @media (max-width: $screen-sm){
+      font-size: 2rem;
+    }
+  }
+
+  h3 {
+    font-size: 2.2rem;
+    padding-bottom: 2rem;
+  }
+
+  li {
+    list-style-type: initial;
+  }
+
+  pre {
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+    padding: 2.4rem;
+    border-radius: 4px;
+    background-color: #f6f8fa;
+    overflow-x: scroll;
+    display: block;
+    margin-bottom: 5rem;
+
+    code {
+      background-color: #f6f8fa;
+    }
+  }
+
+  code {
+    background: #f3f4f4;
+    border-radius: 4px;
+    display: inline;
+    color: $secondary;
+    font-size: 14px;
+    padding: .2em .4em;
+
+    @media (min-width: $screen-sm){
+      font-size: 16px;
+    }
+  }
+}
+</style>
