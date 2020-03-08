@@ -7,15 +7,17 @@
       <div class="stat-meta">
         <p>
           <span class="sm-date">نویسنده</span> -
+
+          <nuxt-link :to="localePath({ name: 'category-name', params: { category: post.category }})">
           <span class="sm-category">{{post.category}}</span>
+          </nuxt-link>
         </p>
       </div>
       <nuxt-link
-        :to="localePath({ name: 'post-id', params: { id: post.id, content:post.content }})"
+        :to="localePath({ name: 'post-id', params: { id: post.id }})"
       >
         <h4>{{post.title}}</h4>
       </nuxt-link>
-      <!-- <p style="font-family: BYekan, 'BYekan', tahoma;">{{post.content}}</p> -->
       <div class="stat-location-comment">
         <ul>
           <li class="slocation city">
