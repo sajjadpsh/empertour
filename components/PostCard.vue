@@ -17,6 +17,7 @@
         :to="localePath({ name: 'post-id', params: { id: post.id }})"
       >
         <h4>{{post.title}}</h4>
+        <p>  اهمیت عدم سفر در این روز ها برای جلوگیری از شیوع هرچه بیشتر ویروس کرونا (بیشن توی خونت شمالیا گناه نکردن ک)</p>
       </nuxt-link>
       <div class="stat-location-comment">
         <ul class="blog-post-date">
