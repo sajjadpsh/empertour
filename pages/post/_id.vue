@@ -26,15 +26,16 @@
                   <span class="sm-category">کتگوری</span>
                 </p>
               </div>
-              <div class="container small" v-for="post in firstpost" :key="post.id">
+              <div class="container small"> 
                 <!-- <p>{{post.content}}</p> -->
-                <!-- <client-only> -->
+                <client-only>
                   <DynamicMarkdown
+                  
                     :render-func="renderFunc"
                     :static-render-funcs="staticRenderFuncs"
                     :extra-component="extraComponent"
                   />
-                <!-- </client-only> -->
+                </client-only>
               </div>
             </div>
           </div>
@@ -51,37 +52,37 @@
 
   export default {
 
-    mounted: function() {
-    return (
-      this.$axios
-        .get("http://blogapi.empertour.ir/post?skip=0&limit=1", {
-          headers: { "Access-Control-Allow-Origin": "" }
-        })
-        .then(res => {
-            this.firstpost = res.data
-            this.extraComponent= firstpost.extraComponent,
-            this.renderFunc= `(${firstpost.vue.render})`,
-            this.staticRenderFuncs= `[${firstpost.vue.staticRenderFns}]`
-          }
-        )
-        .catch(e => {
-          // console.log(e);
-        })
-    )
-  },
-//  async asyncData ({params, app}) {
-//       const fileContent = await import(`~/contents/fa/${params.id}.md`)
-//       const attr = fileContent.attributes
-//       return {
-//         extraComponent: attr.extraComponent,
-//         renderFunc: `(${fileContent.vue.render})`,
-//         staticRenderFuncs: `[${fileContent.vue.staticRenderFns}]`,
-//         image: {
-//           main: attr.image && attr.image.main,
-//           og: attr.image && attr.image.og
-//         }
-//       }
-//     },
+  //   mounted: function() {
+  //   return (
+  //     this.$axios
+  //       .get("http://blogapi.empertour.ir/post?skip=0&limit=1", {
+  //         headers: { "Access-Control-Allow-Origin": "" }
+  //       })
+  //       .then(res => {
+  //           this.firstpost = res.data.content
+  //           this.extraComponent= firstpost.extraComponent,
+  //           this.renderFunc= `(${firstpost.vue.render})`,
+  //           this.staticRenderFuncs= `[${firstpost.vue.staticRenderFns}]`
+  //         }
+  //       )
+  //       .catch(e => {
+  //         // console.log(e);
+  //       })
+  //   )
+  // },
+ async asyncData ({params, app}) {
+      const fileContent = await import(`~/contents/fa/${params.id}.md`)
+      const attr = fileContent.attributes
+      return {
+        extraComponent: attr.extraComponent,
+        renderFunc: `(${fileContent.vue.render})`,
+        staticRenderFuncs: `[${fileContent.vue.staticRenderFns}]`,
+        image: {
+          main: attr.image && attr.image.main,
+          og: attr.image && attr.image.og
+        }
+      }
+    },
     components: { DynamicMarkdown},
     computed: {
       extraComponentLoader () {
@@ -89,6 +90,9 @@
           return null
         }
         return () => import(`~/components/blog/${this.extraComponent}.vue`)
+      },
+      postcontent(firstpost){
+        return this.$firstpost.vue.render
       }
     },
     data: function() {
@@ -97,5 +101,10 @@
       firstpost: []
     };
   },
+  // props:{
+  //   firstpost:{
+  //     type: Array
+  //   }
+  // }
   }
 </script>
