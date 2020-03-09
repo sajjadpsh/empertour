@@ -1,8 +1,7 @@
 <template>
   <li class="blog">
     <nuxt-link 
-      :to="localePath({ name: 'blog-slug', params: { slug: blog.name }})"
-    >
+      :to="localePath({ name: 'blog-slug', params: { slug: blog.name }})">
       <ImageResponsive
         :imageURL="`blog/${blog.id}/_thumbnail.jpg`"
         :classes="'cardThumbnail'"
