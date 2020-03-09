@@ -26,7 +26,7 @@
                   <span class="sm-category">کتگوری</span>
                 </p>
               </div>
-              <div class="container small"> 
+              <!-- <div class="container small" v-for="post in firstpost">  -->
                 <!-- <p>{{post.content}}</p> -->
                 <client-only>
                   <DynamicMarkdown
@@ -36,7 +36,7 @@
                     :extra-component="extraComponent"
                   />
                 </client-only>
-              </div>
+              <!-- </div> -->
             </div>
           </div>
         </div>
@@ -59,7 +59,7 @@
   //         headers: { "Access-Control-Allow-Origin": "" }
   //       })
   //       .then(res => {
-  //           this.firstpost = res.data.content
+  //           this.firstpost = res.data
   //           this.extraComponent= firstpost.extraComponent,
   //           this.renderFunc= `(${firstpost.vue.render})`,
   //           this.staticRenderFuncs= `[${firstpost.vue.staticRenderFns}]`
@@ -91,9 +91,6 @@
         }
         return () => import(`~/components/blog/${this.extraComponent}.vue`)
       },
-      postcontent(firstpost){
-        return this.$firstpost.vue.render
-      }
     },
     data: function() {
     return {
@@ -101,10 +98,10 @@
       firstpost: []
     };
   },
-  // props:{
-  //   firstpost:{
-  //     type: Array
-  //   }
-  // }
+  props:{
+    post:{
+      type: Object
+    }
+  }
   }
 </script>
