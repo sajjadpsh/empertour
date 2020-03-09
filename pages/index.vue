@@ -1,7 +1,7 @@
 <template>
   <div>
     <section id="hero" class="hero-area hero-first hero-v2">
-      <div class="hero1-slider">
+      <div class="hero1-slider" >
         <div class="item">
           <div class="hero-slider">
             <div class="container">
@@ -9,17 +9,9 @@
                 <div class="col-md-12">
                   <div class="hero-text">
                     <div class="ht-counter-area">
-                      <p>
-                        یه عددی از
-                        <span class="counter-up">70</span> عدد از
-                        <span class="counter-up">1036</span> شهر ها چرت و پرنت
-                      </p>
                     </div>
                     <div class="ht-title">
-                      <h2>بیان از امپراتور استفاده کنید به خدا از همه بهتره</h2>
-                    </div>
-                    <div class="ht-rmore-btn">
-                      <a class="btn-style-b">مطالب بیشتر</a>
+                      <h1 class="blog-title" >بلاگ امپراتور</h1>
                     </div>
                   </div>
                 </div>
@@ -32,7 +24,7 @@
         <div id="gmap" class="gmap-wrapper"></div>
       </div>
     </section>
-    <section id="blog-post3" class="blog-postV3 section-padding bg-dark-blue">
+    <section id="blog-post3" class="blog-postV3 section-padding ">
       <div class="container">
         <BlogSection/>
       </div>
@@ -43,8 +35,13 @@
 
 
 <style scoped>
-.city {
-  color: aqua;
+
+.section-padding{
+  background-image: url('/img/common/car_pattern.svg');
+  background-color: #8450BE;
+}
+.blog-title{
+  color:#6a1b9a;
 }
 </style>
 

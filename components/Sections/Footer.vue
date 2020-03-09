@@ -6,12 +6,13 @@
                     <div class="col-md-4">
                         <div class="fw-left">
                             <div class="footer-logo">
-                                <img src="/img/common/logo-4.png" alt="">
+                                <b><h2 class="footer-name">امپراتور</h2></b>
                             </div>
                             <div class="footer-text">
-                                <p> اپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت
-                                    و سه درصد گذشته، حال و آین</p>
-                                <p>رم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیش</p>
+                                <p class="foot-txt" > امپراتور سایت خرید تور های داخلی و خارجی در کشور می باشد که در تلاش است لحظات خوشی را برای خانواده های ایرانی رقم بزند. شما در سایت امپراتور با خیال آسوده می توانید مقصد مورد نظر خود را مشخص کرده و از میان پیشنهاد های مختلف آژانس های مسافرتی بهترین گزینه را برگزینید. با امپراتور سفر کنید و مقاصد ماجراجویی ، هیجان انگیز ، ساحلی یا تاریخی خود را انتخاب کنید.    
+                                </p>
+                                <p class="foot-txt">امپراتور در نظر دارد با ایجاد بستری امن ، مطمئن و راحت فرآیند تصمیم گیری شما برای سفر های خانوادگی و دوستانه را تسهیل کند. امپراتور به دنبال ایجاد یک تجربه ی ناب برای شما و همسفر هایتان می باشد.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -19,36 +20,37 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="fw-single footer-contact">
-                                    <h4>ارتباط با ما</h4>
+                                    <h4 class="blog-cat-title"></h4>
                                     <ul class="fws">
-                                        <li><span>نشانی:</span> متاسفانه ایران <br>تهران  <br>خیابون حافط</li>
-                                        <li><span>تلفن:</span>09367405960</li>
-                                        <li><span>پست الکترونیک:</span> a.varaste.n@gmail.com</li>
-                                        <li><span>تارنما:</span> www.empertour.com</li>
+                                        <li><span></span> <br>  <br></li>
+                                        <li><span></span></li>
+                                        <li><span></span> </li>
+                                        <li><span></span></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="fw-single footer-links">
-                                    <h4>حساب</h4>
+                                    <h4 class="blog-cat-title"></h4>
                                     <ul class="fws">
-                                        <li><a href="#">لیست های من</a></li>
-                                        <li><a href="#">درخواست های من</a></li>
-                                        <li><a href="#">اعتبارات من</a></li>
-                                        <li><a href="#">سرخی من</a></li>
-                                        <li><a href="#">زردی تو!</a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="fw-single">
-                                    <h4>سفر</h4>
+                                    <h4 class="blog-cat-title">دسته بندی ها</h4>
                                     <ul class="fws footer-links">
-                                        <li><a href="#">خود سفر</a></li>
-                                        <li><a href="#">سفر های من</a></li>
-                                        <li><a href="#">سفر در اوج بیماری</a></li>
-                                        <li><a href="#">چیزای دیگه</a></li>
-                                        <li><a href="#">سفر کنیم تا بقیه رو</a></li>
+                                        <li><a class="blog-footer-cat-list-item" href="#">خود سفر</a></li>
+                                        <li><a class="blog-footer-cat-list-item" href="#">سفر های من</a></li>
+                                        <li><a class="blog-footer-cat-list-item" href="#">سفر در اوج بیماری</a></li>
+                                        <li><a class="blog-footer-cat-list-item" href="#">چیزای دیگه</a></li>
+                                        <li><a class="blog-footer-cat-list-item" href="#">سفر کنیم تا بقیه رو</a></li>
+                                        <li><a class="blog-footer-cat-list-item" href="#">مریض کنیم</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -76,10 +78,9 @@
                     <div class="col-md-6 soCont">
                         <div class="fc-left">
                             <ul class="fc-social">
-                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram blog-footer-so-icon" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter blog-footer-so-icon" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin blog-footer-so-icon" aria-hidden="true"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -109,5 +110,27 @@ export default {
     }
     .soCont{
         text-align: right
+    }
+    .footer-name{
+        color:white;
+        font-size: 250%;
+    }
+    .blog-cat-title{
+        color:#ff9800 !important;
+    }
+    .blog-cat-title:hover{
+        color:#7c43bd !important;
+    }
+    .blog-footer-cat-list-item:hover{
+        color:#ff9800 !important;
+    }
+    .blog-footer-so-icon{
+        color:#ff9800 !important;
+    }
+    .blog-footer-so-icon:hover{
+        color:#8d67b9 !important;
+    }
+    .foot-txt{
+        color: #ff9800 !important;
     }
 </style>

@@ -38,3 +38,15 @@
     
   </div>
 </template>
+
+<style scoped>
+
+.section-padding{
+  background-image: url('/img/common/car_pattern.svg');
+  background-color: #faf2c7;
+}
+.destination-details-content{
+  
+}
+
+</style>
