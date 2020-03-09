@@ -7,10 +7,18 @@
       <div class="stat-text">
         <div class="stat-meta">
           <p>
-            <span class="sm-date">نویسنده</span>
- -
             <nuxt-link
-              :to="localePath({ name: 'category-name', params: { category: post.category }})"
+              :to="localePath({ name: 'author-id', params: { id: post.authorId }})"
+            >
+            <span 
+            class="sm-date" 
+            v-for="author in authors" 
+            v-if="author.id==post.authorId">
+              {{author.firstName}} {{author.surname}}
+            </span>
+ -          </nuxt-link>
+            <nuxt-link
+              :to="localePath({ name: 'category-name', params: { name: post.category }})"
             >
               <span class="sm-category">{{post.category}}</span>
             </nuxt-link>
@@ -37,7 +45,30 @@ export default {
   props: {
     post: {
       type: Object
+    },
+    author:{
+      type: Object
     }
-  }
+  },
+  mounted: function(){
+    return(
+      this.$axios
+        // .get("http://localhost:3000/test.json",{
+        .get("http://blogapi.empertour.ir/author/", {
+          headers: { "Access-Control-Allow-Origin": "" }
+        })
+        .then(res => {
+          this.authors = res.data;
+        })
+        .catch(e => {
+          // console.log(e);
+        })
+    )
+  },
+  data: function(){
+    return{
+      authors:[]
+    }
+  } 
 };
 </script>

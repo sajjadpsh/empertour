@@ -1,9 +1,9 @@
 <template>
   <div class="row">
-    <div class="col-md-12" v-for="post in firstpost" :key="post.id">
+    <div class="col-md-12" v-for="(post) in (firstpost)" :key="post.id">
       <PostCard :post="post" />
     </div>
-    <div class="col-md-4" v-for="post in posts" :key="post.id">
+    <div class="col-md-4" v-for="(post) in (posts)" :key="post.id">
       <PostCard :post="post" />
     </div>
   </div>
@@ -39,6 +39,17 @@ export default {
         })
         .catch(e => {
           // console.log(e);
+        }),
+        this.$axios
+        // .get("http://localhost:3000/test.json",{
+        .get("http://blogapi.empertour.ir/author/", {
+          headers: { "Access-Control-Allow-Origin": "" }
+        })
+        .then(res => {
+          this.authors = res.data;
+        })
+        .catch(e => {
+          // console.log(e);
         })
     );
   },
@@ -46,7 +57,8 @@ export default {
   data: function() {
     return {
       posts: [],
-      firstpost: []
+      firstpost: [],
+      authors:[]
     };
   },
   props: {
@@ -55,7 +67,10 @@ export default {
     },
     firstPost: {
       type: Array
-    }
+    },
+    // authors:{
+    //   type:Array
+    // }
   }
 };
 </script>
