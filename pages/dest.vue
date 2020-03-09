@@ -145,6 +145,19 @@
   </div>
 </template>
 
+<style scoped>
+
+.section-padding{
+  background-image: url('/img/common/car_pattern.svg');
+  background-color: wheat;
+}
+.destination-details-content{
+  
+}
+.ddc-gt-single{
+background-color: white;}
+</style>
+
 <script>
 // import axios from '@nuxtjs/axios'
 

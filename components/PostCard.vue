@@ -6,10 +6,10 @@
     <div class="stat-text">
       <div class="stat-meta">
         <p>
-          <span class="sm-date">نویسنده</span> -
+          <span class="sm-date blog-post-author">نویسنده</span> -
 
           <nuxt-link :to="localePath({ name: 'category-name', params: { category: post.category }})">
-          <span class="sm-category">{{post.category}}</span>
+          <span class="sm-category blog-post-category">{{post.category}}</span>
           </nuxt-link>
         </p>
       </div>
@@ -19,7 +19,7 @@
         <h4>{{post.title}}</h4>
       </nuxt-link>
       <div class="stat-location-comment">
-        <ul>
+        <ul class="blog-post-date">
           <li class="slocation city">
             <i class="fa" aria-hidden="true"></i>
             {{post.postedAt}}
@@ -30,6 +30,18 @@
     </div>
   </div>
 </template>
+
+<style scoped>
+  .blog-post-author{
+    color:#6a1b9a;
+  }  
+  .blog-post-category{
+    color:#ffc107;
+  }
+  .blog-post-date{
+    color:#ffc107;
+  }
+</style>
 
 <script>
 export default {

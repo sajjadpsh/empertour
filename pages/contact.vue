@@ -94,6 +94,18 @@
   </div>
 </template>
 
+<style scoped>
+
+.section-padding{
+  background-image: url('/img/common/car_pattern.svg');
+  background-color: #fce8fa;
+}
+.destination-details-content{
+  
+}
+
+</style>
+
 <script>
 import axios from 'axios'
 export default {
