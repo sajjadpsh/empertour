@@ -149,10 +149,11 @@
 
 .section-padding{
   background-image: url('/img/common/car_pattern.svg');
-  background-color: wheat;
 }
 .destination-details-content{
-  
+  background-color: white;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 .ddc-gt-single{
 background-color: white;}

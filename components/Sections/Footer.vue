@@ -9,9 +9,9 @@
                                 <b><h2 class="footer-name">امپراتور</h2></b>
                             </div>
                             <div class="footer-text">
-                                <p> امپراتور سایت خرید تور های داخلی و خارجی در کشور می باشد که در تلاش است لحظات خوشی را برای خانواده های ایرانی رقم بزند. شما در سایت امپراتور با خیال آسوده می توانید مقصد مورد نظر خود را مشخص کرده و از میان پیشنهاد های مختلف آژانس های مسافرتی بهترین گزینه را برگزینید. با امپراتور سفر کنید و مقاصد ماجراجویی ، هیجان انگیز ، ساحلی یا تاریخی خود را انتخاب کنید.    
+                                <p class="foot-txt" > امپراتور سایت خرید تور های داخلی و خارجی در کشور می باشد که در تلاش است لحظات خوشی را برای خانواده های ایرانی رقم بزند. شما در سایت امپراتور با خیال آسوده می توانید مقصد مورد نظر خود را مشخص کرده و از میان پیشنهاد های مختلف آژانس های مسافرتی بهترین گزینه را برگزینید. با امپراتور سفر کنید و مقاصد ماجراجویی ، هیجان انگیز ، ساحلی یا تاریخی خود را انتخاب کنید.    
                                 </p>
-                                <p>امپراتور در نظر دارد با ایجاد بستری امن ، مطمئن و راحت فرآیند تصمیم گیری شما برای سفر های خانوادگی و دوستانه را تسهیل کند. امپراتور به دنبال ایجاد یک تجربه ی ناب برای شما و همسفر هایتان می باشد.
+                                <p class="foot-txt">امپراتور در نظر دارد با ایجاد بستری امن ، مطمئن و راحت فرآیند تصمیم گیری شما برای سفر های خانوادگی و دوستانه را تسهیل کند. امپراتور به دنبال ایجاد یک تجربه ی ناب برای شما و همسفر هایتان می باشد.
                                 </p>
                             </div>
                         </div>
@@ -20,7 +20,7 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="fw-single footer-contact">
-                                    <h4>ارتباط با ما</h4>
+                                    <h4 class="blog-cat-title"></h4>
                                     <ul class="fws">
                                         <li><span></span> <br>  <br></li>
                                         <li><span></span></li>
@@ -31,7 +31,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="fw-single footer-links">
-                                    <h4>حساب</h4>
+                                    <h4 class="blog-cat-title"></h4>
                                     <ul class="fws">
                                         <li><a href="#"></a></li>
                                         <li><a href="#"></a></li>
@@ -43,15 +43,14 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="fw-single">
-                                    <h4>دسته بندی ها</h4>
+                                    <h4 class="blog-cat-title">دسته بندی ها</h4>
                                     <ul class="fws footer-links">
-                                        <li><a href="#">خود سفر</a></li>
-                                        <li><a href="#">سفر های من</a></li>
-                                        <li><a href="#">سفر در اوج بیماری</a></li>
-                                        <li><a href="#">چیزای دیگه</a></li>
-                                        <li><a href="#">سفر کنیم تا بقیه رو</a></li>
-                                        <li><a href="#">مریض کنیم</a></li>
-
+                                        <li><a class="blog-footer-cat-list-item" href="#">خود سفر</a></li>
+                                        <li><a class="blog-footer-cat-list-item" href="#">سفر های من</a></li>
+                                        <li><a class="blog-footer-cat-list-item" href="#">سفر در اوج بیماری</a></li>
+                                        <li><a class="blog-footer-cat-list-item" href="#">چیزای دیگه</a></li>
+                                        <li><a class="blog-footer-cat-list-item" href="#">سفر کنیم تا بقیه رو</a></li>
+                                        <li><a class="blog-footer-cat-list-item" href="#">مریض کنیم</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -79,9 +78,9 @@
                     <div class="col-md-6 soCont">
                         <div class="fc-left">
                             <ul class="fc-social">
-                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram blog-footer-so-icon" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter blog-footer-so-icon" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin blog-footer-so-icon" aria-hidden="true"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -115,5 +114,23 @@ export default {
     .footer-name{
         color:white;
         font-size: 250%;
+    }
+    .blog-cat-title{
+        color:#ff9800 !important;
+    }
+    .blog-cat-title:hover{
+        color:#7c43bd !important;
+    }
+    .blog-footer-cat-list-item:hover{
+        color:#ff9800 !important;
+    }
+    .blog-footer-so-icon{
+        color:#ff9800 !important;
+    }
+    .blog-footer-so-icon:hover{
+        color:#8d67b9 !important;
+    }
+    .foot-txt{
+        color: #ff9800 !important;
     }
 </style>

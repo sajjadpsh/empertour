@@ -103,6 +103,7 @@
 .destination-details-content{
   
 }
+.contact-form-wrapper{}
 
 </style>
 

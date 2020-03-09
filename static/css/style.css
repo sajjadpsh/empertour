@@ -775,13 +775,14 @@ button {}
     position: relative;
     min-height: 465px;
     overflow: hidden;
+    background-color: #ff9800;
 }
 
 .hero-slider {
     position: relative;
-    background: linear-gradient(rgba(46, 49, 146, 0.6), rgba(46, 49, 146, 0.6)), url(../img/slider/hero-slider-1.png);
     padding-top: 100px;
     min-height: 400px;
+    background-color: #ff9800;
 }
 
 .hero-text {
@@ -1841,7 +1842,6 @@ ul.fc-social li a i {
 
 .hero-v2 .hero-slider {
     padding-top: 0;
-    background: linear-gradient(rgba(14, 42, 71, .6), rgba(14, 42, 71, .6)), url(../img/slider/hero-sliderv1-1.png);
     background-size: 100% 100%;
 }
 
