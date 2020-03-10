@@ -18,15 +18,15 @@
             <div class="destination-details-content">
               <nuxt-link :to="localePath('index')">{{ $t('comeBack') }}</nuxt-link>
               <div class="ddc-title">
-                <h4>تایتل</h4>
+                <h4>{{post.title}}</h4>
               </div>
               <div class="ddc-meta">
                 <p>
-                  <span class="sm-date">تاریخ</span> -
-                  <span class="sm-category">کتگوری</span>
+                  <span class="sm-date">{{post.postedAt}}</span> -
+                  <span class="sm-category">{{post.category}}</span>
                 </p>
               </div>
-              <div class="container small"> 
+              <!-- <div class="container small" v-for="post in firstpost">  -->
                 <!-- <p>{{post.content}}</p> -->
                 <client-only>
                   <DynamicMarkdown
@@ -36,7 +36,7 @@
                     :extra-component="extraComponent"
                   />
                 </client-only>
-              </div>
+              <!-- </div> -->
             </div>
           </div>
         </div>
@@ -51,30 +51,8 @@
 
 
 <script lang="js">
-
   import DynamicMarkdown from "~/components/Markdown/DynamicMarkdown.vue"
-
-
   export default {
-
-  //   mounted: function() {
-  //   return (
-  //     this.$axios
-  //       .get("http://blogapi.empertour.ir/post?skip=0&limit=1", {
-  //         headers: { "Access-Control-Allow-Origin": "" }
-  //       })
-  //       .then(res => {
-  //           this.firstpost = res.data.content
-  //           this.extraComponent= firstpost.extraComponent,
-  //           this.renderFunc= `(${firstpost.vue.render})`,
-  //           this.staticRenderFuncs= `[${firstpost.vue.staticRenderFns}]`
-  //         }
-  //       )
-  //       .catch(e => {
-  //         // console.log(e);
-  //       })
-  //   )
-  // },
  async asyncData ({params, app}) {
       const fileContent = await import(`~/contents/fa/${params.id}.md`)
       const attr = fileContent.attributes
@@ -96,9 +74,6 @@
         }
         return () => import(`~/components/blog/${this.extraComponent}.vue`)
       },
-      postcontent(firstpost){
-        return this.$firstpost.vue.render
-      }
     },
     data: function() {
     return {
@@ -106,10 +81,13 @@
       firstpost: []
     };
   },
-  // props:{
-  //   firstpost:{
-  //     type: Array
-  //   }
-  // }
+  props: {
+    post: {
+      type: Object
+    },
+    author:{
+      type: Object
+    }
+  },
   }
 </script>
