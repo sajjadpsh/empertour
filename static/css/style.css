@@ -1805,15 +1805,11 @@ ul.fc-social li a i {
 }
 
 .footstep-nav-v2 .navbar-nav li a:hover {
-    color: #00af80;
+    color: #ff9800;
 }
 
 .footstep-nav-v2 .navbar-nav .dropdown-menu a {
     color: #fff;
-}
-
-.footstep-nav-v2 .navbar-nav li:last-child a {
-    background-color: #69e781;
 }
 
 .footstep-nav-v2 .navbar-nav li:last-child i {

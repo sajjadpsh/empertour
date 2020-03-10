@@ -1,29 +1,6 @@
 <template>
   <div>
-    <section id="hero" class="hero-area hero-first hero-v2">
-      <div class="hero1-slider" >
-        <div class="item">
-          <div class="hero-slider">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="hero-text">
-                    <div class="ht-counter-area">
-                    </div>
-                    <div class="ht-title">
-                      <h1 class="blog-title" >بلاگ امپراتور</h1>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="hero-maps">
-        <div id="gmap" class="gmap-wrapper"></div>
-      </div>
-    </section>
+    
     <section id="blog-post3" class="blog-postV3 section-padding ">
       <div class="container">
         <BlogSection/>
