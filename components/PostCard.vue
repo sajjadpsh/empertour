@@ -1,6 +1,6 @@
 <template>
   <div class="single-tat stat-v2 stat-fullwidth">
-    <nuxt-link :to="localePath({ name: 'post-id', params: { id: post.id }})">
+    <nuxt-link :to="localePath({ name: 'post-id', params: { id: post.id , slug:post }})">
       <div class="stat-img">
         <img src="/img/blog/tat-2.png" alt />
       </div>
@@ -30,7 +30,7 @@
           <ul>
             <li class="slocation city">
               <i class="fa" aria-hidden="true"></i>
-              {{post.postedAt}}
+              {{(postedAt)}}
             </li>
             <li class="slocation"></li>
           </ul>
@@ -41,6 +41,8 @@
 </template>
 
 <script>
+import moment from 'moment-jalaali-es'
+moment().format('jYYYY/jM/jD')
 export default {
   props: {
     post: {
@@ -53,7 +55,6 @@ export default {
   mounted: function(){
     return(
       this.$axios
-        // .get("http://localhost:3000/test.json",{
         .get("http://blogapi.empertour.ir/author/", {
           headers: { "Access-Control-Allow-Origin": "" }
         })
@@ -69,6 +70,11 @@ export default {
     return{
       authors:[]
     }
-  } 
+  },
+  computed: {
+      postedAt() {
+         return moment(this.post.postedAt).format('jYYYY/jM/jD')
+      }
+   } 
 };
 </script>

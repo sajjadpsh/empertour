@@ -11,15 +11,12 @@
 <script>
 import PostCard from "~/components/PostCard.vue";
 import axios from "@nuxtjs/axios";
-// import axios from "axios";
-
 export default {
   components: { PostCard },
 
   mounted: function() {
     return (
       this.$axios
-        // .get("http://localhost:3000/test.json",{
         .get("http://blogapi.empertour.ir/post?skip=0&limit=1", {
           headers: { "Access-Control-Allow-Origin": "" }
         })
@@ -30,7 +27,6 @@ export default {
           // console.log(e);
         }),
       this.$axios
-        // .get("http://localhost:3000/test.json",{
         .get("http://blogapi.empertour.ir/post?skip=1&limit=-1", {
           headers: { "Access-Control-Allow-Origin": "" }
         })
@@ -41,7 +37,6 @@ export default {
           // console.log(e);
         }),
         this.$axios
-        // .get("http://localhost:3000/test.json",{
         .get("http://blogapi.empertour.ir/author/", {
           headers: { "Access-Control-Allow-Origin": "" }
         })
