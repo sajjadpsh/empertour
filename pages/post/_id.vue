@@ -45,6 +45,11 @@
   </div>
 </template>
 
+<style scoped>
+  
+</style>
+
+
 <script lang="js">
 
   import DynamicMarkdown from "~/components/Markdown/DynamicMarkdown.vue"
