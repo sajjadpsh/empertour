@@ -35,16 +35,6 @@ export default {
         })
         .catch(e => {
           // console.log(e);
-        }),
-        this.$axios
-        .get("http://blogapi.empertour.ir/author/", {
-          headers: { "Access-Control-Allow-Origin": "" }
-        })
-        .then(res => {
-          this.authors = res.data;
-        })
-        .catch(e => {
-          // console.log(e);
         })
     );
   },

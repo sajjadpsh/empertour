@@ -10,6 +10,7 @@
   "dependencies": {
     "@nuxtjs/auth": "^4.8.5",
     "@nuxtjs/axios": "^5.9.5",
+    "@nuxtjs/markdownit": "^1.2.9",
     "@nuxtjs/proxy": "^1.3.3",
     "@nuxtjs/style-resources": "^1.0.0",
     "axios": "^0.19.2",
@@ -18,11 +19,14 @@
     "carousel": "0.0.3",
     "eslint": "^6.8.0",
     "eslint-loader": "^3.0.3",
+    "fs": "0.0.1-security",
     "i18next-sprintf-postprocessor": "^0.2.2",
     "jalali-moment": "^3.3.3",
     "jquery": "^3.4.1",
     "jquery-ui": "^1.12.1",
     "markdown-it": "^10.0.0",
+    "markdown-it-attrs": "^3.0.2",
+    "markdown-it-div": "^1.1.0",
     "markdown-it-prism": "^2.0.3",
     "moment-jalaali-es": "^1.0.1",
     "normalize.css": "^8.0.1",
@@ -35,6 +39,7 @@
     "vue": "^2.6.11",
     "vue-jalali-moment": "^1.0.0",
     "vue-lazyload": "^1.3.3",
+    "vue-markdown": "^2.2.4",
     "webpack": "^4.41.6"
   },
   "scripts": {

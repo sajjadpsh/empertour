@@ -1,8 +1,8 @@
 <template>
   <div>
     <ul>
-      <li v-for="(content,index) in contents" :key="index">
-        <p>{{ content.content }}</p>
+      <li v-for="post in posts">
+        <p>{{ post.content}}</p>
       </li>
     </ul>
   </div>
@@ -10,29 +10,25 @@
 
 <script>
 import axios from "axios";
-
 export default {
   mounted: function() {
-    axios.get("http://localhost:3000/test.json")
+    axios.get("http://blogapi.empertour.ir/post?skip=0&limit=-1")
       .then(res => (
-        this.contents=res.data
+        this.posts=res.data
       ));
-      for (let index = 0; index < contents.length; index++) {
-          contents[index] = unescape(contents[index].content)
-      }
   },
-
+  
   data: function() {
     return {
       posts: [],
       contents: []
     };
   },
-  props: {
-    posts: {
-      type: Array
-    }
-  }
+  // props: {
+  //   posts: {
+  //     type: Array
+  //   }
+  // }
 
 };
 </script>

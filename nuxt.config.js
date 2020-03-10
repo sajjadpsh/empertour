@@ -181,8 +181,19 @@ module.exports = {
     modules: [
         '@nuxtjs/style-resources', ['nuxt-i18n', I18N],
         'nuxt-webfontloader', ['@nuxtjs/axios', { debug: true }],
-        '@nuxtjs/auth', '@nuxtjs/proxy'
+        '@nuxtjs/auth', '@nuxtjs/proxy', '@nuxtjs/markdownit'
     ],
+
+    markdownit: {
+        preset: 'default',
+        linkify: true,
+        breaks: true,
+        injected: true,
+        use: [
+            'markdown-it-div',
+            'markdown-it-attrs'
+        ]
+    },
 
     auth: {
         // Options
