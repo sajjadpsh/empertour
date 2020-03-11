@@ -26,20 +26,7 @@
                   <span class="sm-category">{{post.category}}</span>
                 </p>
               </div>
-              <template lang="md">
-                {{post.content}}
-                <!-- <vue-markdown> -->
-                  <!-- {{markdown}} -->
-                <!-- </vue-markdown> -->
-                <!-- {{markdown}} -->
-                <!-- <DynamicMarkdown
-                  :render-func="renderFunc"
-                  :static-render-funcs="staticRenderFuncs"
-                  :extra-component="extraComponent"
-                >
-                {{markdown}}
-                </DynamicMarkdown> -->
-              </template>
+              <p v-html="$md.render(post.content)"></p>
             </div>
           </div>
         </div>
@@ -52,23 +39,20 @@
 import DynamicMarkdown from "~/components/Markdown/DynamicMarkdown.vue";
 import axios from "@nuxtjs/axios";
 import moment from "moment-jalaali-es";
-// import VueMarkdown from 'vue-markdown'
-
+import markdown from "@nuxtjs/markdownit";
 
 export default {
   async asyncData({ params, app, $axios }) {
     const posts = await $axios.get(
       `http://blogapi.empertour.ir/post/${params.id}`
-    )
+    );
     return {
       post: posts.data
-    }
+    };
   },
+
   components: { DynamicMarkdown },
   computed: {
-    markdown() {
-      return unescape(this.post.content)
-    },
     extraComponentLoader() {
       if (!this.extraComponent) {
         return null;
@@ -77,7 +61,7 @@ export default {
     },
     postedAt() {
       return moment(this.post.postedAt).format("jYYYY/jM/jD");
-    },
-  },
+    }
+  }
 };
 </script>

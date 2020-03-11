@@ -40,7 +40,6 @@
 
 <script>
 import moment from "moment-jalaali-es";
-// import fs from 'fs'
 export default {
   props: {
     post: {

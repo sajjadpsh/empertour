@@ -53,9 +53,6 @@ export default {
     firstPost: {
       type: Array
     },
-    // authors:{
-    //   type:Array
-    // }
   }
 };
 </script>
