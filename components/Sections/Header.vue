@@ -23,6 +23,7 @@
   </header>
 </template>
 
+
 <style scoped>
 .navbar {
   overflow: hidden;
