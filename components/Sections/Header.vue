@@ -5,19 +5,10 @@
         <a class="navbar-brand" href="#">
           <img src="/img/common/empertour.svg" alt class="logo empertourLogo" />
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <i class="fa fa-bars" aria-hidden="true"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto liCont">
-            <li class="nav-item active dropdown">
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto "><li class="nav-item "></li><li class=""></li></ul>
+          <ul class="navbar-nav goleft">
+            <li class="nav-item active dropdown ">
               <a class="nav-link" href="#" id="navbarDropdown">
                 خانه
                 <span class="sr-only">(current)</span>
@@ -51,14 +42,10 @@
 .empertourLogo {
   height: 50px;
 }
-
-.liCont {
-  margin-right: 30%;
-}
-
-.orderBtn {
-  position: absolute;
-  float: right;
+ 
+ul{
+  text-align: left;
+  direction: ltr;
 }
 
 </style>
