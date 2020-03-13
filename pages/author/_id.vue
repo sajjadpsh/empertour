@@ -36,7 +36,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4" v-for="post in posts" :key="post.authorId">
-          <PostCard :post="post" />
+          <PostCard :post="post"/>
         </div>
       </div>
     </div>

@@ -30,5 +30,21 @@ export default {
   //   }
   // }
 
+  // async asyncData () {
+  //   const dataobject = await this.$axios.$get('localhost:3000/test.json')
+  //   return {
+  //     objects: dataobject,
+  //     // title: dataobject.title,
+  //     // content: dataobject.content,
+  //     // postedAt: dataobject.postedAt,
+  //     // comments: dataobject.comments,
+  //     // likes: dataobject.likes,
+  //     // views: dataobject.views,
+  //     // authorId: dataobject.authorId,
+  //     // tags: dataobject.tags,
+  //     // category: dataobject.category,
+  //     // id: dataobject.id,
+  //   }
+  // },
 };
 </script>

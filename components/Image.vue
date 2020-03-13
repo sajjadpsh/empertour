@@ -1,8 +1,7 @@
 <template lang="html">
   <div
     v-lazy-container="{ selector: 'img' }"
-    :class="`image-placeholder ${isRounded}`"
-  >
+    :class="`image-placeholder ${isRounded}`">
     <img
       :data-src="imageRequired"
       :data-loading="imageRequired.placeholder"
