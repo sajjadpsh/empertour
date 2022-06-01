@@ -53,6 +53,6 @@
     "node-sass": "^4.13.1",
     "responsive-loader": "^1.2.0",
     "sass-loader": "^8.0.2",
-    "sharp": "^0.23.4"
+    "sharp": "^0.30.5"
   }
 }
