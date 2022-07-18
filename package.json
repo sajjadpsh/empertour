@@ -23,7 +23,7 @@
     "i18next-sprintf-postprocessor": "^0.2.2",
     "jalali-moment": "^3.3.3",
     "jquery": "^3.4.1",
-    "jquery-ui": "^1.12.1",
+    "jquery-ui": "^1.13.2",
     "markdown-it": "^10.0.0",
     "markdown-it-attrs": "^3.0.2",
     "markdown-it-div": "^1.1.0",
